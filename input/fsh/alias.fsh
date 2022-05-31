@@ -1,5 +1,5 @@
 Alias: $SCT = http://snomed.info/sct
-Alias: $loinc = http://www.loinc.org
+Alias: $loinc = http://loinc.org
 
 Alias: $ObservationLab = https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
 Alias: $Specimen = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
