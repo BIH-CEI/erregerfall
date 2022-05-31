@@ -3,7 +3,7 @@
 // SUSHI will look for definitions in any file using the .fsh ending.
 Profile: ErregerFall
 Parent: DiagnosticReport
-Id: ErregerFall
+Id: sd-erregerfall
 Title: "ErregerFall"
 Description: "tbd"
 * code MS
@@ -20,9 +20,18 @@ Description: "tbd"
 * result[mre-klasse] only Reference(Profile_MREKlasse)
 * conclusionCode MS
 
+Instance: example-erregerfall-1
+InstanceOf: sd-erregerfall
+Usage: #example
+Title: "example-erregerfall-1"
+Description: "Beispiel eines Erregerfalls"
+* status = #final
+* code = $loinc#96161-5 "Infectious disease Evaluation note"
+* subject = Reference(Patient/example-patient)
+
 Profile: Profile_MREKlasse
 Parent: $ObservationLab
-Id: Profile-MREKlasse
+Id: sd-mre-klasse
 Title: "Profile - MRE Klasse"
 * category.coding 3..
 * category.coding contains loinc-microbiology-studies 1..1
@@ -34,10 +43,7 @@ Title: "Profile - MRE Klasse"
 * code.coding contains loinc 1..1 MS
 * code.coding[loinc] = $loinc#99780-9
 * value[x] only CodeableConcept
-* valueQuantity ..0
-* valueQuantity ^sliceName = "valueQuantity"
 * valueCodeableConcept from VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT (required)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * specimen only Reference($Specimen)
 
 ValueSet: VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT
@@ -58,6 +64,24 @@ Description: "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."
 // PVL
 // TOXINBILDEND
 
+Instance: example-mre-klasse
+InstanceOf: sd-mre-klasse
+Usage: #example
+Title: "example-mre-klasse"
+Description: "Beispiel MRE Klasse"
+* status = #final
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "59826-8_1234567890"
+* identifier[analyseBefundCode].assigner = Reference(Organization/example)
+//* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+//* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
+* category = $loinc#18725-2
+* code = $loinc#99780-9
+* subject = Reference(Patient/example-patient)
+* effectiveDateTime = "2022-05-31"
+* valueCodeableConcept = $SCT#115329001
+
 
 ValueSet: ErregerStatus
 Id: ErregerStatus
@@ -72,7 +96,7 @@ Description: "tbd"
 
 Profile: Profile_ErregerNachweis
 Parent: $ObservationLab
-Id: profile-erregerNachweis
+Id: sd-erregernachweis
 Title: "Profile - Erreger Nachweis"
 * category.coding 3..
 * category.coding contains loinc-microbiology-studies 1..1
@@ -84,12 +108,9 @@ Title: "Profile - Erreger Nachweis"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc-microorganism 1..1 MS
 * code.coding[loinc-microorganism] = $loinc#11475-1
-* value[x] only CodeableConcept or Quantity
-* valueQuantity ..0
-* valueQuantity ^sliceName = "valueQuantity"
+* value[x] only CodeableConcept
 * valueCodeableConcept 1..
 * valueCodeableConcept from VS_Detection_Qualifier_SNOMED_CT (required)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * specimen 1..
 * specimen only Reference($Specimen)
 // * hasMember only Reference($Keimzahl or $Virulenzfaktor or $Resistenzmechanismus or $AntibiogrammPanel)
@@ -132,14 +153,30 @@ Title: "Profile - Erreger Nachweis"
 * component[erstnachweisdatum].value[x] 1.. MS
 * component[erstnachweisdatum].value[x] only dateTime
 
+Instance: example-erregernachweis
+InstanceOf: sd-erregernachweis
+Usage: #example
+Title: "example-erregernachweis"
+Description: "Beispiel für Erregernachweis"
+* status = #final
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "59826-8_1234567890"
+* identifier[analyseBefundCode].assigner = Reference(Organization/example)
+* category.coding[loinc-microbiology-studies] = $loinc#18725-2
+* code.coding[loinc-microorganism] = $loinc#11475-1
+* subject = Reference(Patient/example-patient)
+* effectiveDateTime = "2022-05-31"
+* specimen = Reference(Specimen/example)
+* valueCodeableConcept = $SCT#260373001 "Detected (qualifier value)"
 
 ValueSet: VS_Detection_Qualifier_SNOMED_CT
 Id: vs-detection-qualifier-snomed-ct
 Title: "VS Detection Qualifier [SNOMED CT]"
 Description: "A set of codes representing the result of a test as detected, not detected, or inconclusive."
-* SNOMED_CT#260373001 "Detected (qualifier value)"
-* SNOMED_CT#260415000 "Not detected (qualifier value)"
-* SNOMED_CT#419984006 "Inconclusive (qualifier value)"
+* $SCT#260373001 "Detected (qualifier value)"
+* $SCT#260415000 "Not detected (qualifier value)"
+* $SCT#419984006 "Inconclusive (qualifier value)"
 
 ValueSet: VS_Erreger_Pilze
 Id: vs-erreger-pilze
