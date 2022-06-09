@@ -43,7 +43,7 @@ Title: "Profile - MRE Klasse"
 * code.coding contains loinc 1..1 MS
 * code.coding[loinc] = $loinc#99780-9
 * value[x] only CodeableConcept
-* valueCodeableConcept from VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT (required)
+* value[x] from VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT (required)
 * specimen only Reference($Specimen)
 
 ValueSet: VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT
@@ -109,8 +109,7 @@ Title: "Profile - Erreger Nachweis"
 * code.coding contains loinc-microorganism 1..1 MS
 * code.coding[loinc-microorganism] = $loinc#11475-1
 * value[x] only CodeableConcept
-* valueCodeableConcept 1..
-* valueCodeableConcept from VS_Detection_Qualifier_SNOMED_CT (required)
+* value[x] from VS_Detection_Qualifier_SNOMED_CT (required)
 * specimen 1..
 * specimen only Reference($Specimen)
 // * hasMember only Reference($Keimzahl or $Virulenzfaktor or $Resistenzmechanismus or $AntibiogrammPanel)
