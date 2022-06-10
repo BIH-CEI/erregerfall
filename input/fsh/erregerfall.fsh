@@ -80,7 +80,7 @@ Description: "Beispiel MRE Klasse"
 * code = $loinc#99780-9
 * subject = Reference(Patient/example-patient)
 * effectiveDateTime = "2022-05-31"
-* value[x] = $SCT#115329001
+* valueCodeableConcept = $SCT#115329001
 
 
 ValueSet: ErregerStatus
@@ -167,7 +167,7 @@ Description: "Beispiel für Erregernachweis"
 * subject = Reference(Patient/example-patient)
 * effectiveDateTime = "2022-05-31"
 * specimen = Reference(Specimen/example)
-* value[x] = $SCT#260373001 "Detected (qualifier value)"
+* valueCodeableConcept = $SCT#260373001 "Detected (qualifier value)"
 
 ValueSet: VS_Detection_Qualifier_SNOMED_CT
 Id: vs-detection-qualifier-snomed-ct
