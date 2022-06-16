@@ -34,8 +34,8 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * result ^slicing.discriminator[=].path = "resolve()"
 * result ^slicing.rules = #open
 * result contains erreger-nachweis 0..* MS and mre-klasse 0..* MS
-* result[erreger-nachweis] only Reference(Profile_ErregerNachweis)
-* result[mre-klasse] only Reference(Profile_MREKlasse)
+* result[erreger-nachweis] only Reference(Profil_ErregerNachweis)
+* result[mre-klasse] only Reference(Profil_MREKlasse)
 * conclusionCode MS
 * conclusionCode ^short = "Erregerstatus"
 * conclusionCode from VS_ErregerStatus (required)
