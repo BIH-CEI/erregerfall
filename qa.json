@@ -1,0 +1,12 @@
+{
+  "url": "https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall",
+  "name": "ErregerFall",
+  "package-id": "erreger.fall",
+  "ig-ver": "0.1.0",
+  "date": "Thu, 16 Jun, 2022 09:48:26 +0000",
+  "errs": 13,
+  "warnings": 16,
+  "hints": 2,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

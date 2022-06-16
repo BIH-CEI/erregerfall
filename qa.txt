@@ -1,0 +1,80 @@
+﻿ErregerFall : Validation Results
+=========================================
+
+err = 13, warn = 16, info = 2
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.121
+Generated Thu Jun 16 09:49:04 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
+ Build Errors : 15 / 4 / 0
+ /github/workspace/fsh-generated/resources/DiagnosticReport-example-erregerfall-1 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-erreger.fall : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-erregernachweis : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-mre-klasse : 5 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-erregerfall : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-erregernachweis : 0 / 4 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-mre-klasse : 0 / 4 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-ErregerStatus : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS-Mikrobiologischer-Befund-MRE-Klasse : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-detection-qualifier-snomed-ct : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-erreger-bakterien : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-erreger-pilze : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-erreger-viren : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sd-erregernachweis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sd-mre-klasse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum could not be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 620, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 835, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 901, column 154: The link '' for "QuelleKlinischesBezugsdatum" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 290, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 321, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 978, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 1008, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 620, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 835, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 901, column 154: The link '' for "QuelleKlinischesBezugsdatum" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 290, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 319, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 790, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 818, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
+== fsh-generated/resources/DiagnosticReport-example-erregerfall-1.json ==
+ERROR: DiagnosticReport/example-erregerfall-1: DiagnosticReport.subject: Unable to resolve resource 'Patient/example-patient'
+== fsh-generated/resources/ImplementationGuide-erreger.fall.json ==
+ERROR: ImplementationGuide/erreger.fall: ImplementationGuide.dependsOn[0].uri: Canonical URLs must be absolute URLs if they are not fragment references (de.medizininformatikinitiative.kerndatensatz.laborbefund)
+ERROR: ImplementationGuide/erreger.fall: ImplementationGuide.dependsOn[1].uri: Canonical URLs must be absolute URLs if they are not fragment references (de.medizininformatikinitiative.kerndatensatz.biobank)
+== fsh-generated/resources/Observation-example-erregernachweis.json ==
+ERROR: Observation/example-erregernachweis: Observation.identifier[0].assigner: Unable to resolve resource 'Organization/example'
+ERROR: Observation/example-erregernachweis: Observation.identifier[0].type: Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2: max allowed = 1, but found 2 (from https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis)
+ERROR: Observation/example-erregernachweis: Observation.subject: Unable to resolve resource 'Patient/example-patient'
+ERROR: Observation/example-erregernachweis: Observation.specimen: Unable to resolve resource 'Specimen/example'
+== fsh-generated/resources/Observation-example-mre-klasse.json ==
+ERROR: Observation/example-mre-klasse: Observation.identifier[0].assigner: Unable to resolve resource 'Organization/example'
+ERROR: Observation/example-mre-klasse: Observation.identifier[0].type: Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2: max allowed = 1, but found 2 (from https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse)
+ERROR: Observation/example-mre-klasse: Observation.category[0]: Observation.category.coding:loinc-observation: minimum required = 1, but only found 0 (from https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse)
+ERROR: Observation/example-mre-klasse: Observation.category[0]: Observation.category.coding:loinc-microbiology-studies: max allowed = 1, but found 2 (from https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse)
+ERROR: Observation/example-mre-klasse: Observation.subject: Unable to resolve resource 'Patient/example-patient'
+== fsh-generated/resources/StructureDefinition-sd-erregerfall.json ==
+WARNING: https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall#DiagnosticReport.specimen: Cannot check whether the target profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore is valid constraint on the base because it is not known
+WARNING: StructureDefinition/sd-erregerfall: StructureDefinition.differential.element.where(path = 'DiagnosticReport.specimen'): Cannot check whether the target profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore is valid constraint on the base because it is not known
+WARNING: StructureDefinition/sd-erregerfall: StructureDefinition.differential.element[3].type[0].targetProfile[0]: Unable to resolve profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+WARNING: StructureDefinition/sd-erregerfall: StructureDefinition.snapshot.element[20].type[0].targetProfile[0]: Unable to resolve profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+== fsh-generated/resources/StructureDefinition-sd-erregernachweis.json ==
+WARNING: https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis#Observation.specimen: Cannot check whether the target profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore is valid constraint on the base because it is not known
+INFORMATION: StructureDefinition/sd-erregernachweis: StructureDefinition.snapshot.element[37].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/sd-erregernachweis: StructureDefinition.differential.element.where(path = 'Observation.specimen'): Cannot check whether the target profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore is valid constraint on the base because it is not known
+WARNING: StructureDefinition/sd-erregernachweis: StructureDefinition.differential.element[6].type[0].targetProfile[0]: Unable to resolve profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+WARNING: StructureDefinition/sd-erregernachweis: StructureDefinition.snapshot.element[92].type[0].targetProfile[0]: Unable to resolve profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+== fsh-generated/resources/StructureDefinition-sd-mre-klasse.json ==
+WARNING: https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse#Observation.specimen: Cannot check whether the target profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore is valid constraint on the base because it is not known
+INFORMATION: StructureDefinition/sd-mre-klasse: StructureDefinition.snapshot.element[37].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/sd-mre-klasse: StructureDefinition.differential.element.where(path = 'Observation.specimen'): Cannot check whether the target profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore is valid constraint on the base because it is not known
+WARNING: StructureDefinition/sd-mre-klasse: StructureDefinition.differential.element[6].type[0].targetProfile[0]: Unable to resolve profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+WARNING: StructureDefinition/sd-mre-klasse: StructureDefinition.snapshot.element[92].type[0].targetProfile[0]: Unable to resolve profile https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+== fsh-generated/resources/ValueSet-ErregerStatus.json ==
+== fsh-generated/resources/ValueSet-VS-Mikrobiologischer-Befund-MRE-Klasse.json ==
+== fsh-generated/resources/ValueSet-vs-detection-qualifier-snomed-ct.json ==
+== fsh-generated/resources/ValueSet-vs-erreger-bakterien.json ==
+== fsh-generated/resources/ValueSet-vs-erreger-pilze.json ==
+== fsh-generated/resources/ValueSet-vs-erreger-viren.json ==

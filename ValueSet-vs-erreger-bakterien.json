@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-erreger-bakterien",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  409822003 (Domain Bacteria (organism))</li></ul></div>"
+  },
+  "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-bakterien",
+  "version": "0.1.0",
+  "name": "VS_Erreger_Bakterien",
+  "title": "VS Erreger Bakterien",
+  "status": "active",
+  "date": "2022-06-16T09:48:26+00:00",
+  "publisher": "Berlin Institute of Health",
+  "contact": [
+    {
+      "name": "Berlin Institute of Health",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/"
+        }
+      ]
+    }
+  ],
+  "description": "tbd",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "409822003"
+          }
+        ]
+      }
+    ]
+  }
+}

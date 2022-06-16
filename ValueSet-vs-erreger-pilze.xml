@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-erreger-pilze"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  414561005 (Kingdom Fungi (organism))</li></ul></div>
+  </text>
+  <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-pilze"/>
+  <version value="0.1.0"/>
+  <name value="VS_Erreger_Pilze"/>
+  <title value="VS Erreger Pilze"/>
+  <status value="active"/>
+  <date value="2022-06-16T09:48:26+00:00"/>
+  <publisher value="Berlin Institute of Health"/>
+  <contact>
+    <name value="Berlin Institute of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="tbd"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="414561005"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

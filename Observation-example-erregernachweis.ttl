@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/Observation/example-erregernachweis> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-erregernachweis"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis";
+       fhir:index 0;
+       fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Observation Instance Identifier: 59826-8_1234567890</p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 26436-6}, {http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://loinc.org 18725-2}\">Laboratory studies (set)</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 11475-1}\">Microorganism identified in Specimen by Culture</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@1.0.7-alpha1&amp;canonical=de.medizininformatikinitiative.kerndatensatz.laborbefund/Patient/example-patient\">Patient/example-patient</a></p><p><b>effective</b>: 2022-05-31</p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 260373001}\">Detected (qualifier value)</span></p><p><b>specimen</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@1.0.7-alpha1&amp;canonical=de.medizininformatikinitiative.kerndatensatz.laborbefund/Specimen/example\">Specimen/example</a></p></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "OBI" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "OBI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://exmaple.org/fhir/sid/test-lab-results" ];
+     fhir:Identifier.value [ fhir:value "59826-8_1234567890" ];
+     fhir:Identifier.assigner [
+       fhir:link <https://charite.de/fhir/erregerfall/Organization/example>;
+       fhir:Reference.reference [ fhir:value "Organization/example" ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:26436-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "26436-6" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ], [
+       fhir:index 2;
+       a loinc:18725-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "18725-2" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:11475-1;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "11475-1" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://charite.de/fhir/erregerfall/Patient/example-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-31"^^xsd:date];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:260373001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "260373001" ];
+       fhir:Coding.display [ fhir:value "Detected (qualifier value)" ]
+     ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <https://charite.de/fhir/erregerfall/Specimen/example>;
+     fhir:Reference.reference [ fhir:value "Specimen/example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/Observation/example-erregernachweis.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

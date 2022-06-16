@@ -1,0 +1,26 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example-erregerfall-1",
+  "meta": {
+    "profile": [
+      "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 96161-5}\">Infectious disease Evaluation note</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr></table><p><b>Report Details</b></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "96161-5",
+        "display": "Infectious disease Evaluation note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-patient"
+  }
+}
