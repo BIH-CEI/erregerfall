@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: erreger.fall
+id: erregerfall
 canonical: https://charite.de/fhir/erregerfall
 name: ErregerFall
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: ErregerFall
+description: Profile für die Use Cases Erreger-Fall und Abstrichserie
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html

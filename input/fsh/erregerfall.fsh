@@ -1,11 +1,29 @@
-// This is a simple example of a FSH file.
-// This file can be renamed, and additional FSH files can be added.
-// SUSHI will look for definitions in any file using the .fsh ending.
-Profile: ErregerFall
+Profile: Profil_ErregerFall
 Parent: DiagnosticReport
 Id: sd-erregerfall
-Title: "ErregerFall"
-Description: "tbd"
+Title: "Profil - ErregerFall"
+Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten in Bezug auf einen bestimmten Erreger. In der Regel entsteht ein Erreger-Fall als Reaktion auf eine positive oder grenzwertige Abstrichserie."
+* identifier MS
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open
+* identifier contains ErregerFallNummer 1..1
+* identifier[ErregerFallNummer] ^short = "Erregerfallnummer"
+* identifier[ErregerFallNummer] ^definition = "Eindeutige ErregerFall-Nummer innerhalb des Patienten"
+* identifier[ErregerFallNummer].type 1.. MS
+* identifier[ErregerFallNummer].type = $v2-0203#LACSN
+* identifier[ErregerFallNummer].type.coding MS
+* identifier[ErregerFallNummer].type.coding ^slicing.discriminator.type = #value
+* identifier[ErregerFallNummer].type.coding ^slicing.discriminator.path = "system"
+* identifier[ErregerFallNummer].type.coding ^slicing.rules = #open
+* identifier[ErregerFallNummer].type.coding contains lacsnV2 1..1 MS
+* identifier[ErregerFallNummer].type.coding[lacsnV2].system 1.. MS
+* identifier[ErregerFallNummer].type.coding[lacsnV2].system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
+* identifier[ErregerFallNummer].type.coding[lacsnV2].code 1.. MS
+* identifier[ErregerFallNummer].type.coding[lacsnV2].code = #LACSN (exactly)
+* identifier[ErregerFallNummer].system 1.. MS
+* identifier[ErregerFallNummer].value 1.. MS
+* identifier[ErregerFallNummer].assigner MS
 * code MS
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
 * subject MS
@@ -19,20 +37,28 @@ Description: "tbd"
 * result[erreger-nachweis] only Reference(Profile_ErregerNachweis)
 * result[mre-klasse] only Reference(Profile_MREKlasse)
 * conclusionCode MS
+* conclusionCode ^short = "Erregerstatus"
+* conclusionCode from VS_ErregerStatus (required)
 
-Instance: example-erregerfall-1
+Instance: example-erregerfall-mrsa
 InstanceOf: sd-erregerfall
 Usage: #example
-Title: "example-erregerfall-1"
-Description: "Beispiel eines Erregerfalls"
+Title: "Beispiel Erregerfall MRSA"
+Description: "Beispiel eines Erregerfalls MRSA"
+* identifier[ErregerFallNummer].type = $v2-0203#LACSN
+* identifier[ErregerFallNummer].system = "https://www.charite.de/fhir/sid/erregerfaelle"
+* identifier[ErregerFallNummer].value = "0123456789"
 * status = #final
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
 * subject = Reference(Patient/example-patient)
+* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
+* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
+* conclusionCode = $SCT#10828004 "Positive (qualifier value)"
 
-Profile: Profile_MREKlasse
+Profile: Profil_MREKlasse
 Parent: $ObservationLab
 Id: sd-mre-klasse
-Title: "Profile - MRE Klasse"
+Title: "Profil - MRE Klasse"
 * category.coding 3..
 * category.coding contains loinc-microbiology-studies 1..1
 * category.coding[loinc-microbiology-studies] = $loinc#18725-2
@@ -46,12 +72,12 @@ Title: "Profile - MRE Klasse"
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #open
 * value[x] only CodeableConcept
-* value[x] from VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT (required)
+* value[x] from VS_Mikrobiologischer_Befund_MRE_Klasse (required)
 * specimen only Reference($Specimen)
 
-ValueSet: VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT
-Id: VS-Mikrobiologischer-Befund-MRE-Klasse
-Title: "VS Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"
+ValueSet: VS_Mikrobiologischer_Befund_MRE_Klasse
+Id: vs-mikrobiologischer-befund-mre-klasse
+Title: "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"
 Description: "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."
 * SNOMED_CT#115329001 "MRSA"
 * SNOMED_CT#113727004 "VRE"
@@ -67,11 +93,11 @@ Description: "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."
 // PVL
 // TOXINBILDEND
 
-Instance: example-mre-klasse
+Instance: example-mre-klasse-mrsa
 InstanceOf: sd-mre-klasse
 Usage: #example
-Title: "example-mre-klasse"
-Description: "Beispiel MRE Klasse"
+Title: "Beispiel - MRE Klasse MRSA"
+Description: "Beispiel für MRE Klasse MRSA"
 * status = #final
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
@@ -79,17 +105,17 @@ Description: "Beispiel MRE Klasse"
 * identifier[analyseBefundCode].assigner = Reference(Organization/example)
 //* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 //* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
-* category = $loinc#18725-2
-* code = $loinc#99780-9
-* subject = Reference(Patient/example-patient)
+* category = $loinc#18725-2 "Microbiology studies (set)"
+* code = $loinc#99780-9 "Multidrug resistant gram-negative organism classification [Type]"
+* subject = Reference(Patient/example)
 * effectiveDateTime = "2022-05-31"
-* valueCodeableConcept = $SCT#115329001
+* valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
 
 
-ValueSet: ErregerStatus
-Id: ErregerStatus
-Title: "ErregerStatus"
-Description: "tbd"
+ValueSet: VS_ErregerStatus
+Id: vs-erreger-status
+Title: "ValueSet - ErregerStatus [SNOMED CT]"
+Description: "Das ValueSet enthält Codes für den Erregerstatus eines Patienten."
 * $SCT#10828004 "Positive (qualifier value)"
 * $SCT#260385009 "Negative (qualifier value)"
 * $SCT#410513005 "In the past (qualifier value)"
@@ -97,10 +123,10 @@ Description: "tbd"
 * $SCT#419099009 "Dead (finding)"
 
 
-Profile: Profile_ErregerNachweis
+Profile: Profil_ErregerNachweis
 Parent: $ObservationLab
 Id: sd-erregernachweis
-Title: "Profile - Erreger Nachweis"
+Title: "Profil - Erreger Nachweis"
 * category.coding 3..
 * category.coding contains loinc-microbiology-studies 1..1
 * category.coding[loinc-microbiology-studies] = $loinc#18725-2
@@ -115,7 +141,7 @@ Title: "Profile - Erreger Nachweis"
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #open
 * value[x] only CodeableConcept
-* value[x] from VS_Detection_Qualifier_SNOMED_CT (required)
+* value[x] from VS_Erregernachweis_Qualifier (required)
 * specimen 1..
 * specimen only Reference($Specimen)
 // * hasMember only Reference($Keimzahl or $Virulenzfaktor or $Resistenzmechanismus or $AntibiogrammPanel)
@@ -128,7 +154,8 @@ Title: "Profile - Erreger Nachweis"
     NachweisBakterien 0..1 MS and
     NachweisPilze 0..1 MS and
     NachweisVirus 0..1 MS and
-    erstnachweisdatum 0..1 MS
+    Erstnachweisdatum 0..1 MS and
+    Nachweisort 0..1 MS
 * component[NachweisBakterien].code 1.. MS
 * component[NachweisBakterien].code = $loinc#6463-4
 * component[NachweisBakterien].value[x] 1.. MS
@@ -136,7 +163,6 @@ Title: "Profile - Erreger Nachweis"
 * component[NachweisBakterien].valueCodeableConcept 1.. MS
 * component[NachweisBakterien].valueCodeableConcept only CodeableConcept
 * component[NachweisBakterien].valueCodeableConcept from VS_Erreger_Bakterien (required)
-* component[NachweisBakterien].valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * component[NachweisPilze].code 1.. MS
 * component[NachweisPilze].code = $loinc#42805-2
 * component[NachweisPilze].value[x] 1.. MS
@@ -144,7 +170,6 @@ Title: "Profile - Erreger Nachweis"
 * component[NachweisPilze].valueCodeableConcept 1.. MS
 * component[NachweisPilze].valueCodeableConcept only CodeableConcept
 * component[NachweisPilze].valueCodeableConcept from VS_Erreger_Pilze (required)
-* component[NachweisPilze].valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * component[NachweisVirus].code 1.. MS
 * component[NachweisVirus].code = $loinc#6584-7
 * component[NachweisVirus].value[x] 1.. MS
@@ -152,53 +177,62 @@ Title: "Profile - Erreger Nachweis"
 * component[NachweisVirus].valueCodeableConcept 1.. MS
 * component[NachweisVirus].valueCodeableConcept only CodeableConcept
 * component[NachweisVirus].valueCodeableConcept from VS_Erreger_Viren (required)
-* component[NachweisVirus].valueCodeableConcept ^sliceName = "valueCodeableConcept"
-* component[erstnachweisdatum].code 1.. MS
-* component[erstnachweisdatum].code = $loinc#99350-1
-* component[erstnachweisdatum].value[x] 1.. MS
-* component[erstnachweisdatum].value[x] only dateTime
+* component[Erstnachweisdatum].code 1.. MS
+* component[Erstnachweisdatum].code = $loinc#99350-1
+* component[Erstnachweisdatum].value[x] 1.. MS
+* component[Erstnachweisdatum].value[x] only dateTime
+* component[Nachweisort].code 1.. MS 
+* component[Nachweisort].code = $loinc#81267-7 "Setting of exposure to illness"
+* component[Nachweisort].value[x] 1.. MS
+* component[Nachweisort].value[x] only string
 
-Instance: example-erregernachweis
+Instance: example-erregernachweis-mrsa
 InstanceOf: sd-erregernachweis
 Usage: #example
-Title: "example-erregernachweis"
-Description: "Beispiel für Erregernachweis"
+Title: "Beispiel Erregernachweis MRSA"
+Description: "Beispiel für Erregernachweis von MRSA"
 * status = #final
-* identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/lab-tests"
 * identifier[analyseBefundCode].value = "59826-8_1234567890"
-* identifier[analyseBefundCode].assigner = Reference(Organization/example)
+* identifier[analyseBefundCode].assigner = Reference(Organization/charite)
 * category.coding[loinc-microbiology-studies] = $loinc#18725-2
 * code.coding[loinc-microorganism] = $loinc#11475-1
-* subject = Reference(Patient/example-patient)
+* subject = Reference(Patient/example)
 * effectiveDateTime = "2022-05-31"
 * specimen = Reference(Specimen/example)
 * valueCodeableConcept = $SCT#260373001 "Detected (qualifier value)"
+* component[NachweisBakterien].code = $loinc#6463-4 "Bacteria identified in Specimen by Culture"
+* component[NachweisBakterien].valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
+* component[Erstnachweisdatum].code = $loinc#99350-1 "Date of first infection onset"
+* component[Erstnachweisdatum].valueDateTime = "2022-05-31"
+* component[Nachweisort].code = $loinc#81267-7 "Setting of exposure to illness"
+* component[Nachweisort].valueString = "CBF Station 12"
 
-ValueSet: VS_Detection_Qualifier_SNOMED_CT
-Id: vs-detection-qualifier-snomed-ct
-Title: "VS Detection Qualifier [SNOMED CT]"
-Description: "A set of codes representing the result of a test as detected, not detected, or inconclusive."
+ValueSet: VS_Erregernachweis_Qualifier
+Id: vs-erregernachweis-qualifier
+Title: "ValueSet - Erregernachweis Qualifier [SNOMED CT]"
+Description: "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises."
 * $SCT#260373001 "Detected (qualifier value)"
 * $SCT#260415000 "Not detected (qualifier value)"
 * $SCT#419984006 "Inconclusive (qualifier value)"
 
 ValueSet: VS_Erreger_Pilze
 Id: vs-erreger-pilze
-Title: "VS Erreger Pilze"
-Description: "tbd"
+Title: "ValueSet - Erreger Pilze [SNOMED CT]"
+Description: "Das ValueSet enthält Codes für Pilze aus SNOMED CT."
 * include codes from system $SCT where concept descendent-of #414561005
 
 ValueSet: VS_Erreger_Bakterien
 Id: vs-erreger-bakterien
-Title: "VS Erreger Bakterien"
-Description: "tbd"
+Title: "ValueSet - Erreger Bakterien [SNOMED CT]"
+Description: "Das ValueSet enthält Codes für Bakterien aus SNOMED CT."
 * include codes from system $SCT where concept descendent-of #409822003 
 
 ValueSet: VS_Erreger_Viren
 Id: vs-erreger-viren
-Title: "VS Erreger Viren"
-Description: "tbd"
+Title: "ValueSet - Erreger Viren [SNOMED CT]"
+Description: "Das ValueSet enthält Codes für Viren aus SNOMED CT."
 * include codes from system $SCT where concept descendent-of #49872002 
 
 // TODO: Examples
