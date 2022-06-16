@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="ErregerFall"/>
   <status value="draft"/>
-  <date value="2022-06-16T09:48:26+00:00"/>
+  <date value="2022-06-16T13:52:14+00:00"/>
   <publisher value="Berlin Institute of Health"/>
   <contact>
     <name value="Berlin Institute of Health"/>
@@ -21,6 +21,11 @@
   <packageId value="erreger.fall"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_laborbefund">
     <uri value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>

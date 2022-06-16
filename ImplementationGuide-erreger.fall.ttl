@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-06-16T09:48:26+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-06-16T13:52:14+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -35,12 +35,21 @@
   ];
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+  ], [
+     fhir:index 1;
      fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_laborbefund" ];
      fhir:ImplementationGuide.dependsOn.uri [ fhir:value "de.medizininformatikinitiative.kerndatensatz.laborbefund" ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.laborbefund" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.7-alpha1" ]
   ], [
-     fhir:index 1;
+     fhir:index 2;
      fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_biobank" ];
      fhir:ImplementationGuide.dependsOn.uri [ fhir:value "de.medizininformatikinitiative.kerndatensatz.biobank" ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.biobank" ];
