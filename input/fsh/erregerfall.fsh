@@ -22,12 +22,12 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * specimen MS
 * specimen only Reference($Specimen)
 * result MS
-* result ^slicing.discriminator[+].type = #value
-* result ^slicing.discriminator[=].path = "resolve()"
-* result ^slicing.rules = #open
-* result contains erreger-nachweis 0..* MS and mre-klasse 0..* MS
-* result[erreger-nachweis] only Reference(Profil_ErregerNachweis)
-* result[mre-klasse] only Reference(Profil_MREKlasse)
+//* result ^slicing.discriminator[+].type = #value
+//* result ^slicing.discriminator[=].path = "resolve()"
+//* result ^slicing.rules = #open
+//* result contains erreger-nachweis 0..* MS and mre-klasse 0..* MS
+//* result[erreger-nachweis] only Reference(Profil_ErregerNachweis)
+//* result[mre-klasse] only Reference(Profil_MREKlasse)
 * conclusionCode MS
 * conclusionCode ^short = "Erregerstatus"
 * conclusionCode from VS_ErregerStatus (required)
@@ -43,8 +43,10 @@ Description: "Beispiel eines Erregerfalls MRSA"
 * status = #final
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
 * subject = Reference(Patient/example-patient)
-* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
-* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
+//* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
+//* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
+* result[+] = Reference(example-erregernachweis-mrsa)
+* result[+] = Reference(example-mre-klasse-mrsa)
 * conclusionCode = $SCT#10828004 "Positive (qualifier value)"
 
 Profile: Profil_MREKlasse
