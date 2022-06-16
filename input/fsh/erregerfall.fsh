@@ -13,14 +13,6 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * identifier[ErregerFallNummer].type 1.. MS
 * identifier[ErregerFallNummer].type = $v2-0203#LACSN
 * identifier[ErregerFallNummer].type.coding MS
-* identifier[ErregerFallNummer].type.coding ^slicing.discriminator.type = #value
-* identifier[ErregerFallNummer].type.coding ^slicing.discriminator.path = "system"
-* identifier[ErregerFallNummer].type.coding ^slicing.rules = #open
-* identifier[ErregerFallNummer].type.coding contains lacsnV2 1..1 MS
-* identifier[ErregerFallNummer].type.coding[lacsnV2].system 1.. MS
-* identifier[ErregerFallNummer].type.coding[lacsnV2].system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
-* identifier[ErregerFallNummer].type.coding[lacsnV2].code 1.. MS
-* identifier[ErregerFallNummer].type.coding[lacsnV2].code = #LACSN (exactly)
 * identifier[ErregerFallNummer].system 1.. MS
 * identifier[ErregerFallNummer].value 1.. MS
 * identifier[ErregerFallNummer].assigner MS
