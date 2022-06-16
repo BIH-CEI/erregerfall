@@ -42,6 +42,9 @@ Title: "Profile - MRE Klasse"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc 1..1 MS
 * code.coding[loinc] = $loinc#99780-9
+* value[x] ^slicing.discriminator.type = #type
+* value[x] ^slicing.discriminator.path = "$this"
+* value[x] ^slicing.rules = #open
 * value[x] only CodeableConcept
 * value[x] from VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT (required)
 * specimen only Reference($Specimen)
@@ -108,6 +111,9 @@ Title: "Profile - Erreger Nachweis"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc-microorganism 1..1 MS
 * code.coding[loinc-microorganism] = $loinc#11475-1
+* value[x] ^slicing.discriminator.type = #type
+* value[x] ^slicing.discriminator.path = "$this"
+* value[x] ^slicing.rules = #open
 * value[x] only CodeableConcept
 * value[x] from VS_Detection_Qualifier_SNOMED_CT (required)
 * specimen 1..
