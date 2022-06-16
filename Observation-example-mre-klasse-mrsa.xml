@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-mre-klasse-mrsa"/>
+  <meta>
+    <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-mre-klasse-mrsa" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-sd-mre-klasse.html">Profil - MRE Klasse</a></p></div><p><b>identifier</b>: Observation Instance Identifier: 59826-8_1234567890</p><p><b>status</b>: final</p><p><b>category</b>: Microbiology studies (set) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#18725-2; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory; <a href="https://loinc.org/">LOINC</a>#18725-2)</span></p><p><b>code</b>: Multidrug resistant gram-negative organism classification [Type] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#99780-9)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@1.0.7-alpha1&amp;canonical=de.medizininformatikinitiative.kerndatensatz.laborbefund/Patient/example">Patient/example</a></p><p><b>effective</b>: 2022-05-31</p><p><b>value</b>: Methicillin resistant Staphylococcus aureus (organism) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#115329001)</span></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="OBI"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="OBI"/>
+      </coding>
+    </type>
+    <system value="https://exmaple.org/fhir/sid/test-lab-results"/>
+    <value value="59826-8_1234567890"/>
+    <assigner>
+      <reference value="Organization/example"/>
+    </assigner>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18725-2"/>
+      <display value="Microbiology studies (set)"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18725-2"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="99780-9"/>
+      <display value="Multidrug resistant gram-negative organism classification [Type]"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="2022-05-31"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="115329001"/>
+      <display value="Methicillin resistant Staphylococcus aureus (organism)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

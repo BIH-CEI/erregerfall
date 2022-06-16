@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/Observation/example-mre-klasse-mrsa> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-mre-klasse-mrsa"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse";
+       fhir:index 0;
+       fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-mre-klasse-mrsa\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sd-mre-klasse.html\">Profil - MRE Klasse</a></p></div><p><b>identifier</b>: Observation Instance Identifier: 59826-8_1234567890</p><p><b>status</b>: final</p><p><b>category</b>: Microbiology studies (set) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#18725-2; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory; <a href=\"https://loinc.org/\">LOINC</a>#18725-2)</span></p><p><b>code</b>: Multidrug resistant gram-negative organism classification [Type] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#99780-9)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@1.0.7-alpha1&amp;canonical=de.medizininformatikinitiative.kerndatensatz.laborbefund/Patient/example\">Patient/example</a></p><p><b>effective</b>: 2022-05-31</p><p><b>value</b>: Methicillin resistant Staphylococcus aureus (organism) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#115329001)</span></p></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "OBI" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "OBI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://exmaple.org/fhir/sid/test-lab-results" ];
+     fhir:Identifier.value [ fhir:value "59826-8_1234567890" ];
+     fhir:Identifier.assigner [
+       fhir:link <https://charite.de/fhir/erregerfall/Organization/example>;
+       fhir:Reference.reference [ fhir:value "Organization/example" ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:18725-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "18725-2" ];
+       fhir:Coding.display [ fhir:value "Microbiology studies (set)" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ], [
+       fhir:index 2;
+       a loinc:18725-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "18725-2" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:99780-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "99780-9" ];
+       fhir:Coding.display [ fhir:value "Multidrug resistant gram-negative organism classification [Type]" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://charite.de/fhir/erregerfall/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-05-31"^^xsd:date];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:115329001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "115329001" ];
+       fhir:Coding.display [ fhir:value "Methicillin resistant Staphylococcus aureus (organism)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/Observation/example-mre-klasse-mrsa.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

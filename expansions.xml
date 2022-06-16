@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="62a2945e-9446-4a32-804d-8a6ec14e8115"/>
+  <id value="5c609ed9-a8ae-47f0-a29a-11ef6d7a99d8"/>
   <meta>
-    <lastUpdated value="2022-06-16T13:52:14.750+00:00"/>
+    <lastUpdated value="2022-06-16T21:59:32.267+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/ErregerStatus"/>
+    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-status"/>
     <resource>
       <ValueSet>
-        <id value="ErregerStatus"/>
+        <id value="vs-erreger-status"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -68,12 +68,12 @@
             </table>
           </div>
         </text>
-        <url value="https://charite.de/fhir/erregerfall/ValueSet/ErregerStatus"/>
+        <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-status"/>
         <version value="0.1.0"/>
-        <name value="ErregerStatus"/>
-        <title value="ErregerStatus"/>
+        <name value="VS_ErregerStatus"/>
+        <title value="ValueSet - ErregerStatus [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-16T13:52:14+00:00"/>
+        <date value="2022-06-16T21:59:32+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -82,10 +82,10 @@
             <value value="https://www.bihealth.org/"/>
           </telecom>
         </contact>
-        <description value="tbd"/>
+        <description value="Das ValueSet enthält Codes für den Erregerstatus eines Patienten."/>
         <expansion>
-          <identifier value="urn:uuid:7b23925c-da14-42f1-8d19-21197fef10a6"/>
-          <timestamp value="2022-06-16T13:52:43+00:00"/>
+          <identifier value="urn:uuid:937f1970-5308-475f-923e-a97d2b3ff8e6"/>
+          <timestamp value="2022-06-16T21:59:58+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -123,104 +123,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="419099009"/>
             <display value="Dead (finding)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/vs-detection-qualifier-snomed-ct"/>
-    <resource>
-      <ValueSet>
-        <id value="vs-detection-qualifier-snomed-ct"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
-            <p>All codes in this table are from the system 
-              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260373001"> </a>  
-                  <a href="http://snomed.info/id/260373001">260373001</a>
-                </td>
-                <td>Detected (qualifier value)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260415000"> </a>  
-                  <a href="http://snomed.info/id/260415000">260415000</a>
-                </td>
-                <td>Not detected (qualifier value)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-419984006"> </a>  
-                  <a href="http://snomed.info/id/419984006">419984006</a>
-                </td>
-                <td>Inconclusive (qualifier value)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-detection-qualifier-snomed-ct"/>
-        <version value="0.1.0"/>
-        <name value="VS_Detection_Qualifier_SNOMED_CT"/>
-        <title value="VS Detection Qualifier [SNOMED CT]"/>
-        <status value="active"/>
-        <date value="2022-06-16T13:52:14+00:00"/>
-        <publisher value="Berlin Institute of Health"/>
-        <contact>
-          <name value="Berlin Institute of Health"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.bihealth.org/"/>
-          </telecom>
-        </contact>
-        <description value="A set of codes representing the result of a test as detected, not detected, or inconclusive."/>
-        <expansion>
-          <identifier value="urn:uuid:7f2e4c09-4165-4afa-838f-f5cc4e1ae7f3"/>
-          <timestamp value="2022-06-16T13:52:43+00:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260373001"/>
-            <display value="Detected (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260415000"/>
-            <display value="Not detected (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="419984006"/>
-            <display value="Inconclusive (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -7256,9 +7158,9 @@
         <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-bakterien"/>
         <version value="0.1.0"/>
         <name value="VS_Erreger_Bakterien"/>
-        <title value="VS Erreger Bakterien"/>
+        <title value="ValueSet - Erreger Bakterien [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-16T13:52:14+00:00"/>
+        <date value="2022-06-16T21:59:32+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -7267,7 +7169,7 @@
             <value value="https://www.bihealth.org/"/>
           </telecom>
         </contact>
-        <description value="tbd"/>
+        <description value="Das ValueSet enthält Codes für Bakterien aus SNOMED CT."/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
@@ -7275,8 +7177,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:636f938d-363a-4c76-9bcd-aa70fcb81400"/>
-          <timestamp value="2022-06-16T13:52:43+00:00"/>
+          <identifier value="urn:uuid:8532af2f-9953-46cf-b788-464a2977d5aa"/>
+          <timestamp value="2022-06-16T21:59:58+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -19324,9 +19226,9 @@
         <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-pilze"/>
         <version value="0.1.0"/>
         <name value="VS_Erreger_Pilze"/>
-        <title value="VS Erreger Pilze"/>
+        <title value="ValueSet - Erreger Pilze [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-16T13:52:14+00:00"/>
+        <date value="2022-06-16T21:59:32+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -19335,7 +19237,7 @@
             <value value="https://www.bihealth.org/"/>
           </telecom>
         </contact>
-        <description value="tbd"/>
+        <description value="Das ValueSet enthält Codes für Pilze aus SNOMED CT."/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
@@ -19343,8 +19245,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:f9846f43-f955-4d5d-97e2-4c56463bc3c9"/>
-          <timestamp value="2022-06-16T13:52:44+00:00"/>
+          <identifier value="urn:uuid:9797c1fe-6448-49e4-a3bf-6fd203ca2b0e"/>
+          <timestamp value="2022-06-16T21:59:58+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -31392,9 +31294,9 @@
         <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-viren"/>
         <version value="0.1.0"/>
         <name value="VS_Erreger_Viren"/>
-        <title value="VS Erreger Viren"/>
+        <title value="ValueSet - Erreger Viren [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-16T13:52:14+00:00"/>
+        <date value="2022-06-16T21:59:32+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -31403,7 +31305,7 @@
             <value value="https://www.bihealth.org/"/>
           </telecom>
         </contact>
-        <description value="tbd"/>
+        <description value="Das ValueSet enthält Codes für Viren aus SNOMED CT."/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
@@ -31411,8 +31313,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:2e354a5b-8baa-4103-9df8-7081dadd1966"/>
-          <timestamp value="2022-06-16T13:52:44+00:00"/>
+          <identifier value="urn:uuid:53d51d73-016d-4b08-90e1-46db923a8172"/>
+          <timestamp value="2022-06-16T21:59:58+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36431,10 +36333,108 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/VS-Mikrobiologischer-Befund-MRE-Klasse"/>
+    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/vs-erregernachweis-qualifier"/>
     <resource>
       <ValueSet>
-        <id value="VS-Mikrobiologischer-Befund-MRE-Klasse"/>
+        <id value="vs-erregernachweis-qualifier"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p>All codes in this table are from the system 
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260373001"> </a>  
+                  <a href="http://snomed.info/id/260373001">260373001</a>
+                </td>
+                <td>Detected (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260415000"> </a>  
+                  <a href="http://snomed.info/id/260415000">260415000</a>
+                </td>
+                <td>Not detected (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419984006"> </a>  
+                  <a href="http://snomed.info/id/419984006">419984006</a>
+                </td>
+                <td>Inconclusive (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-erregernachweis-qualifier"/>
+        <version value="0.1.0"/>
+        <name value="VS_Erregernachweis_Qualifier"/>
+        <title value="ValueSet - Erregernachweis Qualifier [SNOMED CT]"/>
+        <status value="active"/>
+        <date value="2022-06-16T21:59:32+00:00"/>
+        <publisher value="Berlin Institute of Health"/>
+        <contact>
+          <name value="Berlin Institute of Health"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises."/>
+        <expansion>
+          <identifier value="urn:uuid:2167280f-899e-4b32-9b27-26752dd8ad9d"/>
+          <timestamp value="2022-06-16T21:59:58+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260373001"/>
+            <display value="Detected (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260415000"/>
+            <display value="Not detected (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419984006"/>
+            <display value="Inconclusive (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/vs-mikrobiologischer-befund-mre-klasse"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mikrobiologischer-befund-mre-klasse"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -36517,12 +36517,12 @@
             </table>
           </div>
         </text>
-        <url value="https://charite.de/fhir/erregerfall/ValueSet/VS-Mikrobiologischer-Befund-MRE-Klasse"/>
+        <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-mikrobiologischer-befund-mre-klasse"/>
         <version value="0.1.0"/>
-        <name value="VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT"/>
-        <title value="VS Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
+        <name value="VS_Mikrobiologischer_Befund_MRE_Klasse"/>
+        <title value="ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-16T13:52:14+00:00"/>
+        <date value="2022-06-16T21:59:32+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36533,8 +36533,8 @@
         </contact>
         <description value="Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."/>
         <expansion>
-          <identifier value="urn:uuid:795199f5-747b-45b5-979c-365c2aa1462a"/>
-          <timestamp value="2022-06-16T13:52:44+00:00"/>
+          <identifier value="urn:uuid:62a07e68-dbba-4305-8ebd-f5c1d894bde5"/>
+          <timestamp value="2022-06-16T21:59:59+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

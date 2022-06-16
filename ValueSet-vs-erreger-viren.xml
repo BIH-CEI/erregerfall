@@ -8,9 +8,9 @@
   <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-viren"/>
   <version value="0.1.0"/>
   <name value="VS_Erreger_Viren"/>
-  <title value="VS Erreger Viren"/>
+  <title value="ValueSet - Erreger Viren [SNOMED CT]"/>
   <status value="active"/>
-  <date value="2022-06-16T13:52:14+00:00"/>
+  <date value="2022-06-16T21:59:32+00:00"/>
   <publisher value="Berlin Institute of Health"/>
   <contact>
     <name value="Berlin Institute of Health"/>
@@ -19,7 +19,7 @@
       <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
-  <description value="tbd"/>
+  <description value="Das ValueSet enthält Codes für Viren aus SNOMED CT."/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

@@ -11,42 +11,21 @@
     "type": "StructureDefinition",
     "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall",
     "version": "0.1.0",
-    "name": "ErregerFall"
+    "name": "Profil_ErregerFall"
   },
   {
     "id": "sd-erregernachweis",
     "type": "StructureDefinition",
     "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis",
     "version": "0.1.0",
-    "name": "Profile_ErregerNachweis"
+    "name": "Profil_ErregerNachweis"
   },
   {
     "id": "sd-mre-klasse",
     "type": "StructureDefinition",
     "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse",
     "version": "0.1.0",
-    "name": "Profile_MREKlasse"
-  },
-  {
-    "id": "ErregerStatus",
-    "type": "ValueSet",
-    "url": "https://charite.de/fhir/erregerfall/ValueSet/ErregerStatus",
-    "version": "0.1.0",
-    "name": "ErregerStatus"
-  },
-  {
-    "id": "VS-Mikrobiologischer-Befund-MRE-Klasse",
-    "type": "ValueSet",
-    "url": "https://charite.de/fhir/erregerfall/ValueSet/VS-Mikrobiologischer-Befund-MRE-Klasse",
-    "version": "0.1.0",
-    "name": "VS_Mikrobiologischer_Befund_MRE_Klasse_LOINC_SNOMED_CT"
-  },
-  {
-    "id": "vs-detection-qualifier-snomed-ct",
-    "type": "ValueSet",
-    "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-detection-qualifier-snomed-ct",
-    "version": "0.1.0",
-    "name": "VS_Detection_Qualifier_SNOMED_CT"
+    "name": "Profil_MREKlasse"
   },
   {
     "id": "vs-erreger-bakterien",
@@ -63,10 +42,31 @@
     "name": "VS_Erreger_Pilze"
   },
   {
+    "id": "vs-erreger-status",
+    "type": "ValueSet",
+    "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-status",
+    "version": "0.1.0",
+    "name": "VS_ErregerStatus"
+  },
+  {
     "id": "vs-erreger-viren",
     "type": "ValueSet",
     "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-viren",
     "version": "0.1.0",
     "name": "VS_Erreger_Viren"
+  },
+  {
+    "id": "vs-erregernachweis-qualifier",
+    "type": "ValueSet",
+    "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-erregernachweis-qualifier",
+    "version": "0.1.0",
+    "name": "VS_Erregernachweis_Qualifier"
+  },
+  {
+    "id": "vs-mikrobiologischer-befund-mre-klasse",
+    "type": "ValueSet",
+    "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-mikrobiologischer-befund-mre-klasse",
+    "version": "0.1.0",
+    "name": "VS_Mikrobiologischer_Befund_MRE_Klasse"
   }
 ]

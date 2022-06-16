@@ -15,9 +15,9 @@
   fhir:ValueSet.url [ fhir:value "https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-viren"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "VS_Erreger_Viren"];
-  fhir:ValueSet.title [ fhir:value "VS Erreger Viren"];
+  fhir:ValueSet.title [ fhir:value "ValueSet - Erreger Viren [SNOMED CT]"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-06-16T13:52:14+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-06-16T21:59:32+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "tbd"];
+  fhir:ValueSet.description [ fhir:value "Das ValueSet enthält Codes für Viren aus SNOMED CT."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

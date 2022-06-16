@@ -1,0 +1,59 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example-erregerfall-mrsa",
+  "meta": {
+    "profile": [
+      "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 96161-5}\">Infectious disease Evaluation note</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-example-erregernachweis-mrsa.html\"><span title=\"Codes: {http://loinc.org 11475-1}\">Microorganism identified in Specimen by Culture</span></a></td><td><span title=\"Codes: {http://snomed.info/sct 260373001}\">Detected (qualifier value)</span></td><td>2022-05-31</td></tr><tr><td><a href=\"Observation-example-mre-klasse-mrsa.html\"><span title=\"Codes: {http://loinc.org 99780-9}\">Multidrug resistant gram-negative organism classification [Type]</span></a></td><td><span title=\"Codes: {http://snomed.info/sct 115329001}\">Methicillin resistant Staphylococcus aureus (organism)</span></td><td>2022-05-31</td></tr></table><p><b>Coded Conclusions :</b></p><ul><li><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></li></ul></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "LACSN"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/erregerfaelle",
+      "value": "0123456789"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "96161-5",
+        "display": "Infectious disease Evaluation note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-patient"
+  },
+  "result": [
+    {
+      "reference": "Observation/example-erregernachweis-mrsa"
+    },
+    {
+      "reference": "Observation/example-mre-klasse-mrsa"
+    }
+  ],
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "Positive (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

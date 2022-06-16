@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-erregernachweis-qualifier",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/260373001\">260373001</a></td><td>Detected (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/260415000\">260415000</a></td><td>Not detected (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/419984006\">419984006</a></td><td>Inconclusive (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-erregernachweis-qualifier",
+  "version": "0.1.0",
+  "name": "VS_Erregernachweis_Qualifier",
+  "title": "ValueSet - Erregernachweis Qualifier [SNOMED CT]",
+  "status": "active",
+  "date": "2022-06-16T21:59:32+00:00",
+  "publisher": "Berlin Institute of Health",
+  "contact": [
+    {
+      "name": "Berlin Institute of Health",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "260373001",
+            "display": "Detected (qualifier value)"
+          },
+          {
+            "code": "260415000",
+            "display": "Not detected (qualifier value)"
+          },
+          {
+            "code": "419984006",
+            "display": "Inconclusive (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -3,13 +3,14 @@
   "id": "erreger.fall",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ErregerFall</h2><p>The official URL for this implementation guide is: </p><pre>https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ErregerFall</h2><p>The official URL for this implementation guide is: </p><pre>https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall</pre><div><p>Profile für die Use Cases Erreger-Fall und Abstrichserie</p>\n</div></div>"
   },
   "url": "https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall",
   "version": "0.1.0",
   "name": "ErregerFall",
+  "title": "ErregerFall",
   "status": "draft",
-  "date": "2022-06-16T13:52:14+00:00",
+  "date": "2022-06-16T21:59:32+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -22,6 +23,7 @@
       ]
     }
   ],
+  "description": "Profile für die Use Cases Erreger-Fall und Abstrichserie",
   "packageId": "erreger.fall",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -347,8 +349,8 @@
         "reference": {
           "reference": "StructureDefinition/sd-erregerfall"
         },
-        "name": "ErregerFall",
-        "description": "tbd",
+        "name": "Profil - ErregerFall",
+        "description": "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten in Bezug auf einen bestimmten Erreger. In der Regel entsteht ein Erreger-Fall als Reaktion auf eine positive oder grenzwertige Abstrichserie.",
         "exampleBoolean": false
       },
       {
@@ -361,7 +363,7 @@
         "reference": {
           "reference": "StructureDefinition/sd-erregernachweis"
         },
-        "name": "Profile - Erreger Nachweis",
+        "name": "Profil - Erreger Nachweis",
         "exampleBoolean": false
       },
       {
@@ -374,7 +376,7 @@
         "reference": {
           "reference": "StructureDefinition/sd-mre-klasse"
         },
-        "name": "Profile - MRE Klasse",
+        "name": "Profil - MRE Klasse",
         "exampleBoolean": false
       },
       {
@@ -385,24 +387,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/ErregerStatus"
+          "reference": "ValueSet/vs-erreger-status"
         },
-        "name": "ErregerStatus",
-        "description": "tbd",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-detection-qualifier-snomed-ct"
-        },
-        "name": "VS Detection Qualifier [SNOMED CT]",
-        "description": "A set of codes representing the result of a test as detected, not detected, or inconclusive.",
+        "name": "ValueSet - ErregerStatus [SNOMED CT]",
+        "description": "Das ValueSet enthält Codes für den Erregerstatus eines Patienten.",
         "exampleBoolean": false
       },
       {
@@ -415,8 +403,8 @@
         "reference": {
           "reference": "ValueSet/vs-erreger-bakterien"
         },
-        "name": "VS Erreger Bakterien",
-        "description": "tbd",
+        "name": "ValueSet - Erreger Bakterien [SNOMED CT]",
+        "description": "Das ValueSet enthält Codes für Bakterien aus SNOMED CT.",
         "exampleBoolean": false
       },
       {
@@ -429,8 +417,8 @@
         "reference": {
           "reference": "ValueSet/vs-erreger-pilze"
         },
-        "name": "VS Erreger Pilze",
-        "description": "tbd",
+        "name": "ValueSet - Erreger Pilze [SNOMED CT]",
+        "description": "Das ValueSet enthält Codes für Pilze aus SNOMED CT.",
         "exampleBoolean": false
       },
       {
@@ -443,8 +431,8 @@
         "reference": {
           "reference": "ValueSet/vs-erreger-viren"
         },
-        "name": "VS Erreger Viren",
-        "description": "tbd",
+        "name": "ValueSet - Erreger Viren [SNOMED CT]",
+        "description": "Das ValueSet enthält Codes für Viren aus SNOMED CT.",
         "exampleBoolean": false
       },
       {
@@ -455,9 +443,23 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/VS-Mikrobiologischer-Befund-MRE-Klasse"
+          "reference": "ValueSet/vs-erregernachweis-qualifier"
         },
-        "name": "VS Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]",
+        "name": "ValueSet - Erregernachweis Qualifier [SNOMED CT]",
+        "description": "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-mikrobiologischer-befund-mre-klasse"
+        },
+        "name": "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]",
         "description": "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE).",
         "exampleBoolean": false
       },
@@ -469,10 +471,10 @@
           }
         ],
         "reference": {
-          "reference": "DiagnosticReport/example-erregerfall-1"
+          "reference": "DiagnosticReport/example-erregerfall-mrsa"
         },
-        "name": "example-erregerfall-1",
-        "description": "Beispiel eines Erregerfalls",
+        "name": "Beispiel Erregerfall MRSA",
+        "description": "Beispiel eines Erregerfalls MRSA",
         "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"
       },
       {
@@ -483,10 +485,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/example-erregernachweis"
+          "reference": "Observation/example-erregernachweis-mrsa"
         },
-        "name": "example-erregernachweis",
-        "description": "Beispiel für Erregernachweis",
+        "name": "Beispiel Erregernachweis MRSA",
+        "description": "Beispiel für Erregernachweis von MRSA",
         "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"
       },
       {
@@ -497,10 +499,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/example-mre-klasse"
+          "reference": "Observation/example-mre-klasse-mrsa"
         },
-        "name": "example-mre-klasse",
-        "description": "Beispiel MRE Klasse",
+        "name": "Beispiel - MRE Klasse MRSA",
+        "description": "Beispiel für MRE Klasse MRSA",
         "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse"
       }
     ],

@@ -7,17 +7,17 @@
     "DiagnosticReport": [
       {
         "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall",
-        "title": "ErregerFall"
+        "title": "Profil - ErregerFall"
       }
     ],
     "Observation": [
       {
         "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis",
-        "title": "Profile - Erreger Nachweis"
+        "title": "Profil - Erreger Nachweis"
       },
       {
         "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse",
-        "title": "Profile - MRE Klasse"
+        "title": "Profil - MRE Klasse"
       }
     ]
   },

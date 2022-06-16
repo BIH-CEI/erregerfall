@@ -3,13 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="erreger.fall"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ErregerFall</h2><p>The official URL for this implementation guide is: </p><pre>https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ErregerFall</h2><p>The official URL for this implementation guide is: </p><pre>https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall</pre><div><p>Profile für die Use Cases Erreger-Fall und Abstrichserie</p>
+</div></div>
   </text>
   <url value="https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall"/>
   <version value="0.1.0"/>
   <name value="ErregerFall"/>
+  <title value="ErregerFall"/>
   <status value="draft"/>
-  <date value="2022-06-16T13:52:14+00:00"/>
+  <date value="2022-06-16T21:59:32+00:00"/>
   <publisher value="Berlin Institute of Health"/>
   <contact>
     <name value="Berlin Institute of Health"/>
@@ -18,6 +20,7 @@
       <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
+  <description value="Profile für die Use Cases Erreger-Fall und Abstrichserie"/>
   <packageId value="erreger.fall"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -220,8 +223,8 @@
       <reference>
         <reference value="StructureDefinition/sd-erregerfall"/>
       </reference>
-      <name value="ErregerFall"/>
-      <description value="tbd"/>
+      <name value="Profil - ErregerFall"/>
+      <description value="Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten in Bezug auf einen bestimmten Erreger. In der Regel entsteht ein Erreger-Fall als Reaktion auf eine positive oder grenzwertige Abstrichserie."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -231,7 +234,7 @@
       <reference>
         <reference value="StructureDefinition/sd-erregernachweis"/>
       </reference>
-      <name value="Profile - Erreger Nachweis"/>
+      <name value="Profil - Erreger Nachweis"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -241,7 +244,7 @@
       <reference>
         <reference value="StructureDefinition/sd-mre-klasse"/>
       </reference>
-      <name value="Profile - MRE Klasse"/>
+      <name value="Profil - MRE Klasse"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -249,21 +252,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ErregerStatus"/>
+        <reference value="ValueSet/vs-erreger-status"/>
       </reference>
-      <name value="ErregerStatus"/>
-      <description value="tbd"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-detection-qualifier-snomed-ct"/>
-      </reference>
-      <name value="VS Detection Qualifier [SNOMED CT]"/>
-      <description value="A set of codes representing the result of a test as detected, not detected, or inconclusive."/>
+      <name value="ValueSet - ErregerStatus [SNOMED CT]"/>
+      <description value="Das ValueSet enthält Codes für den Erregerstatus eines Patienten."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -273,8 +265,8 @@
       <reference>
         <reference value="ValueSet/vs-erreger-bakterien"/>
       </reference>
-      <name value="VS Erreger Bakterien"/>
-      <description value="tbd"/>
+      <name value="ValueSet - Erreger Bakterien [SNOMED CT]"/>
+      <description value="Das ValueSet enthält Codes für Bakterien aus SNOMED CT."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -284,8 +276,8 @@
       <reference>
         <reference value="ValueSet/vs-erreger-pilze"/>
       </reference>
-      <name value="VS Erreger Pilze"/>
-      <description value="tbd"/>
+      <name value="ValueSet - Erreger Pilze [SNOMED CT]"/>
+      <description value="Das ValueSet enthält Codes für Pilze aus SNOMED CT."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -295,8 +287,8 @@
       <reference>
         <reference value="ValueSet/vs-erreger-viren"/>
       </reference>
-      <name value="VS Erreger Viren"/>
-      <description value="tbd"/>
+      <name value="ValueSet - Erreger Viren [SNOMED CT]"/>
+      <description value="Das ValueSet enthält Codes für Viren aus SNOMED CT."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -304,9 +296,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VS-Mikrobiologischer-Befund-MRE-Klasse"/>
+        <reference value="ValueSet/vs-erregernachweis-qualifier"/>
       </reference>
-      <name value="VS Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
+      <name value="ValueSet - Erregernachweis Qualifier [SNOMED CT]"/>
+      <description value="Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-mikrobiologischer-befund-mre-klasse"/>
+      </reference>
+      <name value="ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
       <description value="Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -315,10 +318,10 @@
         <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
-        <reference value="DiagnosticReport/example-erregerfall-1"/>
+        <reference value="DiagnosticReport/example-erregerfall-mrsa"/>
       </reference>
-      <name value="example-erregerfall-1"/>
-      <description value="Beispiel eines Erregerfalls"/>
+      <name value="Beispiel Erregerfall MRSA"/>
+      <description value="Beispiel eines Erregerfalls MRSA"/>
       <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"/>
     </resource>
     <resource>
@@ -326,10 +329,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/example-erregernachweis"/>
+        <reference value="Observation/example-erregernachweis-mrsa"/>
       </reference>
-      <name value="example-erregernachweis"/>
-      <description value="Beispiel für Erregernachweis"/>
+      <name value="Beispiel Erregernachweis MRSA"/>
+      <description value="Beispiel für Erregernachweis von MRSA"/>
       <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"/>
     </resource>
     <resource>
@@ -337,10 +340,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/example-mre-klasse"/>
+        <reference value="Observation/example-mre-klasse-mrsa"/>
       </reference>
-      <name value="example-mre-klasse"/>
-      <description value="Beispiel MRE Klasse"/>
+      <name value="Beispiel - MRE Klasse MRSA"/>
+      <description value="Beispiel für MRE Klasse MRSA"/>
       <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse"/>
     </resource>
     <page>

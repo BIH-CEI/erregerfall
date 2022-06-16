@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="example-erregerfall-mrsa"/>
+  <meta>
+    <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 96161-5}">Infectious disease Evaluation note</span> </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-example-erregernachweis-mrsa.html"><span title="Codes: {http://loinc.org 11475-1}">Microorganism identified in Specimen by Culture</span></a></td><td><span title="Codes: {http://snomed.info/sct 260373001}">Detected (qualifier value)</span></td><td>2022-05-31</td></tr><tr><td><a href="Observation-example-mre-klasse-mrsa.html"><span title="Codes: {http://loinc.org 99780-9}">Multidrug resistant gram-negative organism classification [Type]</span></a></td><td><span title="Codes: {http://snomed.info/sct 115329001}">Methicillin resistant Staphylococcus aureus (organism)</span></td><td>2022-05-31</td></tr></table><p><b>Coded Conclusions :</b></p><ul><li><span title="Codes: {http://snomed.info/sct 10828004}">Positive (qualifier value)</span></li></ul></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="LACSN"/>
+      </coding>
+    </type>
+    <system value="https://www.charite.de/fhir/sid/erregerfaelle"/>
+    <value value="0123456789"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="96161-5"/>
+      <display value="Infectious disease Evaluation note"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-patient"/>
+  </subject>
+  <result>
+    <reference value="Observation/example-erregernachweis-mrsa"/>
+  </result>
+  <result>
+    <reference value="Observation/example-mre-klasse-mrsa"/>
+  </result>
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="10828004"/>
+      <display value="Positive (qualifier value)"/>
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

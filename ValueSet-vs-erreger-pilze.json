@@ -8,9 +8,9 @@
   "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-pilze",
   "version": "0.1.0",
   "name": "VS_Erreger_Pilze",
-  "title": "VS Erreger Pilze",
+  "title": "ValueSet - Erreger Pilze [SNOMED CT]",
   "status": "active",
-  "date": "2022-06-16T13:52:14+00:00",
+  "date": "2022-06-16T21:59:32+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "tbd",
+  "description": "Das ValueSet enthält Codes für Pilze aus SNOMED CT.",
   "compose": {
     "include": [
       {

@@ -10,13 +10,14 @@
   fhir:Resource.id [ fhir:value "erreger.fall"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ErregerFall</h2><p>The official URL for this implementation guide is: </p><pre>https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ErregerFall</h2><p>The official URL for this implementation guide is: </p><pre>https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall</pre><div><p>Profile für die Use Cases Erreger-Fall und Abstrichserie</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "ErregerFall"];
+  fhir:ImplementationGuide.title [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-06-16T13:52:14+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-06-16T21:59:32+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -27,6 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
      ]
   ];
+  fhir:ImplementationGuide.description [ fhir:value "Profile für die Use Cases Erreger-Fall und Abstrichserie"];
   fhir:ImplementationGuide.packageId [ fhir:value "erreger.fall"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -332,8 +334,8 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-erregerfall" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ErregerFall" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profil - ErregerFall" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten in Bezug auf einen bestimmten Erreger. In der Regel entsteht ein Erreger-Fall als Reaktion auf eine positive oder grenzwertige Abstrichserie." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -346,7 +348,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-erregernachweis" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile - Erreger Nachweis" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profil - Erreger Nachweis" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -359,7 +361,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-mre-klasse" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile - MRE Klasse" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profil - MRE Klasse" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -369,11 +371,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/ErregerStatus>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ErregerStatus" ]
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-status>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-erreger-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ErregerStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - ErregerStatus [SNOMED CT]" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für den Erregerstatus eines Patienten." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -383,11 +385,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-detection-qualifier-snomed-ct>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-detection-qualifier-snomed-ct" ]
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-bakterien>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-erreger-bakterien" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS Detection Qualifier [SNOMED CT]" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of codes representing the result of a test as detected, not detected, or inconclusive." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Erreger Bakterien [SNOMED CT]" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Bakterien aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -397,11 +399,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-bakterien>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-erreger-bakterien" ]
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-pilze>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-erreger-pilze" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS Erreger Bakterien" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Erreger Pilze [SNOMED CT]" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Pilze aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -411,11 +413,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-pilze>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-erreger-pilze" ]
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-viren>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-erreger-viren" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS Erreger Pilze" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Erreger Viren [SNOMED CT]" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Viren aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -425,11 +427,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-viren>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-erreger-viren" ]
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-erregernachweis-qualifier>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-erregernachweis-qualifier" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS Erreger Viren" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Erregernachweis Qualifier [SNOMED CT]" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
@@ -439,10 +441,10 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/VS-Mikrobiologischer-Befund-MRE-Klasse>;
-         fhir:Reference.reference [ fhir:value "ValueSet/VS-Mikrobiologischer-Befund-MRE-Klasse" ]
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-mikrobiologischer-befund-mre-klasse>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-mikrobiologischer-befund-mre-klasse" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -453,11 +455,11 @@
          fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/DiagnosticReport/example-erregerfall-1>;
-         fhir:Reference.reference [ fhir:value "DiagnosticReport/example-erregerfall-1" ]
+         fhir:link <https://charite.de/fhir/erregerfall/DiagnosticReport/example-erregerfall-mrsa>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/example-erregerfall-mrsa" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-erregerfall-1" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel eines Erregerfalls" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Beispiel Erregerfall MRSA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel eines Erregerfalls MRSA" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall";
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall>
@@ -470,11 +472,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/Observation/example-erregernachweis>;
-         fhir:Reference.reference [ fhir:value "Observation/example-erregernachweis" ]
+         fhir:link <https://charite.de/fhir/erregerfall/Observation/example-erregernachweis-mrsa>;
+         fhir:Reference.reference [ fhir:value "Observation/example-erregernachweis-mrsa" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-erregernachweis" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel für Erregernachweis" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Beispiel Erregernachweis MRSA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel für Erregernachweis von MRSA" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis";
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis>
@@ -487,11 +489,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://charite.de/fhir/erregerfall/Observation/example-mre-klasse>;
-         fhir:Reference.reference [ fhir:value "Observation/example-mre-klasse" ]
+         fhir:link <https://charite.de/fhir/erregerfall/Observation/example-mre-klasse-mrsa>;
+         fhir:Reference.reference [ fhir:value "Observation/example-mre-klasse-mrsa" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-mre-klasse" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel MRE Klasse" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Beispiel - MRE Klasse MRSA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel für MRE Klasse MRSA" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse";
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse>
