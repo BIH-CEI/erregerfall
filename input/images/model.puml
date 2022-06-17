@@ -1,0 +1,92 @@
+@startuml "Erregerfall"
+skinparam groupInheritance 2
+
+class Erregerfall <<DiagnosticReport>> {
+    Nummer
+    identifier : Identifier
+    ..
+    Erregerstatus
+    conclusionCode : CodeableConcept
+    ..
+    Erreger 
+    result : Reference
+    ..
+    Attribut 
+    result : Reference
+    ..
+    Material
+    specimen : Reference
+    ..
+    Patient
+    subject : Reference
+}
+
+class Patient <<Patient>> {
+    Identifier
+    identifier : Identifier
+    ..
+    Name
+    name : HumanName
+    ..
+    GeschlechtAdministrativ
+    gender : code
+    ..
+    Geburtsdatum
+    birthDate : date
+    ..
+    Adresse
+    address : Address
+}
+
+Patient <-- Erregerfall : subject
+
+class Erregernachweis <<Observation>> {
+    Erreger
+    valueCodeableConcept : CodeableConcept
+    ..
+    Erstnachweisdatum
+    valueDateTime : dateTime
+    ..
+    Nachweisort
+    valueString : string
+    ..
+    Patient
+    subject : Reference
+    ..
+    Material
+    specimen : Reference
+}
+
+Patient <-- Erregernachweis : subject
+
+class MREKlasse <<Observation>> {
+    Attribut
+    valueCodeableConcept : CodeableConcept
+    ..
+    Patient
+    subject : Reference
+    ..
+    Material
+    specimen : Reference
+}
+
+Erregernachweis <-- Erregerfall : result
+MREKlasse <-- Erregerfall : result
+
+class Material <<Specimen>> {
+    ProbenID
+    identifier : Identifier
+    ..
+    Probenart 
+    type : CodeableConcept
+    ..
+    Entnahmestelle
+    bodySite : CodeableConcept
+}
+
+Erregerfall --> Material : specimen
+Erregernachweis --> Material : specimen
+MREKlasse --> Material : specimen
+Patient <-- MREKlasse : subject
+
+@enduml
