@@ -3,7 +3,7 @@
 
 err = 14, warn = 4, info = 2
 IG Publisher Version: 1.1.121
-Generated Thu Jun 16 22:00:12 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
+Generated Fri Jun 17 08:52:47 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
  Build Errors : 17 / 4 / 0
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-erregerfall-mrsa : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-erreger.fall : 2 / 0 / 1
@@ -26,21 +26,21 @@ ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/e
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sd-erregernachweis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sd-mre-klasse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum could not be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 343, column 1552: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 413, column 1528: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 537, column 1392: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 595, column 1552: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 665, column 1528: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 336, column 1330: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 513, column 1684: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 978, column 1546: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1072, column 1330: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1249, column 1684: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 334, column 1397: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 475, column 1679: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 778, column 1541: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 834, column 1397: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 975, column 1679: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 354, column 1552: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 424, column 1528: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 548, column 1392: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 606, column 1552: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 676, column 1528: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 1330: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 524, column 1684: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 989, column 1546: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1083, column 1330: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1260, column 1684: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 345, column 1397: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 486, column 1679: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 789, column 1541: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 845, column 1397: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 986, column 1679: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 == fsh-generated/resources/DiagnosticReport-example-erregerfall-mrsa.json ==
 ERROR: DiagnosticReport/example-erregerfall-mrsa: DiagnosticReport.subject: Unable to resolve resource with reference 'Patient/example-patient'
 == fsh-generated/resources/ImplementationGuide-erreger.fall.json ==

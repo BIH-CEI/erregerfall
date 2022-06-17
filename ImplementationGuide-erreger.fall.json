@@ -10,7 +10,7 @@
   "name": "ErregerFall",
   "title": "ErregerFall",
   "status": "draft",
-  "date": "2022-06-16T21:59:32+00:00",
+  "date": "2022-06-17T08:52:13+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -514,6 +514,26 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logicalmodel.html",
+          "title": "Logical Model",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         }
       ]

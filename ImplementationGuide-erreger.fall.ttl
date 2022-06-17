@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.title [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-06-16T21:59:32+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-06-17T08:52:13+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -507,6 +507,26 @@
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "logicalmodel.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Logical Model" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extensions.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

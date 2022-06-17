@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1049px" preserveAspectRatio="none" style="width:653px;height:1049px;background:#FFFFFF;" version="1.1" viewBox="0 0 653 1049" width="653px" zoomAndPan="magnify"><defs><filter height="300%" id="f1qtwleqsn3ukv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[521ddbd3ee4354927cabac5284d02cf4]
+class Erregerfall--><rect codeLine="3" fill="#FEFECE" filter="url(#f1qtwleqsn3ukv)" height="241.7266" id="Erregerfall" style="stroke:#A80036;stroke-width:1.5;" width="203" x="224" y="577"/><ellipse cx="268.25" cy="596.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M270.7231,602.2759 Q270.1421,602.5747 269.5029,602.7241 Q268.8638,602.8735 268.1582,602.8735 Q265.6514,602.8735 264.3315,601.2217 Q263.0117,599.5698 263.0117,596.4487 Q263.0117,593.3193 264.3315,591.6675 Q265.6514,590.0156 268.1582,590.0156 Q268.8638,590.0156 269.5112,590.165 Q270.1587,590.3145 270.7231,590.6133 L270.7231,593.3359 Q270.0923,592.7549 269.4988,592.4851 Q268.9053,592.2153 268.2744,592.2153 Q266.9297,592.2153 266.2449,593.282 Q265.5601,594.3486 265.5601,596.4487 Q265.5601,598.5405 266.2449,599.6072 Q266.9297,600.6738 268.2744,600.6738 Q268.9053,600.6738 269.4988,600.4041 Q270.0923,600.1343 270.7231,599.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="110" x="286.75" y="593.6016">«DiagnosticReport»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="60" x="311.75" y="607.7344">Erregerfall</text><line style="stroke:#A80036;stroke-width:1.5;" x1="225" x2="426" y1="615.2656" y2="615.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="230" y="629.9004">Nummer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="230" y="642.8555">identifier : Identifier</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="225" x2="426" y1="649.1758" y2="649.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="230" y="663.8105">Erregerstatus</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="191" x="230" y="676.7656">conclusionCode : CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="225" x2="426" y1="683.0859" y2="683.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="230" y="697.7207">Erreger</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="230" y="710.6758">result : Reference</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="225" x2="426" y1="716.9961" y2="716.9961"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="230" y="731.6309">Attribut</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="230" y="744.5859">result : Reference</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="225" x2="426" y1="750.9063" y2="750.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="230" y="765.541">Material</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="230" y="778.4961">specimen : Reference</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="225" x2="426" y1="784.8164" y2="784.8164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="230" y="799.4512">Patient</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="230" y="812.4063">subject : Reference</text><!--MD5=[9dd4eaa2771a2ff8dbee15cc1e732cab]
+class Patient--><rect codeLine="23" fill="#FEFECE" filter="url(#f1qtwleqsn3ukv)" height="207.8164" id="Patient" style="stroke:#A80036;stroke-width:1.5;" width="143" x="245" y="7"/><ellipse cx="288.8" cy="26.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M291.2731,32.2759 Q290.6921,32.5747 290.0529,32.7241 Q289.4138,32.8735 288.7082,32.8735 Q286.2014,32.8735 284.8815,31.2217 Q283.5617,29.5698 283.5617,26.4487 Q283.5617,23.3193 284.8815,21.6675 Q286.2014,20.0156 288.7082,20.0156 Q289.4138,20.0156 290.0612,20.165 Q290.7087,20.3145 291.2731,20.6133 L291.2731,23.3359 Q290.6423,22.7549 290.0488,22.4851 Q289.4553,22.2153 288.8244,22.2153 Q287.4797,22.2153 286.7949,23.282 Q286.1101,24.3486 286.1101,26.4487 Q286.1101,28.5405 286.7949,29.6072 Q287.4797,30.6738 288.8244,30.6738 Q289.4553,30.6738 290.0488,30.4041 Q290.6423,30.1343 291.2731,29.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="307.2" y="23.6016">«Patient»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="39" x="313.2" y="37.7344">Patient</text><line style="stroke:#A80036;stroke-width:1.5;" x1="246" x2="387" y1="45.2656" y2="45.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="251" y="59.9004">Identifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="251" y="72.8555">identifier : Identifier</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="246" x2="387" y1="79.1758" y2="79.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="30" x="251" y="93.8105">Name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="251" y="106.7656">name : HumanName</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="246" x2="387" y1="113.0859" y2="113.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="131" x="251" y="127.7207">GeschlechtAdministrativ</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="251" y="140.6758">gender : code</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="246" x2="387" y1="146.9961" y2="146.9961"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="251" y="161.6309">Geburtsdatum</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="251" y="174.5859">birthDate : date</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="246" x2="387" y1="180.9063" y2="180.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="44" x="251" y="195.541">Adresse</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="251" y="208.4961">address : Address</text><!--MD5=[e0991859d0c8012ffc3ce7df86cf4865]
+class Erregernachweis--><rect codeLine="42" fill="#FEFECE" filter="url(#f1qtwleqsn3ukv)" height="207.8164" id="Erregernachweis" style="stroke:#A80036;stroke-width:1.5;" width="239" x="7" y="292"/><ellipse cx="74.75" cy="311.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M77.2231,317.2759 Q76.6421,317.5747 76.0029,317.7241 Q75.3638,317.8735 74.6582,317.8735 Q72.1514,317.8735 70.8315,316.2217 Q69.5117,314.5698 69.5117,311.4487 Q69.5117,308.3193 70.8315,306.6675 Q72.1514,305.0156 74.6582,305.0156 Q75.3638,305.0156 76.0112,305.165 Q76.6587,305.3145 77.2231,305.6133 L77.2231,308.3359 Q76.5923,307.7549 75.9988,307.4851 Q75.4053,307.2153 74.7744,307.2153 Q73.4297,307.2153 72.7449,308.282 Q72.0601,309.3486 72.0601,311.4487 Q72.0601,313.5405 72.7449,314.6072 Q73.4297,315.6738 74.7744,315.6738 Q75.4053,315.6738 75.9988,315.4041 Q76.5923,315.1343 77.2231,314.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="102.25" y="308.6016">«Observation»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="95.25" y="322.7344">Erregernachweis</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="245" y1="330.2656" y2="330.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="13" y="344.9004">Erreger</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="13" y="357.8555">valueCodeableConcept : CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="245" y1="364.1758" y2="364.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="13" y="378.8105">Erstnachweisdatum</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="13" y="391.7656">valueDateTime : dateTime</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="245" y1="398.0859" y2="398.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="13" y="412.7207">Nachweisort</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="13" y="425.6758">valueString : string</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="245" y1="431.9961" y2="431.9961"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="13" y="446.6309">Patient</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="13" y="459.5859">subject : Reference</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="8" x2="245" y1="465.9063" y2="465.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="13" y="480.541">Material</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="13" y="493.4961">specimen : Reference</text><!--MD5=[301fa9b9cbc8684b7cf2f4edd614d790]
+class MREKlasse--><rect codeLine="61" fill="#FEFECE" filter="url(#f1qtwleqsn3ukv)" height="139.9961" id="MREKlasse" style="stroke:#A80036;stroke-width:1.5;" width="239" x="400" y="326"/><ellipse cx="476.75" cy="345.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M479.2231,351.2759 Q478.6421,351.5747 478.0029,351.7241 Q477.3638,351.8735 476.6582,351.8735 Q474.1514,351.8735 472.8315,350.2217 Q471.5117,348.5698 471.5117,345.4487 Q471.5117,342.3193 472.8315,340.6675 Q474.1514,339.0156 476.6582,339.0156 Q477.3638,339.0156 478.0112,339.165 Q478.6587,339.3145 479.2231,339.6133 L479.2231,342.3359 Q478.5923,341.7549 477.9988,341.4851 Q477.4053,341.2153 476.7744,341.2153 Q475.4297,341.2153 474.7449,342.282 Q474.0601,343.3486 474.0601,345.4487 Q474.0601,347.5405 474.7449,348.6072 Q475.4297,349.6738 476.7744,349.6738 Q477.4053,349.6738 477.9988,349.4041 Q478.5923,349.1343 479.2231,348.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="495.25" y="342.6016">«Observation»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="62" x="504.75" y="356.7344">MREKlasse</text><line style="stroke:#A80036;stroke-width:1.5;" x1="401" x2="638" y1="364.2656" y2="364.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="406" y="378.9004">Attribut</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="406" y="391.8555">valueCodeableConcept : CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="401" x2="638" y1="398.1758" y2="398.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="406" y="412.8105">Patient</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="406" y="425.7656">subject : Reference</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="401" x2="638" y1="432.0859" y2="432.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="406" y="446.7207">Material</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="406" y="459.6758">specimen : Reference</text><!--MD5=[90d32ccc189f11441a6ce7cbb63ad387]
+class Material--><rect codeLine="75" fill="#FEFECE" filter="url(#f1qtwleqsn3ukv)" height="139.9961" id="Material" style="stroke:#A80036;stroke-width:1.5;" width="162" x="244.5" y="896"/><ellipse cx="289.75" cy="915.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M292.2231,921.2759 Q291.6421,921.5747 291.0029,921.7241 Q290.3638,921.8735 289.6582,921.8735 Q287.1514,921.8735 285.8315,920.2217 Q284.5117,918.5698 284.5117,915.4487 Q284.5117,912.3193 285.8315,910.6675 Q287.1514,909.0156 289.6582,909.0156 Q290.3638,909.0156 291.0112,909.165 Q291.6587,909.3145 292.2231,909.6133 L292.2231,912.3359 Q291.5923,911.7549 290.9988,911.4851 Q290.4053,911.2153 289.7744,911.2153 Q288.4297,911.2153 287.7449,912.282 Q287.0601,913.3486 287.0601,915.4487 Q287.0601,917.5405 287.7449,918.6072 Q288.4297,919.6738 289.7744,919.6738 Q290.4053,919.6738 290.9988,919.4041 Q291.5923,919.1343 292.2231,918.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="308.25" y="912.6016">«Specimen»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="46" x="318.75" y="926.7344">Material</text><line style="stroke:#A80036;stroke-width:1.5;" x1="245.5" x2="405.5" y1="934.2656" y2="934.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="250.5" y="948.9004">ProbenID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="250.5" y="961.8555">identifier : Identifier</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="245.5" x2="405.5" y1="968.1758" y2="968.1758"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="53" x="250.5" y="982.8105">Probenart</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="250.5" y="995.7656">type : CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="245.5" x2="405.5" y1="1002.0859" y2="1002.0859"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="250.5" y="1016.7207">Entnahmestelle</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="250.5" y="1029.6758">bodySite : CodeableConcept</text><!--MD5=[a7ab82470004ed3676404f8c37e72b5e]
+reverse link Patient to Erregerfall--><path codeLine="40" d="M318.17,220.32 C319.72,321.45 322.04,472.1 323.65,576.88 " fill="none" id="Patient-backto-Erregerfall" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="318.09,215.24,314.2449,224.3072,318.1757,220.2393,322.2437,224.1701,318.09,215.24" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="323.5" y="401.0684">subject</text><!--MD5=[bc5fd9efc2a54b60cb6263d4217b2e12]
+reverse link Patient to Erregernachweis--><path codeLine="59" d="M244.14,219.77 C228.26,243.44 211.47,268.44 195.71,291.91 " fill="none" id="Patient-backto-Erregernachweis" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="247.1,215.37,238.7587,220.6066,244.31,219.5192,245.3974,225.0706,247.1,215.37" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="228.5" y="258.5684">subject</text><!--MD5=[6d4e477a2ba2ce67bf321f26df96abb4]
+reverse link Erregernachweis to Erregerfall--><path codeLine="72" d="M197.87,504.6 C213.4,528.01 229.93,552.92 245.76,576.79 " fill="none" id="Erregernachweis-backto-Erregerfall" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="194.98,500.24,196.6287,509.9499,197.7469,504.4046,203.2922,505.5228,194.98,500.24" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="227.5" y="543.5684">result</text><!--MD5=[71d0d2e4beac3fdb6d5423ac41832667]
+reverse link MREKlasse to Erregerfall--><path codeLine="73" d="M471.98,470.48 C451.25,502.54 426.41,540.96 403.12,576.98 " fill="none" id="MREKlasse-backto-Erregerfall" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="474.75,466.2,466.5055,471.5878,472.0361,470.3994,473.2245,475.93,474.75,466.2" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="429.5" y="543.5684">result</text><!--MD5=[4f50d5148c5c896cdd29a3948a615209]
+link Erregerfall to Material--><path codeLine="86" d="M325.5,819.16 C325.5,843.61 325.5,868.64 325.5,890.91 " fill="none" id="Erregerfall-to-Material" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="325.5,895.91,329.5,886.91,325.5,890.91,321.5,886.91,325.5,895.91" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="326.5" y="862.5684">specimen</text><!--MD5=[e9bc292d985be39bc6174ae41b518a0b]
+link Erregernachweis to Material--><path codeLine="87" d="M108.14,500.08 C97.36,589.38 94.29,719.49 144.5,819 C165.3,860.22 203.63,893.74 239.68,918.22 " fill="none" id="Erregernachweis-to-Material" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="244.07,921.17,238.8334,912.8287,239.9208,918.38,234.3694,919.4674,244.07,921.17" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="145.5" y="703.0684">specimen</text><!--MD5=[3f5c9b1122a10a9060d580821042701e]
+link MREKlasse to Material--><path codeLine="88" d="M517.78,466.29 C513.32,552.59 497.76,702.83 444.5,819 C432.7,844.74 415.26,869.78 397.35,891.64 " fill="none" id="MREKlasse-to-Material" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="394,895.68,402.8154,891.288,397.184,891.8249,396.6472,886.1936,394,895.68" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="508.5" y="703.0684">specimen</text><!--MD5=[ff259174fefdfc3b51b7b4751f405aa1]
+reverse link Patient to MREKlasse--><path codeLine="89" d="M391.25,216.21 C417.47,252.76 446.25,292.89 469.9,325.85 " fill="none" id="Patient-backto-MREKlasse" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="388.07,211.78,390.0558,221.4266,390.9802,215.8458,396.561,216.7702,388.07,211.78" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="425.5" y="258.5684">subject</text><!--MD5=[141e878c746de866d74f3b1db04cfe53]
+@startuml "Erregerfall"
+skinparam groupInheritance 2
+
+class Erregerfall <<DiagnosticReport>> {
+    Nummer
+    identifier : Identifier
+    ..
+    Erregerstatus
+    conclusionCode : CodeableConcept
+    ..
+    Erreger 
+    result : Reference
+    ..
+    Attribut 
+    result : Reference
+    ..
+    Material
+    specimen : Reference
+    ..
+    Patient
+    subject : Reference
+}
+
+class Patient <<Patient>> {
+    Identifier
+    identifier : Identifier
+    ..
+    Name
+    name : HumanName
+    ..
+    GeschlechtAdministrativ
+    gender : code
+    ..
+    Geburtsdatum
+    birthDate : date
+    ..
+    Adresse
+    address : Address
+}
+
+Patient <- - Erregerfall : subject
+
+class Erregernachweis <<Observation>> {
+    Erreger
+    valueCodeableConcept : CodeableConcept
+    ..
+    Erstnachweisdatum
+    valueDateTime : dateTime
+    ..
+    Nachweisort
+    valueString : string
+    ..
+    Patient
+    subject : Reference
+    ..
+    Material
+    specimen : Reference
+}
+
+Patient <- - Erregernachweis : subject
+
+class MREKlasse <<Observation>> {
+    Attribut
+    valueCodeableConcept : CodeableConcept
+    ..
+    Patient
+    subject : Reference
+    ..
+    Material
+    specimen : Reference
+}
+
+Erregernachweis <- - Erregerfall : result
+MREKlasse <- - Erregerfall : result
+
+class Material <<Specimen>> {
+    ProbenID
+    identifier : Identifier
+    ..
+    Probenart 
+    type : CodeableConcept
+    ..
+    Entnahmestelle
+    bodySite : CodeableConcept
+}
+
+Erregerfall - -> Material : specimen
+Erregernachweis - -> Material : specimen
+MREKlasse - -> Material : specimen
+Patient <- - MREKlasse : subject
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 17:16:42 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DE
+--></g></svg>
