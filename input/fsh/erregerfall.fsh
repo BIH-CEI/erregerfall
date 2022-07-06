@@ -18,7 +18,10 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * identifier[ErregerFallNummer].assigner MS
 * code MS
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
-* subject MS
+* subject 1.. MS
+* subject.identifier MS
+* subject.identifier ^short = "primäre Patientennummer im lokalen KIS"
+* subject only Reference(Patient)
 * specimen MS
 * specimen only Reference($Specimen)
 * result MS
