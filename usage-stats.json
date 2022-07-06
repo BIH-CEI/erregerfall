@@ -6,6 +6,10 @@
   "profiles": {
     "DiagnosticReport": [
       {
+        "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie",
+        "title": "Profil - Abstrichserie"
+      },
+      {
         "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall",
         "title": "Profil - ErregerFall"
       }
@@ -22,6 +26,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf": [
+      "DiagnosticReport"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -60,6 +67,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode": [
+      "DiagnosticReport"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

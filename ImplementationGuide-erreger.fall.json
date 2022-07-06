@@ -10,7 +10,7 @@
   "name": "ErregerFall",
   "title": "ErregerFall",
   "status": "draft",
-  "date": "2022-06-17T08:52:13+00:00",
+  "date": "2022-07-06T12:38:37+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -46,7 +46,7 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank",
       "uri": "de.medizininformatikinitiative.kerndatensatz.biobank",
       "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ],
   "definition": {
@@ -347,6 +347,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/sd-abstrichserie"
+        },
+        "name": "Profil - Abstrichserie",
+        "description": "Eine Abstrichserie besteht aus einem oder mehreren Befunden, die für einen bestimmten Erreger relevant sind und als Grundlage für eine medizinische Entscheidung dienen",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/sd-erregerfall"
         },
         "name": "Profil - ErregerFall",
@@ -377,6 +391,20 @@
           "reference": "StructureDefinition/sd-mre-klasse"
         },
         "name": "Profil - MRE Klasse",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-abstrichserie-ergbenis"
+        },
+        "name": "ValueSet - Abstrichserie Ergebnis [SNOMED CT]",
+        "description": "Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie.",
         "exampleBoolean": false
       },
       {
@@ -462,6 +490,20 @@
         "name": "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]",
         "description": "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE).",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/example-abstrichserie"
+        },
+        "name": "Beispiel Abstrichserie",
+        "description": "Beispiel einer Abstrichserie",
+        "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie"
       },
       {
         "extension": [

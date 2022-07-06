@@ -1,0 +1,76 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example-abstrichserie",
+  "meta": {
+    "profile": [
+      "https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 78258-1}\">Infectious disease Diagnostic study note</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions :</b></p><ul><li><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "115329001",
+            "display": "Methicillin resistant Staphylococcus aureus (organism)"
+          }
+        ],
+        "text": "MRSA"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf",
+      "valueReference": {
+        "reference": "DiagnosticReport/example-erregerfall-mrsa",
+        "identifier": {
+          "system": "https://www.charite.de/fhir/sid/erregerfaelle",
+          "value": "0123456789"
+        }
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "LACSN"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/abstrichserien",
+      "value": "0123456789"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "78258-1",
+        "display": "Infectious disease Diagnostic study note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-patient"
+  },
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "10828004",
+          "display": "Positive (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

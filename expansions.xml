@@ -1,11 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="90a1a752-c1bb-47e0-a41f-8d5de980c325"/>
+  <id value="5dae3fd6-bf08-4bdf-945a-6e2ea1724fc8"/>
   <meta>
-    <lastUpdated value="2022-06-17T08:52:13.677+00:00"/>
+    <lastUpdated value="2022-07-06T12:38:37.726+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/vs-abstrichserie-ergbenis"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-abstrichserie-ergbenis"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p>All codes in this table are from the system 
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-10828004"> </a>  
+                  <a href="http://snomed.info/id/10828004">10828004</a>
+                </td>
+                <td>Positive (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260405006"> </a>  
+                  <a href="http://snomed.info/id/260405006">260405006</a>
+                </td>
+                <td>Trace (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260385009"> </a>  
+                  <a href="http://snomed.info/id/260385009">260385009</a>
+                </td>
+                <td>Negative (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260415000"> </a>  
+                  <a href="http://snomed.info/id/260415000">260415000</a>
+                </td>
+                <td>Not detected (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-abstrichserie-ergbenis"/>
+        <version value="0.1.0"/>
+        <name value="VS_Abstrichserie_Ergebnis"/>
+        <title value="ValueSet - Abstrichserie Ergebnis [SNOMED CT]"/>
+        <status value="active"/>
+        <date value="2022-07-06T12:38:37+00:00"/>
+        <publisher value="Berlin Institute of Health"/>
+        <contact>
+          <name value="Berlin Institute of Health"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie."/>
+        <expansion>
+          <identifier value="urn:uuid:7cfb3a42-2906-4f17-8d23-a41a3d940306"/>
+          <timestamp value="2022-07-06T12:39:11+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10828004"/>
+            <display value="Positive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260405006"/>
+            <display value="Trace (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260385009"/>
+            <display value="Negative (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260415000"/>
+            <display value="Not detected (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-status"/>
     <resource>
@@ -73,7 +183,7 @@
         <name value="VS_ErregerStatus"/>
         <title value="ValueSet - ErregerStatus [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-17T08:52:13+00:00"/>
+        <date value="2022-07-06T12:38:37+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -84,8 +194,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes für den Erregerstatus eines Patienten."/>
         <expansion>
-          <identifier value="urn:uuid:2a62a36a-fe10-4292-8daf-b459a3c74fb8"/>
-          <timestamp value="2022-06-17T08:52:35+00:00"/>
+          <identifier value="urn:uuid:4d8a17ce-8422-4123-b774-1cbfabe2e2b4"/>
+          <timestamp value="2022-07-06T12:39:12+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7160,7 +7270,7 @@
         <name value="VS_Erreger_Bakterien"/>
         <title value="ValueSet - Erreger Bakterien [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-17T08:52:13+00:00"/>
+        <date value="2022-07-06T12:38:37+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -7177,8 +7287,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:f67053b8-ff13-4588-8ce3-0cf3730624cc"/>
-          <timestamp value="2022-06-17T08:52:35+00:00"/>
+          <identifier value="urn:uuid:82417cc8-cf59-4e9b-9924-7731071c4fc0"/>
+          <timestamp value="2022-07-06T12:39:12+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -19228,7 +19338,7 @@
         <name value="VS_Erreger_Pilze"/>
         <title value="ValueSet - Erreger Pilze [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-17T08:52:13+00:00"/>
+        <date value="2022-07-06T12:38:37+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -19245,8 +19355,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:ee5e2114-4c93-4b34-8270-2f65937715ac"/>
-          <timestamp value="2022-06-17T08:52:35+00:00"/>
+          <identifier value="urn:uuid:3bb51e29-8456-464d-b519-9c099c3ebdad"/>
+          <timestamp value="2022-07-06T12:39:12+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -31296,7 +31406,7 @@
         <name value="VS_Erreger_Viren"/>
         <title value="ValueSet - Erreger Viren [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-17T08:52:13+00:00"/>
+        <date value="2022-07-06T12:38:37+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -31313,8 +31423,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4b02dfee-5dab-4673-9628-f3d3faab6833"/>
-          <timestamp value="2022-06-17T08:52:36+00:00"/>
+          <identifier value="urn:uuid:98e20b27-1928-4801-ab71-092174990699"/>
+          <timestamp value="2022-07-06T12:39:13+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36385,7 +36495,7 @@
         <name value="VS_Erregernachweis_Qualifier"/>
         <title value="ValueSet - Erregernachweis Qualifier [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-17T08:52:13+00:00"/>
+        <date value="2022-07-06T12:38:37+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36396,8 +36506,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises."/>
         <expansion>
-          <identifier value="urn:uuid:c74a8e00-bc63-48fb-a121-07cbc0fe97ac"/>
-          <timestamp value="2022-06-17T08:52:36+00:00"/>
+          <identifier value="urn:uuid:82d9e757-328f-4651-9336-55d5acf4c3de"/>
+          <timestamp value="2022-07-06T12:39:13+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36522,7 +36632,7 @@
         <name value="VS_Mikrobiologischer_Befund_MRE_Klasse"/>
         <title value="ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-06-17T08:52:13+00:00"/>
+        <date value="2022-07-06T12:38:37+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36533,8 +36643,8 @@
         </contact>
         <description value="Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."/>
         <expansion>
-          <identifier value="urn:uuid:5664d170-edfd-4538-b017-288aae654d54"/>
-          <timestamp value="2022-06-17T08:52:36+00:00"/>
+          <identifier value="urn:uuid:ddc62778-e4e7-4011-84f0-5c7698cf6851"/>
+          <timestamp value="2022-07-06T12:39:13+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

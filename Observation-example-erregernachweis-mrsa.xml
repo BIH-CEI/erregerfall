@@ -14,10 +14,6 @@
         <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
         <code value="OBI"/>
       </coding>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="OBI"/>
-      </coding>
     </type>
     <system value="https://www.charite.de/fhir/sid/lab-tests"/>
     <value value="59826-8_1234567890"/>

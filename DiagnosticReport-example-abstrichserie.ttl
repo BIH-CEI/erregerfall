@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/DiagnosticReport/example-abstrichserie> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-abstrichserie"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie";
+       fhir:index 0;
+       fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 78258-1}\">Infectious disease Diagnostic study note</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions :</b></p><ul><li><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:115329001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "115329001" ];
+         fhir:Coding.display [ fhir:value "Methicillin resistant Staphylococcus aureus (organism)" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "MRSA" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://charite.de/fhir/erregerfall/DiagnosticReport/example-erregerfall-mrsa>;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/example-erregerfall-mrsa" ];
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/erregerfaelle" ];
+         fhir:Identifier.value [ fhir:value "0123456789" ]
+       ]
+     ]
+  ];
+  fhir:DiagnosticReport.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "LACSN" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/abstrichserien" ];
+     fhir:Identifier.value [ fhir:value "0123456789" ]
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:78258-1;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "78258-1" ];
+       fhir:Coding.display [ fhir:value "Infectious disease Diagnostic study note" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://charite.de/fhir/erregerfall/Patient/example-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ];
+  fhir:DiagnosticReport.conclusionCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:10828004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "10828004" ];
+       fhir:Coding.display [ fhir:value "Positive (qualifier value)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/DiagnosticReport/example-abstrichserie.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

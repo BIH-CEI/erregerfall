@@ -7,6 +7,13 @@
     "name": "ErregerFall"
   },
   {
+    "id": "sd-abstrichserie",
+    "type": "StructureDefinition",
+    "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie",
+    "version": "0.1.0",
+    "name": "Profil_Abstrichserie"
+  },
+  {
     "id": "sd-erregerfall",
     "type": "StructureDefinition",
     "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall",
@@ -26,6 +33,13 @@
     "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse",
     "version": "0.1.0",
     "name": "Profil_MREKlasse"
+  },
+  {
+    "id": "vs-abstrichserie-ergbenis",
+    "type": "ValueSet",
+    "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-abstrichserie-ergbenis",
+    "version": "0.1.0",
+    "name": "VS_Abstrichserie_Ergebnis"
   },
   {
     "id": "vs-erreger-bakterien",

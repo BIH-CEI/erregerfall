@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.title [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-06-17T08:52:13+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-06T12:38:37+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -55,7 +55,7 @@
      fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_biobank" ];
      fhir:ImplementationGuide.dependsOn.uri [ fhir:value "de.medizininformatikinitiative.kerndatensatz.biobank" ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.biobank" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.1" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -331,6 +331,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-abstrichserie" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profil - Abstrichserie" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eine Abstrichserie besteht aus einem oder mehreren Befunden, die für einen bestimmten Erreger relevant sind und als Grundlage für eine medizinische Entscheidung dienen" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-erregerfall" ]
        ];
@@ -338,7 +352,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten in Bezug auf einen bestimmten Erreger. In der Regel entsteht ein Erreger-Fall als Reaktion auf eine positive oder grenzwertige Abstrichserie." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -351,7 +365,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profil - Erreger Nachweis" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -364,7 +378,21 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profil - MRE Klasse" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-abstrichserie-ergbenis>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-abstrichserie-ergbenis" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Abstrichserie Ergebnis [SNOMED CT]" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -378,7 +406,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für den Erregerstatus eines Patienten." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -392,7 +420,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Bakterien aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -406,7 +434,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Pilze aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -420,7 +448,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Viren aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -434,7 +462,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -448,7 +476,24 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://charite.de/fhir/erregerfall/DiagnosticReport/example-abstrichserie>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/example-abstrichserie" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Beispiel Abstrichserie" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel einer Abstrichserie" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie";
+         fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie>
+       ]
+     ], [
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -465,7 +510,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall>
        ]
      ], [
-       fhir:index 10;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -482,7 +527,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

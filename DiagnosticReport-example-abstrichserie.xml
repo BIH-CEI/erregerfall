@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="example-abstrichserie"/>
+  <meta>
+    <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 78258-1}">Infectious disease Diagnostic study note</span> </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions :</b></p><ul><li><span title="Codes: {http://snomed.info/sct 10828004}">Positive (qualifier value)</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/workflow-reasonCode">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="115329001"/>
+        <display value="Methicillin resistant Staphylococcus aureus (organism)"/>
+      </coding>
+      <text value="MRSA"/>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf">
+    <valueReference>
+      <reference value="DiagnosticReport/example-erregerfall-mrsa"/>
+      <identifier>
+        <system value="https://www.charite.de/fhir/sid/erregerfaelle"/>
+        <value value="0123456789"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="LACSN"/>
+      </coding>
+    </type>
+    <system value="https://www.charite.de/fhir/sid/abstrichserien"/>
+    <value value="0123456789"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78258-1"/>
+      <display value="Infectious disease Diagnostic study note"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-patient"/>
+  </subject>
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="10828004"/>
+      <display value="Positive (qualifier value)"/>
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

@@ -28,10 +28,6 @@
          fhir:index 0;
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
          fhir:Coding.code [ fhir:value "OBI" ]
-       ], [
-         fhir:index 1;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
-         fhir:Coding.code [ fhir:value "OBI" ]
        ]
      ];
      fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/lab-tests" ];

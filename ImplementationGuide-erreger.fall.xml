@@ -11,7 +11,7 @@
   <name value="ErregerFall"/>
   <title value="ErregerFall"/>
   <status value="draft"/>
-  <date value="2022-06-17T08:52:13+00:00"/>
+  <date value="2022-07-06T12:38:37+00:00"/>
   <publisher value="Berlin Institute of Health"/>
   <contact>
     <name value="Berlin Institute of Health"/>
@@ -37,7 +37,7 @@
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_biobank">
     <uri value="de.medizininformatikinitiative.kerndatensatz.biobank"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.biobank"/>
-    <version value="1.0.0"/>
+    <version value="1.0.1"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -221,6 +221,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sd-abstrichserie"/>
+      </reference>
+      <name value="Profil - Abstrichserie"/>
+      <description value="Eine Abstrichserie besteht aus einem oder mehreren Befunden, die für einen bestimmten Erreger relevant sind und als Grundlage für eine medizinische Entscheidung dienen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sd-erregerfall"/>
       </reference>
       <name value="Profil - ErregerFall"/>
@@ -245,6 +256,17 @@
         <reference value="StructureDefinition/sd-mre-klasse"/>
       </reference>
       <name value="Profil - MRE Klasse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-abstrichserie-ergbenis"/>
+      </reference>
+      <name value="ValueSet - Abstrichserie Ergebnis [SNOMED CT]"/>
+      <description value="Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -312,6 +334,17 @@
       <name value="ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
       <description value="Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/example-abstrichserie"/>
+      </reference>
+      <name value="Beispiel Abstrichserie"/>
+      <description value="Beispiel einer Abstrichserie"/>
+      <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

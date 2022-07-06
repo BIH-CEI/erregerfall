@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-abstrichserie-ergbenis"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/10828004">10828004</a></td><td>Positive (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260405006">260405006</a></td><td>Trace (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260385009">260385009</a></td><td>Negative (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260415000">260415000</a></td><td>Not detected (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-abstrichserie-ergbenis"/>
+  <version value="0.1.0"/>
+  <name value="VS_Abstrichserie_Ergebnis"/>
+  <title value="ValueSet - Abstrichserie Ergebnis [SNOMED CT]"/>
+  <status value="active"/>
+  <date value="2022-07-06T12:38:37+00:00"/>
+  <publisher value="Berlin Institute of Health"/>
+  <contact>
+    <name value="Berlin Institute of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="10828004"/>
+        <display value="Positive (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260405006"/>
+        <display value="Trace (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260385009"/>
+        <display value="Negative (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260415000"/>
+        <display value="Not detected (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
