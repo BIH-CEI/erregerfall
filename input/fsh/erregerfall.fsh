@@ -3,6 +3,11 @@ Parent: DiagnosticReport
 Id: sd-erregerfall
 Title: "Profil - ErregerFall"
 Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten in Bezug auf einen bestimmten Erreger. In der Regel entsteht ein Erreger-Fall als Reaktion auf eine positive oder grenzwertige Abstrichserie."
+* extension contains
+    http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf named summaryOf 0..* MS
+* extension[summaryOf] MS
+* extension[summaryOf] ^short = "weitere Befunde"
+* extension[summaryOf] ^definition = "Liste von Auftragsnummern mit zu der Abstrichserie zugehörigen Befunden"
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type"
@@ -16,6 +21,9 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * identifier[ErregerFallNummer].system 1.. MS
 * identifier[ErregerFallNummer].value 1.. MS
 * identifier[ErregerFallNummer].assigner MS
+* basedOn MS
+* basedOn ^short = "Verweis auf Auftragsnummer"
+* basedOn ^definition = "Enthält die Referenzen auf die Aufträge in Form von ServiceRequests"
 * code MS
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
 * subject 1.. MS
@@ -25,6 +33,8 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * specimen MS
 * specimen only Reference($Specimen)
 * result MS
+* result ^short = "Verweis auf Laborergebnisse"
+* result ^definition = "Enthält die Referenzen auf die Laborergbenisse in Form von Observations"
 //* result ^slicing.discriminator[+].type = #value
 //* result ^slicing.discriminator[=].path = "resolve()"
 //* result ^slicing.rules = #open
@@ -40,9 +50,11 @@ InstanceOf: sd-erregerfall
 Usage: #example
 Title: "Beispiel Erregerfall MRSA"
 Description: "Beispiel eines Erregerfalls MRSA"
+* extension[summaryOf].valueReference = Reference(DiagnosticReport/example)
 * identifier[ErregerFallNummer].type = $v2-0203#LACSN
 * identifier[ErregerFallNummer].system = "https://www.charite.de/fhir/sid/erregerfaelle"
 * identifier[ErregerFallNummer].value = "0123456789"
+* basedOn = Reference(ServiceRequest/example)
 * status = #final
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
 * subject = Reference(Patient/example-patient)

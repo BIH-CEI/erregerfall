@@ -6,8 +6,10 @@ Description: "Eine Abstrichserie besteht aus einem oder mehreren Befunden, die f
 * extension contains
     http://hl7.org/fhir/StructureDefinition/workflow-reasonCode named reasonCode 0..1 MS and
     http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf named summaryOf 0..* MS
+* extension[reasonCode]
 * extension[reasonCode] ^short = "Fragestellung"
 * extension[reasonCode].valueCodeableConcept from VS_Mikrobiologischer_Befund_MRE_Klasse (required)
+* extension[summaryOf] MS
 * extension[summaryOf] ^short = "weitere Befunde"
 * extension[summaryOf] ^definition = "Liste von Auftragsnummern mit zu der Abstrichserie zugehörigen Befunden"
 * identifier MS
@@ -23,6 +25,9 @@ Description: "Eine Abstrichserie besteht aus einem oder mehreren Befunden, die f
 * identifier[Abstrichseriennummer].system 1.. MS
 * identifier[Abstrichseriennummer].value 1.. MS
 * identifier[Abstrichseriennummer].assigner MS
+* basedOn MS
+* basedOn ^short = "Verweis auf Auftragsnummer"
+* basedOn ^definition = "Enthält die Referenzen auf die Aufträge in Form von ServiceRequests"
 * code MS
 * code = $loinc#78258-1 "Infectious disease Diagnostic study note"
 * subject MS
@@ -34,6 +39,8 @@ Description: "Eine Abstrichserie besteht aus einem oder mehreren Befunden, die f
 * specimen MS
 * specimen only Reference($Specimen)
 * result MS
+* result ^short = "Verweis auf Laborergebnisse"
+* result ^definition = "Enthält die Referenzen auf die Laborergbenisse in Form von Observations"
 //* result ^slicing.discriminator[+].type = #value
 //* result ^slicing.discriminator[=].path = "resolve()"
 //* result ^slicing.rules = #open
@@ -67,6 +74,7 @@ Description: "Beispiel einer Abstrichserie"
 * identifier[Abstrichseriennummer].type = $v2-0203#LACSN
 * identifier[Abstrichseriennummer].system = "https://www.charite.de/fhir/sid/abstrichserien"
 * identifier[Abstrichseriennummer].value = "0123456789"
+* basedOn = Reference(ServiceRequest/example)
 * status = #final
 * code = $loinc#78258-1 "Infectious disease Diagnostic study note"
 * subject = Reference(Patient/example-patient)
