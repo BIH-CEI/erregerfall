@@ -58,6 +58,11 @@
      fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/abstrichserien" ];
      fhir:Identifier.value [ fhir:value "0123456789" ]
   ];
+  fhir:DiagnosticReport.basedOn [
+     fhir:index 0;
+     fhir:link <https://charite.de/fhir/erregerfall/ServiceRequest/example>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/example" ]
+  ];
   fhir:DiagnosticReport.status [ fhir:value "final"];
   fhir:DiagnosticReport.code [
      fhir:CodeableConcept.coding [

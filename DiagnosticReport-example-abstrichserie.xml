@@ -37,6 +37,9 @@
     <system value="https://www.charite.de/fhir/sid/abstrichserien"/>
     <value value="0123456789"/>
   </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/example"/>
+  </basedOn>
   <status value="final"/>
   <code>
     <coding>

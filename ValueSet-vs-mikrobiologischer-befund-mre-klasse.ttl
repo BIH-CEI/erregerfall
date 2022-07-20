@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VS_Mikrobiologischer_Befund_MRE_Klasse"];
   fhir:ValueSet.title [ fhir:value "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-07-06T12:38:37+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-07-20T12:33:19+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -49,6 +49,11 @@
       "value": "0123456789"
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [
