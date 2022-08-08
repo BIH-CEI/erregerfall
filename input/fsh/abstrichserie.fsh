@@ -47,10 +47,13 @@ Description: "Eine Abstrichserie besteht aus einem oder mehreren Befunden, die f
 //* result contains erreger-nachweis 0..* MS and mre-klasse 0..* MS
 //* result[erreger-nachweis] only Reference(Profil_ErregerNachweis)
 //* result[mre-klasse] only Reference(Profil_MREKlasse)
-* conclusionCode MS
-* conclusionCode ^short = "Ergebnis"
-* conclusionCode from VS_Abstrichserie_Ergebnis (required)
-// ToDo: Nicht zählbar Grund
+* conclusionCode ^slicing.discriminator.type = #pattern
+* conclusionCode ^slicing.discriminator.path = "$this"
+* conclusionCode ^slicing.rules = #open
+* conclusionCode contains result-code 0..* MS and not-countable-reason 0..1 MS
+* conclusionCode[result-code] from vs-abstrichserie-ergbenis (required)
+* conclusionCode[not-countable-reason] from vs-nicht-zaehlbar-grund (required)
+
 
 ValueSet: VS_Abstrichserie_Ergebnis
 Id: vs-abstrichserie-ergbenis
