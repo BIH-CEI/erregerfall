@@ -1,5 +1,12 @@
 [
   {
+    "id": "cs-nicht-zaehlbar-grund",
+    "type": "CodeSystem",
+    "url": "https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund",
+    "version": "0.1.0",
+    "name": "CS_Nicht_Zaehlbar_Grund"
+  },
+  {
     "id": "erreger.fall",
     "type": "ImplementationGuide",
     "url": "https://charite.de/fhir/erregerfall/ImplementationGuide/erreger.fall",
@@ -82,5 +89,12 @@
     "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-mikrobiologischer-befund-mre-klasse",
     "version": "0.1.0",
     "name": "VS_Mikrobiologischer_Befund_MRE_Klasse"
+  },
+  {
+    "id": "vs-nicht-zaehlbar-grund",
+    "type": "ValueSet",
+    "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-nicht-zaehlbar-grund",
+    "version": "0.1.0",
+    "name": "VS_Nicht_Zaehlbar_Grund"
   }
 ]

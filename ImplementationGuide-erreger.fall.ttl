@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.title [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-20T12:33:19+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-08T12:51:52+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -480,6 +480,34 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://charite.de/fhir/erregerfall/ValueSet/vs-nicht-zaehlbar-grund>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-nicht-zaehlbar-grund" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS Nicht Zaehlbar Grund" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-nicht-zaehlbar-grund" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CS Nicht Zaehlbar Grund" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -493,7 +521,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -510,7 +538,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -527,7 +555,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

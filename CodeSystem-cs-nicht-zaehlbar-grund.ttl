@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-nicht-zaehlbar-grund"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">keine-relevanz<a name=\"cs-nicht-zaehlbar-grund-keine-relevanz\"> </a></td><td>Keine Relevanz</td></tr><tr><td style=\"white-space:nowrap\">dekolonisation<a name=\"cs-nicht-zaehlbar-grund-dekolonisation\"> </a></td><td>Dekolonisation</td></tr><tr><td style=\"white-space:nowrap\">abstand-zu-kurz<a name=\"cs-nicht-zaehlbar-grund-abstand-zu-kurz\"> </a></td><td>Abstand zu kurz</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "CS_Nicht_Zaehlbar_Grund"];
+  fhir:CodeSystem.title [ fhir:value "CS Nicht Zaehlbar Grund"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-08-08T12:51:52+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Berlin Institute of Health"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "tbd"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "keine-relevanz" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Keine Relevanz" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "dekolonisation" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dekolonisation" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "abstand-zu-kurz" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Abstand zu kurz" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

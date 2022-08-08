@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nicht-zaehlbar-grund"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">keine-relevanz<a name="cs-nicht-zaehlbar-grund-keine-relevanz"> </a></td><td>Keine Relevanz</td></tr><tr><td style="white-space:nowrap">dekolonisation<a name="cs-nicht-zaehlbar-grund-dekolonisation"> </a></td><td>Dekolonisation</td></tr><tr><td style="white-space:nowrap">abstand-zu-kurz<a name="cs-nicht-zaehlbar-grund-abstand-zu-kurz"> </a></td><td>Abstand zu kurz</td></tr></table></div>
+  </text>
+  <url value="https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund"/>
+  <version value="0.1.0"/>
+  <name value="CS_Nicht_Zaehlbar_Grund"/>
+  <title value="CS Nicht Zaehlbar Grund"/>
+  <status value="active"/>
+  <date value="2022-08-08T12:51:52+00:00"/>
+  <publisher value="Berlin Institute of Health"/>
+  <contact>
+    <name value="Berlin Institute of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="tbd"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="keine-relevanz"/>
+    <display value="Keine Relevanz"/>
+  </concept>
+  <concept>
+    <code value="dekolonisation"/>
+    <display value="Dekolonisation"/>
+  </concept>
+  <concept>
+    <code value="abstand-zu-kurz"/>
+    <display value="Abstand zu kurz"/>
+  </concept>
+</CodeSystem>

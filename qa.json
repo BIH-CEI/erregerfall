@@ -3,10 +3,10 @@
   "name": "ErregerFall",
   "package-id": "erreger.fall",
   "ig-ver": "0.1.0",
-  "date": "Wed, 20 Jul, 2022 12:33:19 +0000",
+  "date": "Mon, 08 Aug, 2022 12:51:52 +0000",
   "errs": 20,
   "warnings": 4,
-  "hints": 2,
+  "hints": 3,
   "version": "4.0.1",
-  "tool": "5.0.0-snapshot1 (3)"
+  "tool": "5.0.0-snapshot2 (3)"
 }

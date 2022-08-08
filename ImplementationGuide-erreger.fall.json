@@ -10,7 +10,7 @@
   "name": "ErregerFall",
   "title": "ErregerFall",
   "status": "draft",
-  "date": "2022-07-20T12:33:19+00:00",
+  "date": "2022-08-08T12:51:52+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -489,6 +489,34 @@
         },
         "name": "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]",
         "description": "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-nicht-zaehlbar-grund"
+        },
+        "name": "VS Nicht Zaehlbar Grund",
+        "description": "tbd",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-nicht-zaehlbar-grund"
+        },
+        "name": "CS Nicht Zaehlbar Grund",
+        "description": "tbd",
         "exampleBoolean": false
       },
       {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="78ab1f38-59a1-4eac-9f5d-e54196b651e1"/>
+  <id value="8bfb208c-8dc8-4b88-b505-0fbe7ed2237f"/>
   <meta>
-    <lastUpdated value="2022-07-20T12:33:19.445+00:00"/>
+    <lastUpdated value="2022-08-08T12:51:52.058+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -66,7 +66,7 @@
         <name value="VS_Abstrichserie_Ergebnis"/>
         <title value="ValueSet - Abstrichserie Ergebnis [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-07-20T12:33:19+00:00"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -77,8 +77,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie."/>
         <expansion>
-          <identifier value="urn:uuid:8b0aa9a4-4e7f-4200-84fb-71c40f6325fe"/>
-          <timestamp value="2022-07-20T12:33:48+00:00"/>
+          <identifier value="urn:uuid:4f8a6ef8-7eca-4495-8331-cc3184d12f1b"/>
+          <timestamp value="2022-08-08T12:52:28+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -90,7 +90,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -125,7 +125,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -183,7 +183,7 @@
         <name value="VS_ErregerStatus"/>
         <title value="ValueSet - ErregerStatus [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-07-20T12:33:19+00:00"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -194,8 +194,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes für den Erregerstatus eines Patienten."/>
         <expansion>
-          <identifier value="urn:uuid:1e787249-a3e0-45b7-9830-abc263f92e9b"/>
-          <timestamp value="2022-07-20T12:33:49+00:00"/>
+          <identifier value="urn:uuid:e50587a8-29bd-4598-aa8e-bc541abee331"/>
+          <timestamp value="2022-08-08T12:52:28+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -207,7 +207,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -247,7 +247,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -1234,13 +1234,6 @@
                   <a href="http://snomed.info/id/5197002">5197002</a>
                 </td>
                 <td>Lactobacillus delbrueckii</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-5234000"> </a>  
-                  <a href="http://snomed.info/id/5234000">5234000</a>
-                </td>
-                <td>Lactobacillus casei ss. tolerans</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -5885,13 +5878,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-28315003"> </a>  
-                  <a href="http://snomed.info/id/28315003">28315003</a>
-                </td>
-                <td>Lactobacillus casei ss. casei</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-28382009"> </a>  
                   <a href="http://snomed.info/id/28382009">28382009</a>
                 </td>
@@ -7262,6 +7248,20 @@
                 </td>
                 <td>Pseudomonas fuscovaginae</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-35164008"> </a>  
+                  <a href="http://snomed.info/id/35164008">35164008</a>
+                </td>
+                <td>Spirillum minus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-35197009"> </a>  
+                  <a href="http://snomed.info/id/35197009">35197009</a>
+                </td>
+                <td>Salmonella Biafra (organism)</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -7270,7 +7270,7 @@
         <name value="VS_Erreger_Bakterien"/>
         <title value="ValueSet - Erreger Bakterien [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-07-20T12:33:19+00:00"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -7287,8 +7287,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d98adcd7-37e4-41a8-bfc5-c35c36204ee9"/>
-          <timestamp value="2022-07-20T12:33:49+00:00"/>
+          <identifier value="urn:uuid:e4a843c0-b9b7-4609-874e-3838dd36d18c"/>
+          <timestamp value="2022-08-08T12:52:28+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7300,7 +7300,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -7996,11 +7996,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="5197002"/>
             <display value="Lactobacillus delbrueckii"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="5234000"/>
-            <display value="Lactobacillus casei ss. tolerans"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11319,11 +11314,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="28315003"/>
-            <display value="Lactobacillus casei ss. casei"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="28382009"/>
             <display value="Vibrio metschnikovii"/>
           </contains>
@@ -12302,6 +12292,16 @@
             <code value="35126006"/>
             <display value="Pseudomonas fuscovaginae"/>
           </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="35164008"/>
+            <display value="Spirillum minus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="35197009"/>
+            <display value="Salmonella Biafra (organism)"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -12315,7 +12315,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -14831,6 +14831,13 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-42132005"> </a>  
+                  <a href="http://snomed.info/id/42132005">42132005</a>
+                </td>
+                <td>Aspergillus amstelodami</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-42178002"> </a>  
                   <a href="http://snomed.info/id/42178002">42178002</a>
                 </td>
@@ -15290,13 +15297,6 @@
                   <a href="http://snomed.info/id/50435003">50435003</a>
                 </td>
                 <td>Exserohilum mcginnisii</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-50524005"> </a>  
-                  <a href="http://snomed.info/id/50524005">50524005</a>
-                </td>
-                <td>Issatchenkia orientalis</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -16809,13 +16809,6 @@
                   <a href="http://snomed.info/id/76951009">76951009</a>
                 </td>
                 <td>Exserohilum rostratum</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-76995003"> </a>  
-                  <a href="http://snomed.info/id/76995003">76995003</a>
-                </td>
-                <td>Candida krusei</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -19330,6 +19323,13 @@
                 </td>
                 <td>Family Apiosporaceae (organism)</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-415911004"> </a>  
+                  <a href="http://snomed.info/id/415911004">415911004</a>
+                </td>
+                <td>Family Calosphaeriaceae (organism)</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -19338,7 +19338,7 @@
         <name value="VS_Erreger_Pilze"/>
         <title value="ValueSet - Erreger Pilze [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-07-20T12:33:19+00:00"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -19355,8 +19355,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:bdfd22ad-6409-4f25-9742-725f5912f38e"/>
-          <timestamp value="2022-07-20T12:33:49+00:00"/>
+          <identifier value="urn:uuid:5cb8bd86-10db-4c6c-b09b-b3404bae4200"/>
+          <timestamp value="2022-08-08T12:52:29+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -19368,7 +19368,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -21157,6 +21157,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="42132005"/>
+            <display value="Aspergillus amstelodami"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="42178002"/>
             <display value="Conidiobolus"/>
           </contains>
@@ -21484,11 +21489,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="50435003"/>
             <display value="Exserohilum mcginnisii"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="50524005"/>
-            <display value="Issatchenkia orientalis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -22569,11 +22569,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="76951009"/>
             <display value="Exserohilum rostratum"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="76995003"/>
-            <display value="Candida krusei"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -24370,6 +24365,11 @@
             <code value="415910003"/>
             <display value="Family Apiosporaceae (organism)"/>
           </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="415911004"/>
+            <display value="Family Calosphaeriaceae (organism)"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -24383,7 +24383,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -31406,7 +31406,7 @@
         <name value="VS_Erreger_Viren"/>
         <title value="ValueSet - Erreger Viren [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-07-20T12:33:19+00:00"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -31423,8 +31423,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:206ba262-a370-4d8b-a35c-43423675dc1c"/>
-          <timestamp value="2022-07-20T12:33:49+00:00"/>
+          <identifier value="urn:uuid:de8eb32d-3fb9-48af-86ee-082a7818d70b"/>
+          <timestamp value="2022-08-08T12:52:29+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -31436,7 +31436,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -36451,7 +36451,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -36495,7 +36495,7 @@
         <name value="VS_Erregernachweis_Qualifier"/>
         <title value="ValueSet - Erregernachweis Qualifier [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-07-20T12:33:19+00:00"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36506,8 +36506,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises."/>
         <expansion>
-          <identifier value="urn:uuid:dc1c83cc-ad86-4a40-afdc-aa9f9eddc1ee"/>
-          <timestamp value="2022-07-20T12:33:50+00:00"/>
+          <identifier value="urn:uuid:b214aae5-c4d2-41e3-97d1-9bff4ceb8c96"/>
+          <timestamp value="2022-08-08T12:52:29+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36519,7 +36519,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -36553,7 +36553,7 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>Loinc v2.72</li>
-                <li>SNOMED CT International edition 31-Mar 2022</li>
+                <li>SNOMED CT International edition 31-Jul 2022</li>
               </ul>
             </div>
             <table class="codes">
@@ -36632,7 +36632,7 @@
         <name value="VS_Mikrobiologischer_Befund_MRE_Klasse"/>
         <title value="ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-07-20T12:33:19+00:00"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36643,8 +36643,8 @@
         </contact>
         <description value="Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."/>
         <expansion>
-          <identifier value="urn:uuid:9b94f418-7647-4c6c-8411-a7b3a6ee0b75"/>
-          <timestamp value="2022-07-20T12:33:50+00:00"/>
+          <identifier value="urn:uuid:99cb162f-a326-4074-add8-e47d1e1b5a78"/>
+          <timestamp value="2022-08-08T12:52:29+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36656,7 +36656,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -36700,6 +36700,147 @@
             <system value="http://loinc.org"/>
             <code value="LA33216-5"/>
             <display value="4MRGN"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://charite.de/fhir/erregerfall/ValueSet/vs-nicht-zaehlbar-grund"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-nicht-zaehlbar-grund"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-cs-nicht-zaehlbar-grund.html">CS Nicht Zaehlbar Grund v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2022</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---charite.de-fhir-erregerfall-CodeSystem-cs-nicht-zaehlbar-grund-keine-relevanz"> </a>  
+                  <a href="CodeSystem-cs-nicht-zaehlbar-grund.html#cs-nicht-zaehlbar-grund-keine-relevanz">keine-relevanz</a>
+                </td>
+                <td>https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund</td>
+                <td>Keine Relevanz</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---charite.de-fhir-erregerfall-CodeSystem-cs-nicht-zaehlbar-grund-dekolonisation"> </a>  
+                  <a href="CodeSystem-cs-nicht-zaehlbar-grund.html#cs-nicht-zaehlbar-grund-dekolonisation">dekolonisation</a>
+                </td>
+                <td>https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund</td>
+                <td>Dekolonisation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---charite.de-fhir-erregerfall-CodeSystem-cs-nicht-zaehlbar-grund-abstand-zu-kurz"> </a>  
+                  <a href="CodeSystem-cs-nicht-zaehlbar-grund.html#cs-nicht-zaehlbar-grund-abstand-zu-kurz">abstand-zu-kurz</a>
+                </td>
+                <td>https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund</td>
+                <td>Abstand zu kurz</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-281789004"> </a>  
+                  <a href="http://snomed.info/id/281789004">281789004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Antibiotic therapy (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>  
+                  <a href="http://snomed.info/id/74964007">74964007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://charite.de/fhir/erregerfall/ValueSet/vs-nicht-zaehlbar-grund"/>
+        <version value="0.1.0"/>
+        <name value="VS_Nicht_Zaehlbar_Grund"/>
+        <title value="VS Nicht Zaehlbar Grund"/>
+        <status value="active"/>
+        <date value="2022-08-08T12:51:52+00:00"/>
+        <publisher value="Berlin Institute of Health"/>
+        <contact>
+          <name value="Berlin Institute of Health"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="tbd"/>
+        <expansion>
+          <identifier value="urn:uuid:3771c03c-6d7b-433e-bea1-2ca2a36d6fed"/>
+          <timestamp value="2022-08-08T12:52:30+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund"/>
+            <code value="keine-relevanz"/>
+            <display value="Keine Relevanz"/>
+          </contains>
+          <contains>
+            <system value="https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund"/>
+            <code value="dekolonisation"/>
+            <display value="Dekolonisation"/>
+          </contains>
+          <contains>
+            <system value="https://charite.de/fhir/erregerfall/CodeSystem/cs-nicht-zaehlbar-grund"/>
+            <code value="abstand-zu-kurz"/>
+            <display value="Abstand zu kurz"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281789004"/>
+            <display value="Antibiotic therapy (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="other"/>
           </contains>
         </expansion>
       </ValueSet>
