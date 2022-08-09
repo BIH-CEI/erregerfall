@@ -31,7 +31,7 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * subject.identifier ^short = "primäre Patientennummer im lokalen KIS"
 * subject only Reference(Patient)
 * specimen MS
-* specimen only Reference($Specimen)
+* specimen only Reference($SpecimenBio)
 * result MS
 * result ^short = "Verweis auf Laborergebnisse"
 * result ^definition = "Enthält die Referenzen auf die Laborergbenisse in Form von Observations"
@@ -44,25 +44,6 @@ Description: "Ein Erreger-Fall beschreibt den Verlauf des Status eines Patienten
 * conclusionCode MS
 * conclusionCode ^short = "Erregerstatus"
 * conclusionCode from VS_ErregerStatus (required)
-
-Instance: example-erregerfall-mrsa
-InstanceOf: sd-erregerfall
-Usage: #example
-Title: "Beispiel Erregerfall MRSA"
-Description: "Beispiel eines Erregerfalls MRSA"
-* extension[summaryOf].valueReference = Reference(DiagnosticReport/example)
-* identifier[ErregerFallNummer].type = $v2-0203#LACSN
-* identifier[ErregerFallNummer].system = "https://www.charite.de/fhir/sid/erregerfaelle"
-* identifier[ErregerFallNummer].value = "0123456789"
-* basedOn = Reference(ServiceRequest/example)
-* status = #final
-* code = $loinc#96161-5 "Infectious disease Evaluation note"
-* subject = Reference(Patient/example-patient)
-//* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
-//* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
-* result[+] = Reference(example-erregernachweis-mrsa)
-* result[+] = Reference(example-mre-klasse-mrsa)
-* conclusionCode = $SCT#10828004 "Positive (qualifier value)"
 
 Profile: Profil_MREKlasse
 Parent: $ObservationLab
@@ -82,55 +63,7 @@ Title: "Profil - MRE Klasse"
 * value[x] ^slicing.rules = #open
 * value[x] only CodeableConcept
 * value[x] from VS_Mikrobiologischer_Befund_MRE_Klasse (required)
-* specimen only Reference($Specimen)
-
-ValueSet: VS_Mikrobiologischer_Befund_MRE_Klasse
-Id: vs-mikrobiologischer-befund-mre-klasse
-Title: "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"
-Description: "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."
-* SNOMED_CT#115329001 "MRSA"
-* SNOMED_CT#113727004 "VRE"
-* SNOMED_CT#838511009 "LVRE"
-* SNOMED_CT#838510005 "LRE"
-* $loinc#LA33214-0 "2MRGN"
-* $loinc#LA33215-7 "3MRGN"
-* $loinc#LA33216-5 "4MRGN"
-// IsolatAttributShortName
-// 2MRGN_NEOPAED
-// CARB_RES
-// ESBL
-// PVL
-// TOXINBILDEND
-
-Instance: example-mre-klasse-mrsa
-InstanceOf: sd-mre-klasse
-Usage: #example
-Title: "Beispiel - MRE Klasse MRSA"
-Description: "Beispiel für MRE Klasse MRSA"
-* status = #final
-* identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
-* identifier[analyseBefundCode].value = "59826-8_1234567890"
-* identifier[analyseBefundCode].assigner = Reference(Organization/example)
-//* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
-//* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
-* category = $loinc#18725-2 "Microbiology studies (set)"
-* code = $loinc#99780-9 "Multidrug resistant gram-negative organism classification [Type]"
-* subject = Reference(Patient/example)
-* effectiveDateTime = "2022-05-31"
-* valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
-
-
-ValueSet: VS_ErregerStatus
-Id: vs-erreger-status
-Title: "ValueSet - ErregerStatus [SNOMED CT]"
-Description: "Das ValueSet enthält Codes für den Erregerstatus eines Patienten."
-* $SCT#10828004 "Positive (qualifier value)"
-* $SCT#260385009 "Negative (qualifier value)"
-* $SCT#410513005 "In the past (qualifier value)"
-* $SCT#24932003 "Exposure to (contextual qualifier) (qualifier value)"
-* $SCT#419099009 "Dead (finding)"
-
+* specimen only Reference($SpecimenBio)
 
 Profile: Profil_ErregerNachweis
 Parent: $ObservationLab
@@ -152,7 +85,7 @@ Title: "Profil - Erreger Nachweis"
 * value[x] only CodeableConcept
 * value[x] from VS_Erregernachweis_Qualifier (required)
 * specimen 1..
-* specimen only Reference($Specimen)
+* specimen only Reference($SpecimenBio)
 // * hasMember only Reference($Keimzahl or $Virulenzfaktor or $Resistenzmechanismus or $AntibiogrammPanel)
 * hasMember MS
 * component MS
@@ -165,35 +98,36 @@ Title: "Profil - Erreger Nachweis"
     NachweisVirus 0..1 MS and
     Erstnachweisdatum 0..1 MS and
     Nachweisort 0..1 MS
-* component[NachweisBakterien].code 1.. MS
-* component[NachweisBakterien].code = $loinc#6463-4
-* component[NachweisBakterien].value[x] 1.. MS
-* component[NachweisBakterien].value[x] only CodeableConcept
-* component[NachweisBakterien].valueCodeableConcept 1.. MS
-* component[NachweisBakterien].valueCodeableConcept only CodeableConcept
-* component[NachweisBakterien].valueCodeableConcept from VS_Erreger_Bakterien (required)
-* component[NachweisPilze].code 1.. MS
-* component[NachweisPilze].code = $loinc#42805-2
-* component[NachweisPilze].value[x] 1.. MS
-* component[NachweisPilze].value[x] only CodeableConcept
-* component[NachweisPilze].valueCodeableConcept 1.. MS
-* component[NachweisPilze].valueCodeableConcept only CodeableConcept
-* component[NachweisPilze].valueCodeableConcept from VS_Erreger_Pilze (required)
-* component[NachweisVirus].code 1.. MS
-* component[NachweisVirus].code = $loinc#6584-7
-* component[NachweisVirus].value[x] 1.. MS
-* component[NachweisVirus].value[x] only CodeableConcept
-* component[NachweisVirus].valueCodeableConcept 1.. MS
-* component[NachweisVirus].valueCodeableConcept only CodeableConcept
-* component[NachweisVirus].valueCodeableConcept from VS_Erreger_Viren (required)
-* component[Erstnachweisdatum].code 1.. MS
-* component[Erstnachweisdatum].code = $loinc#99350-1
-* component[Erstnachweisdatum].value[x] 1.. MS
-* component[Erstnachweisdatum].value[x] only dateTime
-* component[Nachweisort].code 1.. MS 
-* component[Nachweisort].code = $loinc#81267-7 "Setting of exposure to illness"
-* component[Nachweisort].value[x] 1.. MS
-* component[Nachweisort].value[x] only string
+* component[NachweisBakterien]
+  * code 1.. MS
+  * code = $loinc#6463-4
+  * value[x] 1.. MS
+  * value[x] only CodeableConcept
+  * valueCodeableConcept from VS_Erreger_Bakterien (required)
+* component[NachweisPilze]
+  * code 1.. MS
+  * code = $loinc#42805-2
+  * value[x] 1.. MS
+  * value[x] only CodeableConcept
+  * valueCodeableConcept from VS_Erreger_Pilze (required)
+* component[NachweisVirus]
+  * code 1.. MS
+  * code = $loinc#6584-7
+  * value[x] 1.. MS
+  * value[x] only CodeableConcept
+  * valueCodeableConcept from VS_Erreger_Viren (required)
+* component[Erstnachweisdatum]
+  * code 1.. MS
+  * code = $loinc#99350-1
+  * value[x] 1.. MS
+  * value[x] only dateTime
+* component[Nachweisort]
+  * code 1.. MS 
+  * code = $loinc#81267-7 "Setting of exposure to illness"
+  * value[x] 1.. MS
+  * value[x] only string
+
+// TODO: Examples
 
 Instance: example-erregernachweis-mrsa
 InstanceOf: sd-erregernachweis
@@ -218,30 +152,39 @@ Description: "Beispiel für Erregernachweis von MRSA"
 * component[Nachweisort].code = $loinc#81267-7 "Setting of exposure to illness"
 * component[Nachweisort].valueString = "CBF Station 12"
 
-ValueSet: VS_Erregernachweis_Qualifier
-Id: vs-erregernachweis-qualifier
-Title: "ValueSet - Erregernachweis Qualifier [SNOMED CT]"
-Description: "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises."
-* $SCT#260373001 "Detected (qualifier value)"
-* $SCT#260415000 "Not detected (qualifier value)"
-* $SCT#419984006 "Inconclusive (qualifier value)"
+Instance: example-mre-klasse-mrsa
+InstanceOf: sd-mre-klasse
+Usage: #example
+Title: "Beispiel - MRE Klasse MRSA"
+Description: "Beispiel für MRE Klasse MRSA"
+* status = #final
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "59826-8_1234567890"
+* identifier[analyseBefundCode].assigner = Reference(Organization/example)
+//* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+//* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
+* category = $loinc#18725-2 "Microbiology studies (set)"
+* code = $loinc#99780-9 "Multidrug resistant gram-negative organism classification [Type]"
+* subject = Reference(Patient/example)
+* effectiveDateTime = "2022-05-31"
+* valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
 
-ValueSet: VS_Erreger_Pilze
-Id: vs-erreger-pilze
-Title: "ValueSet - Erreger Pilze [SNOMED CT]"
-Description: "Das ValueSet enthält Codes für Pilze aus SNOMED CT."
-* include codes from system $SCT where concept descendent-of #414561005
-
-ValueSet: VS_Erreger_Bakterien
-Id: vs-erreger-bakterien
-Title: "ValueSet - Erreger Bakterien [SNOMED CT]"
-Description: "Das ValueSet enthält Codes für Bakterien aus SNOMED CT."
-* include codes from system $SCT where concept descendent-of #409822003 
-
-ValueSet: VS_Erreger_Viren
-Id: vs-erreger-viren
-Title: "ValueSet - Erreger Viren [SNOMED CT]"
-Description: "Das ValueSet enthält Codes für Viren aus SNOMED CT."
-* include codes from system $SCT where concept descendent-of #49872002 
-
-// TODO: Examples
+Instance: example-erregerfall-mrsa
+InstanceOf: sd-erregerfall
+Usage: #example
+Title: "Beispiel Erregerfall MRSA"
+Description: "Beispiel eines Erregerfalls MRSA"
+* extension[summaryOf].valueReference = Reference(DiagnosticReport/example)
+* identifier[ErregerFallNummer].type = $v2-0203#LACSN
+* identifier[ErregerFallNummer].system = "https://www.charite.de/fhir/sid/erregerfaelle"
+* identifier[ErregerFallNummer].value = "0123456789"
+* basedOn = Reference(ServiceRequest/example)
+* status = #final
+* code = $loinc#96161-5 "Infectious disease Evaluation note"
+* subject = Reference(Patient/example-patient)
+//* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
+//* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
+* result[+] = Reference(example-erregernachweis-mrsa)
+* result[+] = Reference(example-mre-klasse-mrsa)
+* conclusionCode = $SCT#10828004 "Positive (qualifier value)"

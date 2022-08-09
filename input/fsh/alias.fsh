@@ -1,9 +1,12 @@
 Alias: $SCT = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
-
+Alias: $obs-category = http://terminology.hl7.org/CodeSystem/observation-category
+// MII KDS
 Alias: $ObservationLab = https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
-Alias: $Specimen = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+Alias: $ServiceRequestLab = https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Alias: $SpecimenBio = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+// HiGHmed
 Alias: $Keimzahl = http://highmed.org/fhir/StructureDefinition/ic/Keimzahl
 Alias: $Virulenzfaktor = http://highmed.org/fhir/StructureDefinition/ic/Virulenzfaktor
 Alias: $Resistenzmechanismus = http://highmed.org/fhir/StructureDefinition/ic/Resistenzmechanismus
