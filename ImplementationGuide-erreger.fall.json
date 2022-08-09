@@ -10,7 +10,7 @@
   "name": "ErregerFall",
   "title": "ErregerFall",
   "status": "draft",
-  "date": "2022-08-08T12:51:52+00:00",
+  "date": "2022-08-09T15:04:17+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -397,6 +397,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/untersuchungsauftrag"
+        },
+        "name": "Untersuchungsauftrag",
+        "description": "tbd",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -560,6 +574,20 @@
         "name": "Beispiel Erregernachweis MRSA",
         "description": "Beispiel für Erregernachweis von MRSA",
         "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/example-fragestellung"
+        },
+        "name": "example-fragestellung",
+        "description": "Beispiel eines Untersuchungsauftrags inkl. Fragestellung",
+        "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag"
       },
       {
         "extension": [

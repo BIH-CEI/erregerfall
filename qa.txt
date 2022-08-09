@@ -1,20 +1,22 @@
 ﻿ErregerFall : Validation Results
 =========================================
 
-err = 20, warn = 4, info = 3
+err = 21, warn = 4, info = 4
 IG Publisher Version: 1.1.128
-Generated Mon Aug 08 12:52:43 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
- Build Errors : 22 / 4 / 0
+Generated Tue Aug 09 15:05:27 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
+ Build Errors : 23 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-nicht-zaehlbar-grund : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/DiagnosticReport-example-abstrichserie : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-example-abstrichserie : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-erregerfall-mrsa : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-erreger.fall : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-erregernachweis-mrsa : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-mre-klasse-mrsa : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-example-fragestellung : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-abstrichserie : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-erregerfall : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-erregernachweis : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-mre-klasse : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-untersuchungsauftrag : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ValueSet-vs-abstrichserie-ergbenis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-erreger-bakterien : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-erreger-pilze : 0 / 0 / 1
@@ -31,11 +33,11 @@ ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/e
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sd-erregernachweis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sd-mre-klasse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum could not be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 370, column 1542: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 455, column 1520: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 608, column 1382: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 683, column 1542: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 768, column 1520: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 367, column 1542: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 446, column 1520: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 594, column 1394: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 666, column 1542: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-abstrichserie.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 745, column 1520: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 365, column 1552: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 444, column 1518: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 584, column 1380: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
@@ -44,17 +46,17 @@ ERROR: /github/workspace/output/StructureDefinition-sd-erregerfall.html#/html/bo
 ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 1330: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 524, column 1684: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 989, column 1546: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1083, column 1330: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1260, column 1684: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1080, column 1330: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sd-erregernachweis.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1257, column 1684: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 345, column 1397: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 486, column 1679: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 789, column 1541: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 845, column 1397: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sd-mre-klasse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 986, column 1679: The link 'unknown.html' for "Profile - Specimen - Bioprobe - Core" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-untersuchungsauftrag.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 923, column 450: The link '??' for "ValueSetOrderCodes (missing link)" cannot be resolved
 == fsh-generated/resources/CodeSystem-cs-nicht-zaehlbar-grund.json ==
 INFORMATION: CodeSystem/cs-nicht-zaehlbar-grund: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/DiagnosticReport-example-abstrichserie.json ==
-ERROR: DiagnosticReport/example-abstrichserie: DiagnosticReport.basedOn[0]: Unable to resolve resource with reference 'ServiceRequest/example'
 ERROR: DiagnosticReport/example-abstrichserie: DiagnosticReport.subject: Unable to resolve resource with reference 'Patient/example-patient'
 == fsh-generated/resources/DiagnosticReport-example-erregerfall-mrsa.json ==
 ERROR: DiagnosticReport/example-erregerfall-mrsa: DiagnosticReport.extension[0].value.ofType(Reference): Unable to resolve resource with reference 'DiagnosticReport/example'
@@ -72,6 +74,9 @@ ERROR: Observation/example-mre-klasse-mrsa: Observation.identifier[0].assigner: 
 ERROR: Observation/example-mre-klasse-mrsa: Observation.category[0]: Observation.category.coding:loinc-observation: minimum required = 1, but only found 0 (from https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse)
 ERROR: Observation/example-mre-klasse-mrsa: Observation.category[0]: Observation.category.coding:loinc-microbiology-studies: max allowed = 1, but found 2 (from https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse)
 ERROR: Observation/example-mre-klasse-mrsa: Observation.subject: Unable to resolve resource with reference 'Patient/example'
+== fsh-generated/resources/ServiceRequest-example-fragestellung.json ==
+ERROR: ServiceRequest/example-fragestellung: ServiceRequest.identifier[0].assigner: Unable to resolve resource with reference 'Organization/Charite'
+ERROR: ServiceRequest/example-fragestellung: ServiceRequest.subject: Unable to resolve resource with reference 'Patient/example-patient'
 == fsh-generated/resources/StructureDefinition-sd-abstrichserie.json ==
 ERROR: Profil - Abstrichserie.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf]]].DiagnosticReport.extension: Element DiagnosticReport.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/sd-abstrichserie: StructureDefinition: Element DiagnosticReport.extension: derived max (*) cannot be greater than base max (1)
@@ -82,6 +87,8 @@ ERROR: StructureDefinition/sd-erregerfall: StructureDefinition: Element Diagnost
 INFORMATION: StructureDefinition/sd-erregernachweis: StructureDefinition.snapshot.element[37].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/StructureDefinition-sd-mre-klasse.json ==
 INFORMATION: StructureDefinition/sd-mre-klasse: StructureDefinition.snapshot.element[37].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-untersuchungsauftrag.json ==
+INFORMATION: StructureDefinition/untersuchungsauftrag: StructureDefinition.snapshot.element[37].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/ValueSet-vs-abstrichserie-ergbenis.json ==
 == fsh-generated/resources/ValueSet-vs-erreger-bakterien.json ==
 == fsh-generated/resources/ValueSet-vs-erreger-pilze.json ==

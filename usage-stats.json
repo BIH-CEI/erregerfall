@@ -23,6 +23,12 @@
         "url": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse",
         "title": "Profil - MRE Klasse"
       }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag",
+        "title": "Untersuchungsauftrag"
+      }
     ]
   },
   "usage": {
@@ -67,9 +73,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode": [
-      "DiagnosticReport"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

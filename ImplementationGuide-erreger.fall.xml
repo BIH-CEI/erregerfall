@@ -11,7 +11,7 @@
   <name value="ErregerFall"/>
   <title value="ErregerFall"/>
   <status value="draft"/>
-  <date value="2022-08-08T12:51:52+00:00"/>
+  <date value="2022-08-09T15:04:17+00:00"/>
   <publisher value="Berlin Institute of Health"/>
   <contact>
     <name value="Berlin Institute of Health"/>
@@ -260,6 +260,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/untersuchungsauftrag"/>
+      </reference>
+      <name value="Untersuchungsauftrag"/>
+      <description value="tbd"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -389,6 +400,17 @@
       <name value="Beispiel Erregernachweis MRSA"/>
       <description value="Beispiel für Erregernachweis von MRSA"/>
       <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-fragestellung"/>
+      </reference>
+      <name value="example-fragestellung"/>
+      <description value="Beispiel eines Untersuchungsauftrags inkl. Fragestellung"/>
+      <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -565,7 +565,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"closed","Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Observation.component:NachweisBakterien.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+"Observation.component:NachweisBakterien.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-bakterien","",,,,"Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -614,7 +614,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"closed","Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Observation.component:NachweisPilze.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+"Observation.component:NachweisPilze.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-pilze","",,,,"Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -663,7 +663,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"closed","Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Observation.component:NachweisVirus.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+"Observation.component:NachweisVirus.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://charite.de/fhir/erregerfall/ValueSet/vs-erreger-viren","",,,,"Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

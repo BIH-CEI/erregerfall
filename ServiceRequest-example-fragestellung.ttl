@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/ServiceRequest/example-fragestellung> a fhir:ServiceRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-fragestellung"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag";
+       fhir:index 0;
+       fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"example-fragestellung\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-untersuchungsauftrag.html\">Untersuchungsauftrag</a></p></div><p><b>identifier</b>: Placer Identifier: 1234567890</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Staphylococcus aureus capsular polysaccharide enzyme cpe gene [Presence] in Nose by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#79447-9)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@1.0.7-alpha1&amp;canonical=de.medizininformatikinitiative.kerndatensatz.laborbefund/Patient/example-patient\">Patient/example-patient</a></p><p><b>authoredOn</b>: 2021-01-01</p><p><b>reasonCode</b>: MRSA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#115329001 \"Methicillin resistant Staphylococcus aureus (organism)\")</span></p></div>"
+  ];
+  fhir:ServiceRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "PLAC" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://example.org/fhir/sid/anforderung-lab-identifier" ];
+     fhir:Identifier.value [ fhir:value "1234567890" ];
+     fhir:Identifier.assigner [
+       fhir:link <https://charite.de/fhir/erregerfall/Organization/Charite>;
+       fhir:Reference.reference [ fhir:value "Organization/Charite" ]
+     ]
+  ];
+  fhir:ServiceRequest.status [ fhir:value "completed"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:79447-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "79447-9" ]
+     ]
+  ];
+  fhir:ServiceRequest.subject [
+     fhir:link <https://charite.de/fhir/erregerfall/Patient/example-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ];
+  fhir:ServiceRequest.authoredOn [ fhir:value "2021-01-01"^^xsd:date];
+  fhir:ServiceRequest.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:115329001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "115329001" ];
+       fhir:Coding.display [ fhir:value "Methicillin resistant Staphylococcus aureus (organism)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "MRSA" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/ServiceRequest/example-fragestellung.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

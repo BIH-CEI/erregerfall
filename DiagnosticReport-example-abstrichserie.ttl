@@ -23,19 +23,6 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a sct:115329001;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "115329001" ];
-         fhir:Coding.display [ fhir:value "Methicillin resistant Staphylococcus aureus (organism)" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "MRSA" ]
-     ]
-  ], [
-     fhir:index 1;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf" ];
      fhir:Extension.valueReference [
        fhir:link <https://charite.de/fhir/erregerfall/DiagnosticReport/example-erregerfall-mrsa>;
@@ -60,8 +47,8 @@
   ];
   fhir:DiagnosticReport.basedOn [
      fhir:index 0;
-     fhir:link <https://charite.de/fhir/erregerfall/ServiceRequest/example>;
-     fhir:Reference.reference [ fhir:value "ServiceRequest/example" ]
+     fhir:link <https://charite.de/fhir/erregerfall/ServiceRequest/example-fragestellung>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/example-fragestellung" ]
   ];
   fhir:DiagnosticReport.status [ fhir:value "final"];
   fhir:DiagnosticReport.code [

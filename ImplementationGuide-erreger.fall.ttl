@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.title [ fhir:value "ErregerFall"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-08T12:51:52+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-09T15:04:17+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -382,6 +382,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/untersuchungsauftrag" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Untersuchungsauftrag" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -392,7 +406,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -406,7 +420,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für den Erregerstatus eines Patienten." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -420,7 +434,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Bakterien aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -434,7 +448,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Pilze aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -448,7 +462,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes für Viren aus SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -462,7 +476,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -476,7 +490,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -490,7 +504,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -504,7 +518,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "tbd" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -521,7 +535,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-abstrichserie>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -538,7 +552,7 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -555,7 +569,24 @@
          fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://charite.de/fhir/erregerfall/ServiceRequest/example-fragestellung>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-fragestellung" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-fragestellung" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Beispiel eines Untersuchungsauftrags inkl. Fragestellung" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag";
+         fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag>
+       ]
+     ], [
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

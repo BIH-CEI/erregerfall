@@ -8,16 +8,6 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 78258-1}">Infectious disease Diagnostic study note</span> </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><p><b>Coded Conclusions :</b></p><ul><li><span title="Codes: {http://snomed.info/sct 10828004}">Positive (qualifier value)</span></li></ul></div>
   </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/workflow-reasonCode">
-    <valueCodeableConcept>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="115329001"/>
-        <display value="Methicillin resistant Staphylococcus aureus (organism)"/>
-      </coding>
-      <text value="MRSA"/>
-    </valueCodeableConcept>
-  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf">
     <valueReference>
       <reference value="DiagnosticReport/example-erregerfall-mrsa"/>
@@ -38,7 +28,7 @@
     <value value="0123456789"/>
   </identifier>
   <basedOn>
-    <reference value="ServiceRequest/example"/>
+    <reference value="ServiceRequest/example-fragestellung"/>
   </basedOn>
   <status value="final"/>
   <code>

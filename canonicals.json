@@ -42,6 +42,13 @@
     "name": "Profil_MREKlasse"
   },
   {
+    "id": "untersuchungsauftrag",
+    "type": "StructureDefinition",
+    "url": "https://charite.de/fhir/erregerfall/StructureDefinition/untersuchungsauftrag",
+    "version": "0.1.0",
+    "name": "Untersuchungsauftrag"
+  },
+  {
     "id": "vs-abstrichserie-ergbenis",
     "type": "ValueSet",
     "url": "https://charite.de/fhir/erregerfall/ValueSet/vs-abstrichserie-ergbenis",

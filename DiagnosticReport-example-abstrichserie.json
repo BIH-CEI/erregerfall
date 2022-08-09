@@ -12,19 +12,6 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "115329001",
-            "display": "Methicillin resistant Staphylococcus aureus (organism)"
-          }
-        ],
-        "text": "MRSA"
-      }
-    },
-    {
       "url": "http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf",
       "valueReference": {
         "reference": "DiagnosticReport/example-erregerfall-mrsa",
@@ -51,7 +38,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/example"
+      "reference": "ServiceRequest/example-fragestellung"
     }
   ],
   "status": "final",
