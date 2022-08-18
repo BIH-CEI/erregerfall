@@ -1,9 +1,9 @@
 ﻿ErregerFall : Validation Results
 =========================================
 
-err = 31, warn = 4, info = 6
+err = 29, warn = 4, info = 6
 IG Publisher Version: 1.1.128
-Generated Thu Aug 18 12:43:12 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
+Generated Thu Aug 18 12:49:13 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
  Build Errors : 23 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-nicht-zaehlbar-grund : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-abstrichserie : 1 / 0 / 1
@@ -13,7 +13,7 @@ Generated Thu Aug 18 12:43:12 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.
  /github/workspace/fsh-generated/resources/Observation-example-erregernachweis-mrsa : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-mre-klasse-mrsa : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-example-fragestellung : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-sd-abstrichserie : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-abstrichserie : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-erregerfall : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-erregernachweis : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-mre-klasse : 0 / 0 / 2
@@ -92,8 +92,6 @@ ERROR: Observation/example-mre-klasse-mrsa: Observation.subject: Unable to resol
 ERROR: ServiceRequest/example-fragestellung: ServiceRequest.identifier[0].assigner: Unable to resolve resource with reference 'Organization/Charite'
 ERROR: ServiceRequest/example-fragestellung: ServiceRequest.subject: Unable to resolve resource with reference 'Patient/example-patient'
 == fsh-generated/resources/StructureDefinition-sd-abstrichserie.json ==
-ERROR: Profil - Abstrichserie.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf]]].DiagnosticReport.extension: Element DiagnosticReport.extension: derived max (*) cannot be greater than base max (1)
-ERROR: StructureDefinition/sd-abstrichserie: StructureDefinition: Element DiagnosticReport.extension: derived max (*) cannot be greater than base max (1)
 == fsh-generated/resources/StructureDefinition-sd-erregerfall.json ==
 ERROR: Profil - ErregerFall.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf]]].DiagnosticReport.extension: Element DiagnosticReport.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/sd-erregerfall: StructureDefinition: Element DiagnosticReport.extension: derived max (*) cannot be greater than base max (1)

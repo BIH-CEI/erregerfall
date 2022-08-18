@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DiagnosticReport.extension:summaryOf","DiagnosticReport.extension","summaryOf","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf]]} {[]}
+"DiagnosticReport.extension:summaryOf","DiagnosticReport.extension","summaryOf","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf]]} {[]}
 ","weitere Befunde","Liste von Auftragsnummern mit zu der Abstrichserie zugehörigen Befunden","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

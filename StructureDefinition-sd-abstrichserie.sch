@@ -10,6 +10,12 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:DiagnosticReport</sch:title>
+    <sch:rule context="f:DiagnosticReport">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>DiagnosticReport</sch:title>
     <sch:rule context="f:DiagnosticReport">
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
