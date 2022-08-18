@@ -188,3 +188,65 @@ Description: "Beispiel eines Erregerfalls MRSA"
 * result[+] = Reference(example-erregernachweis-mrsa)
 * result[+] = Reference(example-mre-klasse-mrsa)
 * conclusionCode = $SCT#10828004 "Positive (qualifier value)"
+
+Instance: example-erregerfall-mrsa-contained
+InstanceOf: sd-erregerfall
+Usage: #example
+Title: "Beispiel Erregerfall MRSA"
+Description: "Beispiel eines Erregerfalls MRSA"
+* contained[0] = example-erregernachweis-mrsa-inline
+* contained[1] = example-mre-klasse-mrsa-inline
+* extension[summaryOf].valueReference = Reference(DiagnosticReport/example)
+* identifier[ErregerFallNummer].type = $v2-0203#LACSN
+* identifier[ErregerFallNummer].system = "https://www.charite.de/fhir/sid/erregerfaelle"
+* identifier[ErregerFallNummer].value = "0123456789"
+* basedOn = Reference(ServiceRequest/example)
+* status = #final
+* code = $loinc#96161-5 "Infectious disease Evaluation note"
+* subject = Reference(Patient/example-patient)
+//* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
+//* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
+* result[+] = Reference(example-erregernachweis-mrsa-inline)
+* result[+] = Reference(example-mre-klasse-mrsa-inline)
+* conclusionCode = $SCT#10828004 "Positive (qualifier value)"
+
+Instance: example-mre-klasse-mrsa-inline
+InstanceOf: sd-mre-klasse
+Usage: #inline
+Title: "Beispiel - MRE Klasse MRSA"
+Description: "Beispiel für MRE Klasse MRSA"
+* status = #final
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "59826-8_1234567890"
+* identifier[analyseBefundCode].assigner = Reference(Organization/example)
+//* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+//* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
+* category = $loinc#18725-2 "Microbiology studies (set)"
+* code = $loinc#99780-9 "Multidrug resistant gram-negative organism classification [Type]"
+* subject = Reference(Patient/example)
+* effectiveDateTime = "2022-05-31"
+* valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
+
+Instance: example-erregernachweis-mrsa-inline
+InstanceOf: sd-erregernachweis
+Usage: #example
+Title: "Beispiel Erregernachweis MRSA"
+Description: "Beispiel für Erregernachweis von MRSA"
+* status = #final
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/lab-tests"
+* identifier[analyseBefundCode].value = "59826-8_1234567890"
+* identifier[analyseBefundCode].assigner = Reference(Organization/charite)
+* category.coding[loinc-microbiology-studies] = $loinc#18725-2
+* code.coding[loinc-microorganism] = $loinc#11475-1
+* subject = Reference(Patient/example)
+* effectiveDateTime = "2022-05-31"
+* specimen = Reference(Specimen/example)
+* valueCodeableConcept = $SCT#260373001 "Detected (qualifier value)"
+* component[NachweisBakterien].code = $loinc#6463-4 "Bacteria identified in Specimen by Culture"
+* component[NachweisBakterien].valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
+* component[Erstnachweisdatum].code = $loinc#99350-1 "Date of first infection onset"
+* component[Erstnachweisdatum].valueDateTime = "2022-05-31"
+* component[Nachweisort].code = $loinc#81267-7 "Setting of exposure to illness"
+* component[Nachweisort].valueString = "CBF Station 12"
