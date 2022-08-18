@@ -5,7 +5,7 @@ Title: "Profil - Abstrichserie"
 Description: "Eine Abstrichserie besteht aus einem oder mehreren Befunden, die für einen bestimmten Erreger relevant sind und als Grundlage für eine medizinische Entscheidung dienen"
 * extension contains
     // http://hl7.org/fhir/StructureDefinition/workflow-reasonCode named reasonCode 0..1 MS and
-    http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf named summaryOf 0..* MS
+    http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf named summaryOf 0..1 MS
 // * extension[reasonCode]
 // * extension[reasonCode] ^short = "Fragestellung"
 // * extension[reasonCode].valueCodeableConcept from VS_Mikrobiologischer_Befund_MRE_Klasse (required)
