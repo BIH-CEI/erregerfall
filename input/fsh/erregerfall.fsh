@@ -230,7 +230,7 @@ Description: "Beispiel für MRE Klasse MRSA"
 
 Instance: example-erregernachweis-mrsa-inline
 InstanceOf: sd-erregernachweis
-Usage: #example
+Usage: #inline
 Title: "Beispiel Erregernachweis MRSA"
 Description: "Beispiel für Erregernachweis von MRSA"
 * status = #final
