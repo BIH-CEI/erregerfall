@@ -1,9 +1,9 @@
 ﻿ErregerFall : Validation Results
 =========================================
 
-err = 34, warn = 4, info = 6
+err = 31, warn = 4, info = 6
 IG Publisher Version: 1.1.128
-Generated Thu Aug 18 12:40:57 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
+Generated Thu Aug 18 12:43:12 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
  Build Errors : 23 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-nicht-zaehlbar-grund : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-abstrichserie : 1 / 0 / 1
@@ -11,7 +11,6 @@ Generated Thu Aug 18 12:40:57 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-erregerfall-mrsa-contained : 10 / 0 / 7
  /github/workspace/fsh-generated/resources/ImplementationGuide-erreger.fall : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-erregernachweis-mrsa : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-example-erregernachweis-mrsa-inline : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-mre-klasse-mrsa : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-example-fragestellung : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-abstrichserie : 2 / 0 / 1
@@ -84,10 +83,6 @@ ERROR: ImplementationGuide/erreger.fall: ImplementationGuide.dependsOn[2].uri: C
 ERROR: Observation/example-erregernachweis-mrsa: Observation.identifier[0].assigner: Unable to resolve resource with reference 'Organization/charite'
 ERROR: Observation/example-erregernachweis-mrsa: Observation.subject: Unable to resolve resource with reference 'Patient/example'
 ERROR: Observation/example-erregernachweis-mrsa: Observation.specimen: Unable to resolve resource with reference 'Specimen/example'
-== fsh-generated/resources/Observation-example-erregernachweis-mrsa-inline.json ==
-ERROR: Observation/example-erregernachweis-mrsa-inline: Observation.identifier[0].assigner: Unable to resolve resource with reference 'Organization/charite'
-ERROR: Observation/example-erregernachweis-mrsa-inline: Observation.subject: Unable to resolve resource with reference 'Patient/example'
-ERROR: Observation/example-erregernachweis-mrsa-inline: Observation.specimen: Unable to resolve resource with reference 'Specimen/example'
 == fsh-generated/resources/Observation-example-mre-klasse-mrsa.json ==
 ERROR: Observation/example-mre-klasse-mrsa: Observation.identifier[0].assigner: Unable to resolve resource with reference 'Organization/example'
 ERROR: Observation/example-mre-klasse-mrsa: Observation.category[0]: Observation.category.coding:loinc-observation: minimum required = 1, but only found 0 (from https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse)
