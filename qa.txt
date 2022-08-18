@@ -3,7 +3,7 @@
 
 err = 29, warn = 4, info = 6
 IG Publisher Version: 1.1.128
-Generated Thu Aug 18 12:49:13 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
+Generated Thu Aug 18 13:04:40 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
  Build Errors : 23 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-nicht-zaehlbar-grund : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-abstrichserie : 1 / 0 / 1
@@ -74,8 +74,8 @@ ERROR: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.con
 ERROR: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.extension[0].value.ofType(Reference): Unable to resolve resource with reference 'DiagnosticReport/example'
 ERROR: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.basedOn[0]: Unable to resolve resource with reference 'ServiceRequest/example'
 ERROR: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.subject: Unable to resolve resource with reference 'Patient/example-patient'
-INFORMATION: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.result[0]: Details for #example-erregernachweis-mrsa-inline matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.result[1]: Details for #example-mre-klasse-mrsa-inline matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.result[0]: Details for #example-erregernachweis-mrsa matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: DiagnosticReport/example-erregerfall-mrsa-contained: DiagnosticReport.result[1]: Details for #example-mre-klasse-mrsa matching against Profile http://hl7.org/fhir/StructureDefinition/Observation
 == fsh-generated/resources/ImplementationGuide-erreger.fall.json ==
 ERROR: ImplementationGuide/erreger.fall: ImplementationGuide.dependsOn[1].uri: Canonical URLs must be absolute URLs if they are not fragment references (de.medizininformatikinitiative.kerndatensatz.laborbefund)
 ERROR: ImplementationGuide/erreger.fall: ImplementationGuide.dependsOn[2].uri: Canonical URLs must be absolute URLs if they are not fragment references (de.medizininformatikinitiative.kerndatensatz.biobank)

@@ -10,7 +10,7 @@
   </text>
   <contained>
     <Observation>
-      <id value="example-erregernachweis-mrsa-inline"/>
+      <id value="example-erregernachweis-mrsa"/>
       <meta>
         <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"/>
       </meta>
@@ -102,7 +102,7 @@
   </contained>
   <contained>
     <Observation>
-      <id value="example-mre-klasse-mrsa-inline"/>
+      <id value="example-mre-klasse-mrsa"/>
       <meta>
         <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse"/>
       </meta>
@@ -185,10 +185,10 @@
     <reference value="Patient/example-patient"/>
   </subject>
   <result>
-    <reference value="#example-erregernachweis-mrsa-inline"/>
+    <reference value="#example-erregernachweis-mrsa"/>
   </result>
   <result>
-    <reference value="#example-mre-klasse-mrsa-inline"/>
+    <reference value="#example-mre-klasse-mrsa"/>
   </result>
   <conclusionCode>
     <coding>

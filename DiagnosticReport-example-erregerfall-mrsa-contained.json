@@ -13,7 +13,7 @@
   "contained": [
     {
       "resourceType": "Observation",
-      "id": "example-erregernachweis-mrsa-inline",
+      "id": "example-erregernachweis-mrsa",
       "meta": {
         "profile": [
           "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"
@@ -128,7 +128,7 @@
     },
     {
       "resourceType": "Observation",
-      "id": "example-mre-klasse-mrsa-inline",
+      "id": "example-mre-klasse-mrsa",
       "meta": {
         "profile": [
           "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse"
@@ -237,10 +237,10 @@
   },
   "result": [
     {
-      "reference": "#example-erregernachweis-mrsa-inline"
+      "reference": "#example-erregernachweis-mrsa"
     },
     {
-      "reference": "#example-mre-klasse-mrsa-inline"
+      "reference": "#example-mre-klasse-mrsa"
     }
   ],
   "conclusionCode": [

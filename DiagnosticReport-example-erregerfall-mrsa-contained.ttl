@@ -24,7 +24,7 @@
   fhir:DomainResource.contained [
      a fhir:Observation;
      fhir:index 0;
-     fhir:Resource.id [ fhir:value "example-erregernachweis-mrsa-inline" ];
+     fhir:Resource.id [ fhir:value "example-erregernachweis-mrsa" ];
      fhir:Resource.meta [
        fhir:Meta.profile [
          fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis";
@@ -141,7 +141,7 @@
   ], [
      a fhir:Observation;
      fhir:index 1;
-     fhir:Resource.id [ fhir:value "example-mre-klasse-mrsa-inline" ];
+     fhir:Resource.id [ fhir:value "example-mre-klasse-mrsa" ];
      fhir:Resource.meta [
        fhir:Meta.profile [
          fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse";
@@ -250,10 +250,10 @@
   ];
   fhir:DiagnosticReport.result [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "#example-erregernachweis-mrsa-inline" ]
+     fhir:Reference.reference [ fhir:value "#example-erregernachweis-mrsa" ]
   ], [
      fhir:index 1;
-     fhir:Reference.reference [ fhir:value "#example-mre-klasse-mrsa-inline" ]
+     fhir:Reference.reference [ fhir:value "#example-mre-klasse-mrsa" ]
   ];
   fhir:DiagnosticReport.conclusionCode [
      fhir:index 0;

@@ -1,9 +1,13 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ERREGER.FALL\Observation - FHIR v4.0.1</title>
+    <title>ERREGER.FALL\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.17.2"}
-    h3,h4,h5,h6{--heading-prefix:"6.17.2"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -105,7 +109,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><a href='DiagnosticReport-example-erregerfall-mrsa-contained.html'><b>Beispiel Erregerfall MRSA</b></a></li><li><b>Observation</b></li>
+          
 
         </ul>
       </div>  <!-- /container -->
@@ -117,9 +121,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ErregerFall - Local Development build (v0.1.0). See the <a href="https://charite.de/fhir/erregerfall/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ErregerFall - Local Development build (v0.1.0). See the <a href="https://charite.de/fhir/erregerfall/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -131,8 +135,8 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="Observation-example-erregerfall-mrsa-contained_example-mre-klasse-mrsa.html">Narrative Content</a>
   </li>
 
 
@@ -144,42 +148,13 @@
 
 
   <a name="root"> </a>
-
-
-  <h2 id="root">: Observation</h2>
-
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          
-          
-        
-      </td>
-
-    </tr>
-  </table>
-
+  <h2 id="root">: DiagnosticReport/example-erregerfall-mrsa-contained - Change History</h2>
+  <p>History of changes for example-erregerfall-mrsa-contained_example-mre-klasse-mrsa .</p>
 
   
-
-
-  <!-- insert intro if present -->
-  
-
-
-
-  <div><p><b>Generated Narrative: Observation</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;example-mre-klasse-mrsa-inline&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-sd-mre-klasse.html">Profil - MRE Klasse</a></p></div><p><b>identifier</b>: Observation Instance Identifier: 59826-8_1234567890</p><p><b>status</b>: FINAL</p><p><b>category</b>: Microbiology studies (set) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#18725-2; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory; <a href="https://loinc.org/">LOINC</a>#18725-2)</span></p><p><b>code</b>: Multidrug resistant gram-negative organism classification [Type] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#99780-9)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@1.0.7-alpha1&amp;canonical=de.medizininformatikinitiative.kerndatensatz.laborbefund/Patient/example">Patient/example</a></p><p><b>effective</b>: 2022-05-31</p><p><b>value</b>: Methicillin resistant Staphylococcus aureus (organism) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#115329001)</span></p></div>
-
-  
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -187,6 +162,29 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -201,7 +199,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health</a>.  Package erreger.fall#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 18, 2022 12:48+0000">2022-08-18</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health</a>.  Package erreger.fall#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 18, 2022 13:03+0000">2022-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
