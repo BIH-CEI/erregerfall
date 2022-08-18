@@ -86,7 +86,7 @@ InstanceOf: untersuchungsauftrag
 Usage: #example
 Title: "example-fragestellung"
 Description: "Beispiel eines Untersuchungsauftrags inkl. Fragestellung"
-* identifier[anforderung].system = "https://example.org/fhir/sid/anforderung-lab-identifier"
+* identifier[anforderung].system = "https://www.charite.de/fhir/sid/anforderung-lab-identifier"
 * identifier[anforderung].value = "1234567890"
 * identifier[anforderung].assigner = Reference(Organization/Charite)
 * status = #completed
