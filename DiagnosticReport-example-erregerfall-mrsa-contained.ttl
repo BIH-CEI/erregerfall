@@ -1,0 +1,275 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/DiagnosticReport/example-erregerfall-mrsa-contained> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-erregerfall-mrsa-contained"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall";
+       fhir:index 0;
+       fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 96161-5}\">Infectious disease Evaluation note</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td colspan=\"3\"><i>This Observation could not be resolved</i></td></tr><tr><td colspan=\"3\"><i>This Observation could not be resolved</i></td></tr></table><p><b>Coded Conclusions :</b></p><ul><li><span title=\"Codes: {http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></li></ul></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Observation;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "example-erregernachweis-mrsa-inline" ];
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis";
+         fhir:index 0;
+         fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis>
+       ]
+     ];
+     fhir:Observation.identifier [
+       fhir:index 0;
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+           fhir:Coding.code [ fhir:value "OBI" ]
+         ]
+       ];
+       fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/lab-tests" ];
+       fhir:Identifier.value [ fhir:value "59826-8_1234567890" ];
+       fhir:Identifier.assigner [
+         fhir:link <https://charite.de/fhir/erregerfall/Organization/charite>;
+         fhir:Reference.reference [ fhir:value "Organization/charite" ]
+       ]
+     ];
+     fhir:Observation.status [ fhir:value "final" ];
+     fhir:Observation.category [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:26436-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "26436-6" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+         fhir:Coding.code [ fhir:value "laboratory" ]
+       ], [
+         fhir:index 2;
+         a loinc:18725-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "18725-2" ]
+       ]
+     ];
+     fhir:Observation.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:11475-1;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "11475-1" ]
+       ]
+     ];
+     fhir:Observation.subject [
+       fhir:link <https://charite.de/fhir/erregerfall/Patient/example>;
+       fhir:Reference.reference [ fhir:value "Patient/example" ]
+     ];
+     fhir:Observation.effectiveDateTime [ fhir:value "2022-05-31"^^xsd:date ];
+     fhir:Observation.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:260373001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "260373001" ];
+         fhir:Coding.display [ fhir:value "Detected (qualifier value)" ]
+       ]
+     ];
+     fhir:Observation.specimen [
+       fhir:link <https://charite.de/fhir/erregerfall/Specimen/example>;
+       fhir:Reference.reference [ fhir:value "Specimen/example" ]
+     ];
+     fhir:Observation.component [
+       fhir:index 0;
+       fhir:Observation.component.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:6463-4;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "6463-4" ];
+           fhir:Coding.display [ fhir:value "Bacteria identified in Specimen by Culture" ]
+         ]
+       ];
+       fhir:Observation.component.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a sct:115329001;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "115329001" ];
+           fhir:Coding.display [ fhir:value "Methicillin resistant Staphylococcus aureus (organism)" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Observation.component.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:99350-1;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "99350-1" ];
+           fhir:Coding.display [ fhir:value "Date of first infection onset" ]
+         ]
+       ];
+       fhir:Observation.component.valueDateTime [ fhir:value "2022-05-31"^^xsd:date ]
+     ], [
+       fhir:index 2;
+       fhir:Observation.component.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:81267-7;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "81267-7" ];
+           fhir:Coding.display [ fhir:value "Setting of exposure to illness" ]
+         ]
+       ];
+       fhir:Observation.component.valueString [ fhir:value "CBF Station 12" ]
+     ]
+  ], [
+     a fhir:Observation;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "example-mre-klasse-mrsa-inline" ];
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse";
+         fhir:index 0;
+         fhir:link <https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse>
+       ]
+     ];
+     fhir:Observation.identifier [
+       fhir:index 0;
+       fhir:Identifier.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+           fhir:Coding.code [ fhir:value "OBI" ]
+         ]
+       ];
+       fhir:Identifier.system [ fhir:value "https://exmaple.org/fhir/sid/test-lab-results" ];
+       fhir:Identifier.value [ fhir:value "59826-8_1234567890" ];
+       fhir:Identifier.assigner [
+         fhir:link <https://charite.de/fhir/erregerfall/Organization/example>;
+         fhir:Reference.reference [ fhir:value "Organization/example" ]
+       ]
+     ];
+     fhir:Observation.status [ fhir:value "final" ];
+     fhir:Observation.category [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:18725-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "18725-2" ];
+         fhir:Coding.display [ fhir:value "Microbiology studies (set)" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+         fhir:Coding.code [ fhir:value "laboratory" ]
+       ], [
+         fhir:index 2;
+         a loinc:18725-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "18725-2" ]
+       ]
+     ];
+     fhir:Observation.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:99780-9;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "99780-9" ];
+         fhir:Coding.display [ fhir:value "Multidrug resistant gram-negative organism classification [Type]" ]
+       ]
+     ];
+     fhir:Observation.subject [
+       fhir:link <https://charite.de/fhir/erregerfall/Patient/example>;
+       fhir:Reference.reference [ fhir:value "Patient/example" ]
+     ];
+     fhir:Observation.effectiveDateTime [ fhir:value "2022-05-31"^^xsd:date ];
+     fhir:Observation.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:115329001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "115329001" ];
+         fhir:Coding.display [ fhir:value "Methicillin resistant Staphylococcus aureus (organism)" ]
+       ]
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://charite.de/fhir/erregerfall/DiagnosticReport/example>;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/example" ]
+     ]
+  ];
+  fhir:DiagnosticReport.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "LACSN" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/erregerfaelle" ];
+     fhir:Identifier.value [ fhir:value "0123456789" ]
+  ];
+  fhir:DiagnosticReport.basedOn [
+     fhir:index 0;
+     fhir:link <https://charite.de/fhir/erregerfall/ServiceRequest/example>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/example" ]
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:96161-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "96161-5" ];
+       fhir:Coding.display [ fhir:value "Infectious disease Evaluation note" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://charite.de/fhir/erregerfall/Patient/example-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "#example-erregernachweis-mrsa-inline" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "#example-mre-klasse-mrsa-inline" ]
+  ];
+  fhir:DiagnosticReport.conclusionCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:10828004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "10828004" ];
+       fhir:Coding.display [ fhir:value "Positive (qualifier value)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://charite.de/fhir/erregerfall/DiagnosticReport/example-erregerfall-mrsa-contained.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

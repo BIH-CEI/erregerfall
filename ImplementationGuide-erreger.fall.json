@@ -10,7 +10,7 @@
   "name": "ErregerFall",
   "title": "ErregerFall",
   "status": "draft",
-  "date": "2022-08-09T15:04:17+00:00",
+  "date": "2022-08-18T12:34:44+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -565,11 +565,39 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/example-erregerfall-mrsa-contained"
+        },
+        "name": "Beispiel Erregerfall MRSA",
+        "description": "Beispiel eines Erregerfalls MRSA",
+        "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
         "reference": {
           "reference": "Observation/example-erregernachweis-mrsa"
+        },
+        "name": "Beispiel Erregernachweis MRSA",
+        "description": "Beispiel für Erregernachweis von MRSA",
+        "exampleCanonical": "https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-erregernachweis-mrsa-inline"
         },
         "name": "Beispiel Erregernachweis MRSA",
         "description": "Beispiel für Erregernachweis von MRSA",

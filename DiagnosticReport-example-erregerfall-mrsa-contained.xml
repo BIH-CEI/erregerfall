@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="example-erregerfall-mrsa-contained"/>
+  <meta>
+    <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 96161-5}">Infectious disease Evaluation note</span> </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Identifier:</td><td> Laboratory Accession ID: 0123456789</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td colspan="3"><i>This Observation could not be resolved</i></td></tr><tr><td colspan="3"><i>This Observation could not be resolved</i></td></tr></table><p><b>Coded Conclusions :</b></p><ul><li><span title="Codes: {http://snomed.info/sct 10828004}">Positive (qualifier value)</span></li></ul></div>
+  </text>
+  <contained>
+    <Observation>
+      <id value="example-erregernachweis-mrsa-inline"/>
+      <meta>
+        <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"/>
+      </meta>
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="OBI"/>
+          </coding>
+        </type>
+        <system value="https://www.charite.de/fhir/sid/lab-tests"/>
+        <value value="59826-8_1234567890"/>
+        <assigner>
+          <reference value="Organization/charite"/>
+        </assigner>
+      </identifier>
+      <status value="final"/>
+      <category>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="26436-6"/>
+        </coding>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="laboratory"/>
+        </coding>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="18725-2"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="11475-1"/>
+        </coding>
+      </code>
+      <subject>
+        <reference value="Patient/example"/>
+      </subject>
+      <effectiveDateTime value="2022-05-31"/>
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="260373001"/>
+          <display value="Detected (qualifier value)"/>
+        </coding>
+      </valueCodeableConcept>
+      <specimen>
+        <reference value="Specimen/example"/>
+      </specimen>
+      <component>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="6463-4"/>
+            <display value="Bacteria identified in Specimen by Culture"/>
+          </coding>
+        </code>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="115329001"/>
+            <display value="Methicillin resistant Staphylococcus aureus (organism)"/>
+          </coding>
+        </valueCodeableConcept>
+      </component>
+      <component>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="99350-1"/>
+            <display value="Date of first infection onset"/>
+          </coding>
+        </code>
+        <valueDateTime value="2022-05-31"/>
+      </component>
+      <component>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="81267-7"/>
+            <display value="Setting of exposure to illness"/>
+          </coding>
+        </code>
+        <valueString value="CBF Station 12"/>
+      </component>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="example-mre-klasse-mrsa-inline"/>
+      <meta>
+        <profile value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-mre-klasse"/>
+      </meta>
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="OBI"/>
+          </coding>
+        </type>
+        <system value="https://exmaple.org/fhir/sid/test-lab-results"/>
+        <value value="59826-8_1234567890"/>
+        <assigner>
+          <reference value="Organization/example"/>
+        </assigner>
+      </identifier>
+      <status value="final"/>
+      <category>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="18725-2"/>
+          <display value="Microbiology studies (set)"/>
+        </coding>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="laboratory"/>
+        </coding>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="18725-2"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="99780-9"/>
+          <display value="Multidrug resistant gram-negative organism classification [Type]"/>
+        </coding>
+      </code>
+      <subject>
+        <reference value="Patient/example"/>
+      </subject>
+      <effectiveDateTime value="2022-05-31"/>
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="115329001"/>
+          <display value="Methicillin resistant Staphylococcus aureus (organism)"/>
+        </coding>
+      </valueCodeableConcept>
+    </Observation>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/diagnosticReport-summaryOf">
+    <valueReference>
+      <reference value="DiagnosticReport/example"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="LACSN"/>
+      </coding>
+    </type>
+    <system value="https://www.charite.de/fhir/sid/erregerfaelle"/>
+    <value value="0123456789"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/example"/>
+  </basedOn>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="96161-5"/>
+      <display value="Infectious disease Evaluation note"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-patient"/>
+  </subject>
+  <result>
+    <reference value="#example-erregernachweis-mrsa-inline"/>
+  </result>
+  <result>
+    <reference value="#example-mre-klasse-mrsa-inline"/>
+  </result>
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="10828004"/>
+      <display value="Positive (qualifier value)"/>
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

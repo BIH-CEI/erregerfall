@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "Profil_ErregerFall"];
   fhir:StructureDefinition.title [ fhir:value "Profil - ErregerFall"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-09T15:04:17+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-18T12:34:44+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

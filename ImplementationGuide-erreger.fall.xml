@@ -11,7 +11,7 @@
   <name value="ErregerFall"/>
   <title value="ErregerFall"/>
   <status value="draft"/>
-  <date value="2022-08-09T15:04:17+00:00"/>
+  <date value="2022-08-18T12:34:44+00:00"/>
   <publisher value="Berlin Institute of Health"/>
   <contact>
     <name value="Berlin Institute of Health"/>
@@ -392,10 +392,32 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/example-erregerfall-mrsa-contained"/>
+      </reference>
+      <name value="Beispiel Erregerfall MRSA"/>
+      <description value="Beispiel eines Erregerfalls MRSA"/>
+      <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregerfall"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
         <reference value="Observation/example-erregernachweis-mrsa"/>
+      </reference>
+      <name value="Beispiel Erregernachweis MRSA"/>
+      <description value="Beispiel für Erregernachweis von MRSA"/>
+      <exampleCanonical value="https://charite.de/fhir/erregerfall/StructureDefinition/sd-erregernachweis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-erregernachweis-mrsa-inline"/>
       </reference>
       <name value="Beispiel Erregernachweis MRSA"/>
       <description value="Beispiel für Erregernachweis von MRSA"/>
