@@ -15,7 +15,7 @@
         <code value="PLAC"/>
       </coding>
     </type>
-    <system value="https://example.org/fhir/sid/anforderung-lab-identifier"/>
+    <system value="https://www.charite.de/fhir/sid/anforderung-lab-identifier"/>
     <value value="1234567890"/>
     <assigner>
       <reference value="Organization/Charite"/>

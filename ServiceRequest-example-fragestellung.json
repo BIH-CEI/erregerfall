@@ -20,7 +20,7 @@
           }
         ]
       },
-      "system": "https://example.org/fhir/sid/anforderung-lab-identifier",
+      "system": "https://www.charite.de/fhir/sid/anforderung-lab-identifier",
       "value": "1234567890",
       "assigner": {
         "reference": "Organization/Charite"

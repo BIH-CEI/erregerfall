@@ -30,7 +30,7 @@
          fhir:Coding.code [ fhir:value "PLAC" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "https://example.org/fhir/sid/anforderung-lab-identifier" ];
+     fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/anforderung-lab-identifier" ];
      fhir:Identifier.value [ fhir:value "1234567890" ];
      fhir:Identifier.assigner [
        fhir:link <https://charite.de/fhir/erregerfall/Organization/Charite>;
