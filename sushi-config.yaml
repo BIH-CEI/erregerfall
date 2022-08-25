@@ -30,7 +30,7 @@ dependencies:
     version: 1.0.7-alpha1
   de.medizininformatikinitiative.kerndatensatz.biobank:
     uri: de.medizininformatikinitiative.kerndatensatz.biobank
-    version: 1.0.1
+    version: 1.0.3
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
