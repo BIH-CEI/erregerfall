@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8acaa4dd-8c71-4487-bb03-1f38fc4f2af6"/>
+  <id value="ea81e8d3-47d1-426e-9ba4-4e039e33fba4"/>
   <meta>
-    <lastUpdated value="2022-08-18T13:03:54.751+00:00"/>
+    <lastUpdated value="2022-08-25T08:38:52.897+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -66,7 +66,7 @@
         <name value="VS_Abstrichserie_Ergebnis"/>
         <title value="ValueSet - Abstrichserie Ergebnis [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -77,8 +77,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie."/>
         <expansion>
-          <identifier value="urn:uuid:ff3d4279-1076-4218-ae62-4a9f90d5b878"/>
-          <timestamp value="2022-08-18T13:04:25+00:00"/>
+          <identifier value="urn:uuid:2d9d5d81-c2db-4af0-b2d4-54a924df7204"/>
+          <timestamp value="2022-08-25T08:39:23+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -183,7 +183,7 @@
         <name value="VS_ErregerStatus"/>
         <title value="ValueSet - ErregerStatus [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -194,8 +194,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes für den Erregerstatus eines Patienten."/>
         <expansion>
-          <identifier value="urn:uuid:2812cf3f-23b7-4fce-a516-031672152da8"/>
-          <timestamp value="2022-08-18T13:04:25+00:00"/>
+          <identifier value="urn:uuid:7ebc465e-596c-4167-b6a0-1a97e78587ab"/>
+          <timestamp value="2022-08-25T08:39:23+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7270,7 +7270,7 @@
         <name value="VS_Erreger_Bakterien"/>
         <title value="ValueSet - Erreger Bakterien [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -7287,8 +7287,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:1386cc77-e4b5-40a9-89b0-033bb331634e"/>
-          <timestamp value="2022-08-18T13:04:25+00:00"/>
+          <identifier value="urn:uuid:9ea00e18-e4d5-4c7e-a5c7-e66b471f56fc"/>
+          <timestamp value="2022-08-25T08:39:23+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -19338,7 +19338,7 @@
         <name value="VS_Erreger_Pilze"/>
         <title value="ValueSet - Erreger Pilze [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -19355,8 +19355,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:3f086c7c-159e-4173-a230-a28239e5519c"/>
-          <timestamp value="2022-08-18T13:04:26+00:00"/>
+          <identifier value="urn:uuid:a11452c1-0a6a-4d43-a919-075768723884"/>
+          <timestamp value="2022-08-25T08:39:24+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -31406,7 +31406,7 @@
         <name value="VS_Erreger_Viren"/>
         <title value="ValueSet - Erreger Viren [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -31423,8 +31423,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4d8e3e73-1c30-4351-89d2-6e1f07b59898"/>
-          <timestamp value="2022-08-18T13:04:26+00:00"/>
+          <identifier value="urn:uuid:8c2f53f1-d70a-4f73-b467-97763a3c22fd"/>
+          <timestamp value="2022-08-25T08:39:24+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36495,7 +36495,7 @@
         <name value="VS_Erregernachweis_Qualifier"/>
         <title value="ValueSet - Erregernachweis Qualifier [SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36506,8 +36506,8 @@
         </contact>
         <description value="Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises."/>
         <expansion>
-          <identifier value="urn:uuid:5a5ce73a-6031-416b-a79a-7e65cff88cfa"/>
-          <timestamp value="2022-08-18T13:04:26+00:00"/>
+          <identifier value="urn:uuid:4a3fab99-8cbd-46b6-ba64-4f990a539e54"/>
+          <timestamp value="2022-08-25T08:39:24+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36552,7 +36552,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
-                <li>Loinc v2.72</li>
+                <li>Loinc v2.73</li>
                 <li>SNOMED CT International edition 31-Jul 2022</li>
               </ul>
             </div>
@@ -36632,7 +36632,7 @@
         <name value="VS_Mikrobiologischer_Befund_MRE_Klasse"/>
         <title value="ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36643,8 +36643,8 @@
         </contact>
         <description value="Bezeichnungen für Klassen von Multiresistenten Erregern (MRE)."/>
         <expansion>
-          <identifier value="urn:uuid:68345df8-b402-4a60-8b08-5a8d05d001ff"/>
-          <timestamp value="2022-08-18T13:04:26+00:00"/>
+          <identifier value="urn:uuid:a9b0f664-b89a-40be-aa23-460dd90244c1"/>
+          <timestamp value="2022-08-25T08:39:24+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -36664,7 +36664,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.72"/>
+            <valueUri value="http://loinc.org|2.73"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -36783,7 +36783,7 @@
         <name value="VS_Nicht_Zaehlbar_Grund"/>
         <title value="VS Nicht Zaehlbar Grund"/>
         <status value="active"/>
-        <date value="2022-08-18T13:03:54+00:00"/>
+        <date value="2022-08-25T08:38:52+00:00"/>
         <publisher value="Berlin Institute of Health"/>
         <contact>
           <name value="Berlin Institute of Health"/>
@@ -36794,8 +36794,8 @@
         </contact>
         <description value="tbd"/>
         <expansion>
-          <identifier value="urn:uuid:0f858bc3-20ca-4702-b43d-48292799e80d"/>
-          <timestamp value="2022-08-18T13:04:26+00:00"/>
+          <identifier value="urn:uuid:b9897ea0-48cd-4c5d-b2c4-363d102019b7"/>
+          <timestamp value="2022-08-25T08:39:24+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

@@ -10,7 +10,7 @@
   "name": "ErregerFall",
   "title": "ErregerFall",
   "status": "draft",
-  "date": "2022-08-18T13:03:54+00:00",
+  "date": "2022-08-25T08:38:52+00:00",
   "publisher": "Berlin Institute of Health",
   "contact": [
     {
@@ -46,7 +46,7 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank",
       "uri": "de.medizininformatikinitiative.kerndatensatz.biobank",
       "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
-      "version": "1.0.1"
+      "version": "1.0.3"
     }
   ],
   "definition": {

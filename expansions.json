@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8acaa4dd-8c71-4487-bb03-1f38fc4f2af6",
+  "id" : "ea81e8d3-47d1-426e-9ba4-4e039e33fba4",
   "meta" : {
-    "lastUpdated" : "2022-08-18T13:03:54.751+00:00"
+    "lastUpdated" : "2022-08-25T08:38:52.897+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "VS_Abstrichserie_Ergebnis",
       "title" : "ValueSet - Abstrichserie Ergebnis [SNOMED CT]",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -30,8 +30,8 @@
       }],
       "description" : "Das ValueSet enthält Codes für Ergebnisse einer Abstrichserie.",
       "expansion" : {
-        "identifier" : "urn:uuid:ff3d4279-1076-4218-ae62-4a9f90d5b878",
-        "timestamp" : "2022-08-18T13:04:25+00:00",
+        "identifier" : "urn:uuid:2d9d5d81-c2db-4af0-b2d4-54a924df7204",
+        "timestamp" : "2022-08-25T08:39:23+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -82,7 +82,7 @@
       "name" : "VS_ErregerStatus",
       "title" : "ValueSet - ErregerStatus [SNOMED CT]",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -93,8 +93,8 @@
       }],
       "description" : "Das ValueSet enthält Codes für den Erregerstatus eines Patienten.",
       "expansion" : {
-        "identifier" : "urn:uuid:2812cf3f-23b7-4fce-a516-031672152da8",
-        "timestamp" : "2022-08-18T13:04:25+00:00",
+        "identifier" : "urn:uuid:7ebc465e-596c-4167-b6a0-1a97e78587ab",
+        "timestamp" : "2022-08-25T08:39:23+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -150,7 +150,7 @@
       "name" : "VS_Erreger_Bakterien",
       "title" : "ValueSet - Erreger Bakterien [SNOMED CT]",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -169,8 +169,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:1386cc77-e4b5-40a9-89b0-033bb331634e",
-        "timestamp" : "2022-08-18T13:04:25+00:00",
+        "identifier" : "urn:uuid:9ea00e18-e4d5-4c7e-a5c7-e66b471f56fc",
+        "timestamp" : "2022-08-25T08:39:23+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5201,7 +5201,7 @@
       "name" : "VS_Erreger_Pilze",
       "title" : "ValueSet - Erreger Pilze [SNOMED CT]",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -5220,8 +5220,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:3f086c7c-159e-4173-a230-a28239e5519c",
-        "timestamp" : "2022-08-18T13:04:26+00:00",
+        "identifier" : "urn:uuid:a11452c1-0a6a-4d43-a919-075768723884",
+        "timestamp" : "2022-08-25T08:39:24+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -10252,7 +10252,7 @@
       "name" : "VS_Erreger_Viren",
       "title" : "ValueSet - Erreger Viren [SNOMED CT]",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -10271,8 +10271,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:4d8e3e73-1c30-4351-89d2-6e1f07b59898",
-        "timestamp" : "2022-08-18T13:04:26+00:00",
+        "identifier" : "urn:uuid:8c2f53f1-d70a-4f73-b467-97763a3c22fd",
+        "timestamp" : "2022-08-25T08:39:24+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -15303,7 +15303,7 @@
       "name" : "VS_Erregernachweis_Qualifier",
       "title" : "ValueSet - Erregernachweis Qualifier [SNOMED CT]",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -15314,8 +15314,8 @@
       }],
       "description" : "Das ValueSet enthält Codes zur Beschreibung des Testergebnisses eines Erregernachweises.",
       "expansion" : {
-        "identifier" : "urn:uuid:5a5ce73a-6031-416b-a79a-7e65cff88cfa",
-        "timestamp" : "2022-08-18T13:04:26+00:00",
+        "identifier" : "urn:uuid:4a3fab99-8cbd-46b6-ba64-4f990a539e54",
+        "timestamp" : "2022-08-25T08:39:24+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -15354,14 +15354,14 @@
       "id" : "vs-mikrobiologischer-befund-mre-klasse",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.72</li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-115329001\"> </a>  <a href=\"http://snomed.info/id/115329001\">115329001</a></td><td>http://snomed.info/sct</td><td>MRSA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-113727004\"> </a>  <a href=\"http://snomed.info/id/113727004\">113727004</a></td><td>http://snomed.info/sct</td><td>VRE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-838511009\"> </a>  <a href=\"http://snomed.info/id/838511009\">838511009</a></td><td>http://snomed.info/sct</td><td>LVRE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-838510005\"> </a>  <a href=\"http://snomed.info/id/838510005\">838510005</a></td><td>http://snomed.info/sct</td><td>LRE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA33214-0\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA33214-0.html\">LA33214-0</a></td><td>http://loinc.org</td><td>2MRGN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA33215-7\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA33215-7.html\">LA33215-7</a></td><td>http://loinc.org</td><td>3MRGN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA33216-5\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA33216-5.html\">LA33216-5</a></td><td>http://loinc.org</td><td>4MRGN</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.73</li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-115329001\"> </a>  <a href=\"http://snomed.info/id/115329001\">115329001</a></td><td>http://snomed.info/sct</td><td>MRSA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-113727004\"> </a>  <a href=\"http://snomed.info/id/113727004\">113727004</a></td><td>http://snomed.info/sct</td><td>VRE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-838511009\"> </a>  <a href=\"http://snomed.info/id/838511009\">838511009</a></td><td>http://snomed.info/sct</td><td>LVRE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-838510005\"> </a>  <a href=\"http://snomed.info/id/838510005\">838510005</a></td><td>http://snomed.info/sct</td><td>LRE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA33214-0\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA33214-0.html\">LA33214-0</a></td><td>http://loinc.org</td><td>2MRGN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA33215-7\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA33215-7.html\">LA33215-7</a></td><td>http://loinc.org</td><td>3MRGN</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA33216-5\"> </a>  <a href=\"http://details.loinc.org/LOINC/LA33216-5.html\">LA33216-5</a></td><td>http://loinc.org</td><td>4MRGN</td></tr></table></div>"
       },
       "url" : "https://charite.de/fhir/erregerfall/ValueSet/vs-mikrobiologischer-befund-mre-klasse",
       "version" : "0.1.0",
       "name" : "VS_Mikrobiologischer_Befund_MRE_Klasse",
       "title" : "ValueSet - Mikrobiologischer Befund MRE Klasse [LOINC, SNOMED CT]",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -15372,8 +15372,8 @@
       }],
       "description" : "Bezeichnungen für Klassen von Multiresistenten Erregern (MRE).",
       "expansion" : {
-        "identifier" : "urn:uuid:68345df8-b402-4a60-8b08-5a8d05d001ff",
-        "timestamp" : "2022-08-18T13:04:26+00:00",
+        "identifier" : "urn:uuid:a9b0f664-b89a-40be-aa23-460dd90244c1",
+        "timestamp" : "2022-08-25T08:39:24+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -15393,7 +15393,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.72"
+          "valueUri" : "http://loinc.org|2.73"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -15447,7 +15447,7 @@
       "name" : "VS_Nicht_Zaehlbar_Grund",
       "title" : "VS Nicht Zaehlbar Grund",
       "status" : "active",
-      "date" : "2022-08-18T13:03:54+00:00",
+      "date" : "2022-08-25T08:38:52+00:00",
       "publisher" : "Berlin Institute of Health",
       "contact" : [{
         "name" : "Berlin Institute of Health",
@@ -15458,8 +15458,8 @@
       }],
       "description" : "tbd",
       "expansion" : {
-        "identifier" : "urn:uuid:0f858bc3-20ca-4702-b43d-48292799e80d",
-        "timestamp" : "2022-08-18T13:04:26+00:00",
+        "identifier" : "urn:uuid:b9897ea0-48cd-4c5d-b2c4-363d102019b7",
+        "timestamp" : "2022-08-25T08:39:24+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

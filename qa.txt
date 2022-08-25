@@ -3,7 +3,7 @@
 
 err = 29, warn = 4, info = 6
 IG Publisher Version: 1.1.128
-Generated Thu Aug 18 13:04:40 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
+Generated Thu Aug 25 08:39:39 UTC 2022. FHIR version 4.0.1 for erreger.fall#0.1.0 (canonical = https://charite.de/fhir/erregerfall)
  Build Errors : 23 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-nicht-zaehlbar-grund : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-abstrichserie : 1 / 0 / 1
