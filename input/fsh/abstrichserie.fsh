@@ -70,10 +70,10 @@ Description: "Beispiel einer Abstrichserie"
 // * extension[reasonCode].valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
 // * extension[reasonCode].valueCodeableConcept.text = "MRSA"
 * extension[summaryOf].valueReference = Reference(example-erregerfall-mrsa)
-* extension[summaryOf].valueReference.identifier.system = "https://www.charite.de/fhir/sid/erregerfaelle"
+* extension[summaryOf].valueReference.identifier.system = "https://charite.de/fhir/sid/erregerfaelle"
 * extension[summaryOf].valueReference.identifier.value = "0123456789"
 * identifier[Abstrichseriennummer].type = $v2-0203#LACSN
-* identifier[Abstrichseriennummer].system = "https://www.charite.de/fhir/sid/abstrichserien"
+* identifier[Abstrichseriennummer].system = "https://charite.de/fhir/sid/abstrichserien"
 * identifier[Abstrichseriennummer].value = "0123456789"
 * basedOn = Reference(example-fragestellung)
 * status = #final
@@ -86,7 +86,7 @@ InstanceOf: untersuchungsauftrag
 Usage: #example
 Title: "example-fragestellung"
 Description: "Beispiel eines Untersuchungsauftrags inkl. Fragestellung"
-* identifier[anforderung].system = "https://www.charite.de/fhir/sid/anforderung-lab-identifier"
+* identifier[anforderung].system = "https://charite.de/fhir/sid/anforderung-lab-identifier"
 * identifier[anforderung].value = "1234567890"
 * identifier[anforderung].assigner = Reference(Organization/Charite)
 * status = #completed

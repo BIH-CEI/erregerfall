@@ -136,14 +136,14 @@ Title: "Beispiel Erregernachweis MRSA"
 Description: "Beispiel für Erregernachweis von MRSA"
 * status = #final
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/lab-tests"
+* identifier[analyseBefundCode].system = "https://charite.de/fhir/sid/lab-tests"
 * identifier[analyseBefundCode].value = "59826-8_1234567890"
-* identifier[analyseBefundCode].assigner = Reference(Organization/charite)
+* identifier[analyseBefundCode].assigner = Reference(example-organization-charite)
 * category.coding[loinc-microbiology-studies] = $loinc#18725-2
 * code.coding[loinc-microorganism] = $loinc#11475-1
-* subject = Reference(Patient/example)
+* subject = Reference(example-patient)
 * effectiveDateTime = "2022-05-31"
-* specimen = Reference(Specimen/example)
+* specimen = Reference(example-specimen)
 * valueCodeableConcept = $SCT#260373001 "Detected (qualifier value)"
 * component[NachweisBakterien].code = $loinc#6463-4 "Bacteria identified in Specimen by Culture"
 * component[NachweisBakterien].valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
@@ -159,14 +159,14 @@ Title: "Beispiel - MRE Klasse MRSA"
 Description: "Beispiel für MRE Klasse MRSA"
 * status = #final
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://exmaple.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].system = "https://laborberlin.com/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "59826-8_1234567890"
-* identifier[analyseBefundCode].assigner = Reference(Organization/example)
+* identifier[analyseBefundCode].assigner = Reference(example-organization-labor)
 //* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 //* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-ID"
-* category = $loinc#18725-2 "Microbiology studies (set)"
+* category.coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
 * code = $loinc#99780-9 "Multidrug resistant gram-negative organism classification [Type]"
-* subject = Reference(Patient/example)
+* subject = Reference(example-patient)
 * effectiveDateTime = "2022-05-31"
 * valueCodeableConcept = $SCT#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
 
@@ -177,12 +177,12 @@ Title: "Beispiel Erregerfall MRSA"
 Description: "Beispiel eines Erregerfalls MRSA"
 * extension[summaryOf].valueReference = Reference(DiagnosticReport/example)
 * identifier[ErregerFallNummer].type = $v2-0203#LACSN
-* identifier[ErregerFallNummer].system = "https://www.charite.de/fhir/sid/erregerfaelle"
+* identifier[ErregerFallNummer].system = "https://charite.de/fhir/sid/erregerfaelle"
 * identifier[ErregerFallNummer].value = "0123456789"
 * basedOn = Reference(ServiceRequest/example)
 * status = #final
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
-* subject = Reference(Patient/example-patient)
+* subject = Reference(example-patient)
 //* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
 //* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
 * result[+] = Reference(example-erregernachweis-mrsa)
@@ -194,18 +194,107 @@ InstanceOf: sd-erregerfall
 Usage: #example
 Title: "Beispiel Erregerfall MRSA"
 Description: "Beispiel eines Erregerfalls MRSA"
+* meta.tag = https://charite.de/fhir/tags#erregerfall
 * contained[0] = example-erregernachweis-mrsa
 * contained[1] = example-mre-klasse-mrsa
-* extension[summaryOf].valueReference = Reference(DiagnosticReport/example)
+//* extension[summaryOf].valueReference = Reference(DiagnosticReport/example)
 * identifier[ErregerFallNummer].type = $v2-0203#LACSN
-* identifier[ErregerFallNummer].system = "https://www.charite.de/fhir/sid/erregerfaelle"
+* identifier[ErregerFallNummer].system = "https://charite.de/fhir/sid/erregerfaelle"
 * identifier[ErregerFallNummer].value = "0123456789"
-* basedOn = Reference(ServiceRequest/example)
+//* basedOn = Reference(ServiceRequest/example)
 * status = #final
 * code = $loinc#96161-5 "Infectious disease Evaluation note"
-* subject = Reference(Patient/example-patient)
+* subject = Reference(example-patient)
 //* result[erreger-nachweis] = Reference(example-erregernachweis-mrsa)
 //* result[mre-klasse] = Reference(example-mre-klasse-mrsa)
 * result[+] = Reference(example-erregernachweis-mrsa)
 * result[+] = Reference(example-mre-klasse-mrsa)
 * conclusionCode = $SCT#10828004 "Positive (qualifier value)"
+
+Instance: example-patient
+InstanceOf: Patient
+Usage: #example
+* identifier[0].use = #usual
+* identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[=].system = "https://charite.de/fhir/sid/patienten"
+* identifier[=].value = "146314909"
+* identifier[=].assigner = Reference(example-organization-charite)
+* identifier[+].use = #official
+* identifier[=].type = http://fhir.de/CodeSystem/identifier-type-de-basis#GKV
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "Z900211002"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "104943020"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* name[0].use = #official
+* name[=].family = "Hirsch"
+* name[=].given[0] = "Rahel"
+* gender = #female
+* birthDate = "1870-09-15"
+* deceasedBoolean = true
+* address.type = #both
+* address.line = "Charitépl. 1"
+* address.city = "Berlin"
+* address.state = "DE-BE"
+* address.postalCode = "10117"
+* address.country = "DE"
+
+Instance: example-organization-charite
+InstanceOf: Organization
+Usage: #example
+* identifier[0].type = http://terminology.hl7.org/CodeSystem/v2-0203#XX
+* identifier[=].system = "http://fhir.de/sid/arge-ik/iknr"
+* identifier[=].value = "261101015"
+* type.coding = http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung#KHS
+* name = "Charité-Universitätsmedizin Berlin, Campus Charité Mitte"
+* telecom.system = #phone
+* telecom.value = "03045050"
+* address.type = #both
+* address.line = "Charitéplatz 1"
+* address.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address.line.extension[=].valueString = "1"
+* address.line.extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address.line.extension[=].valueString = "Charitéplatz"
+* address.city = "Berlin"
+* address.postalCode = "10117"
+
+Instance: example-organization-labor
+InstanceOf: Organization
+Usage: #example
+* name = "Labor Berlin - Charité Vivantes GmbH"
+* telecom.system = #phone
+* telecom.value = "+49 (30) 405 026-800"
+* address.type = #both
+* address.line = "Sylter Straße 2"
+* address.line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address.line.extension[=].valueString = "2"
+* address.line.extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address.line.extension[=].valueString = "Sylter Straße"
+* address.city = "Berlin"
+* address.postalCode = "13353"
+
+Instance: example-specimen
+InstanceOf: Specimen
+Usage: #example
+* type = $SCT#258500001 "Nasopharyngeal swab (specimen)"
+* collection.collectedDateTime = "2022-05-30T12:44:00+01:00"
+* collection.bodySite = $SCT#71836000 "Nasopharyngeal structure (body structure)"
+* identifier.system = "https://biobank.charite.de/fhir/sid/proben"
+* identifier.value = "5432"
+* status = #available
+* subject = Reference(example-patient)
+
+Instance: example-erregerfall-mrsa-bundle
+InstanceOf: Bundle
+Usage: #example
+Title: "Example Erregerfall MRSA Bundle"
+Description: "Beispiel eines Erregerfalls MRSA als Transaction Bundle"
+* type = #transaction
+* timestamp = "2023-03-10T12:09:00+01:00"
+* insert Bundle(example-patient, Patient)
+* insert Bundle(example-erregerfall-mrsa-contained, DiagnosticReport)
+* insert Bundle(example-erregernachweis-mrsa, Observation)
+* insert Bundle(example-mre-klasse-mrsa, Observation)
+* insert Bundle(example-organization-charite, Organization)
+* insert Bundle(example-organization-labor, Organization)
+* insert Bundle(example-specimen, Specimen)
